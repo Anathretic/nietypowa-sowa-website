@@ -4,7 +4,7 @@
 
 I would like to introduce you to one of my website commercial projects, where I built the whole thing using the React framework.
 
-This is a site dedicated to an artist who airbrush paints professionally, creating custom helmets, motorbike tanks, etc. To build it, I used a mockup created by my designer [Kamila L.](https://github.com/KamiRaLsr). The website allows you to browse the offer and contact via a form using a friendly UI.
+This is a site dedicated to an artist who airbrush paints professionally, creating custom helmets, motorbike tanks, etc. To build it, I used a mockup created by my designer [Kamila L](https://github.com/KamiRaLsr). The website allows you to browse the offer and contact via a form using a friendly UI.
 
 ## Coding & Problems
 
