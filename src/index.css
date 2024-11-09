@@ -20,15 +20,8 @@ body {
 	max-width: 1920px;
 }
 
-.title-font {
-	font-family: 'Dancing Script', cursive;
-}
-
-.bg-gradient {
-	background-color: rgb(211, 124, 177);
-	background-image: linear-gradient(140deg, rgba(211, 124, 177, 1) 0%, rgba(51, 115, 198, 1) 100%);
-	background-size: cover;
-	background-position: center;
+.main-bg-color {
+	background-color: #072028;
 }
 
 .text-gradient {
@@ -55,33 +48,8 @@ body {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card {
-	background: rgb(185, 28, 28);
-	background: radial-gradient(circle, rgba(185, 28, 28, 1) 0%, rgba(27, 34, 79, 1) 43%, rgba(185, 28, 28, 1) 100%);
-}
-
-.card-1,
-.card-2,
-.card-3 {
-	background-color: rgba(0, 0, 0, 0.5);
-	background-size: cover;
-	background-position: center;
-}
-
-.card-1 {
-	background-image: url('/src/images//paintings-card.jpg');
-}
-
-.card-2 {
-	background-image: url('/src/images/shoes-card.jpg');
-}
-
-.card-3 {
-	background-image: url('/src/images/bookmarks-card.jpg');
-}
-
 .active {
-	color: #ff91d8;
+	color: #072028;
 }
 
 form span {
@@ -95,5 +63,5 @@ form textarea:invalid[focused='true'] ~ span {
 
 form input:invalid[focused='true'],
 form textarea:invalid[focused='true'] {
-	border: 1px solid #ff91d8;
+	border: 1px solid #072028;
 }

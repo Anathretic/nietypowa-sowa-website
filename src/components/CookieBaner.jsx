@@ -9,7 +9,7 @@ export const CookieBaner = ({ ...otherProps }) => {
 			buttonText='OK!'
 			style={{
 				color: '#fff',
-				backgroundColor: '#bf589a',
+				backgroundColor: '#C80C59',
 				fontSize: '12px',
 				padding: '10px',
 				textAlign: 'center',
