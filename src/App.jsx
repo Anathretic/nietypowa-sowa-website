@@ -1,11 +1,13 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
-import { Navbar, Offer, Footer, Contact, PageNotFound, PrivacyPolicy, Home, OfferCategory, Prices } from './sections';
+import { Navbar } from './components/Navbar/Navbar';
+import { Aerograph, Contact, Gallery, Offer, PageNotFound, PrivacyPolicy, TermsOfUse } from './sections';
+import { Footer } from './components/Footer/Footer';
 import { CookieBaner } from './components/CookieBaner';
 
 const App = () => {
 	return (
 		<div className='min-h-screen'>
-			<div className='bg-gradient'>
+			<div className='main-bg-color'>
 				<Routes>
 					<Route
 						element={
@@ -14,7 +16,6 @@ const App = () => {
 								<CookieBaner />
 							</>
 						}>
-						<Route path='/' element={<Home />} />
 						<Route
 							element={
 								<>
@@ -23,11 +24,12 @@ const App = () => {
 									<Footer />
 								</>
 							}>
-							<Route path='/oferta' element={<Offer />} />
-							<Route path='/oferta/:id' element={<OfferCategory />} />
-							<Route path='/cennik' element={<Prices />} />
+							<Route path='/' element={<Aerograph />} />
+							<Route path='/nasze-uslugi' element={<Offer />} />
+							<Route path='/galeria' element={<Gallery />} />
 							<Route path='/kontakt' element={<Contact />} />
 							<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
+							<Route path='/warunki-uzytkowania' element={<TermsOfUse />} />
 							<Route path='*' element={<PageNotFound />} />
 						</Route>
 					</Route>

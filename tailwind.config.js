@@ -8,9 +8,6 @@ export default {
 				rsm: '350px',
 				mf: '990px',
 			},
-			backgroundImage: {
-				'hero-img': 'url(/src/images/hero-bg.jpg)',
-			},
 			keyframes: {
 				'slide-in': {
 					'0%': {
