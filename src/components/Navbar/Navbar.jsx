@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { NavbarItem } from './components/NavbarItem';
+import { InstagramAnchor } from './components/InstagramAnchor';
 import NavLogo from '/nietypowa-nav-logo.png';
 
 const navbarItems = [
@@ -48,6 +49,7 @@ export const Navbar = () => {
 						{navbarItems.map(({ title, section }) => (
 							<NavbarItem key={title} title={title} section={section} />
 						))}
+						<InstagramAnchor liStyles='ml-5' />
 					</ul>
 				</nav>
 				<div className='flex relative'>
@@ -61,7 +63,7 @@ export const Navbar = () => {
 					{toggleMenu && (
 						<nav>
 							<ul className='z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col justify-start items-center rounded-md text-white bg-[#C80C59] animate-slide-in'>
-								<li className='text-xl self-start my-2 mb-10 cursor-pointer'>
+								<li className='text-xl self-start my-2 mb-6 cursor-pointer'>
 									<AiOutlineClose fontSize={28} onClick={() => setToggleMenu(false)} />
 								</li>
 								{navbarItems.map(({ title, section }) => (
@@ -75,6 +77,7 @@ export const Navbar = () => {
 										}}
 									/>
 								))}
+								<InstagramAnchor />
 							</ul>
 						</nav>
 					)}
