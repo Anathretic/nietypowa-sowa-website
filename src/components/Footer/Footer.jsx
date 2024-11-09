@@ -1,4 +1,3 @@
-import { BsInstagram } from 'react-icons/bs';
 import { FaRegCopyright } from 'react-icons/fa';
 import { IoDocumentOutline } from 'react-icons/io5';
 import { MdOutlinePrivacyTip } from 'react-icons/md';
@@ -20,13 +19,6 @@ export const Footer = () => {
 					<p className={`${isMobile ? 'text-xs' : 'text-sm' } text-center mf:text-base uppercase`}> {currentYear} nietypowa sowa</p>
 				</div>
 				<div className='flex flex-end '>
-					<a
-						className='cursor-pointer p-1 mr-2 hover:text-[#C80C59] transition duration-300'
-						href='https://www.instagram.com/nietypowa_sowa/'
-						target='_blank'
-						rel='noreferrer'>
-						<BsInstagram fontSize={isMobile ? 18 : 22} />
-					</a>
 					<Link
 						to='/polityka-prywatnosci'
 						className='p-1 pt-[2px] hover:text-[#C80C59] transition duration-300'
