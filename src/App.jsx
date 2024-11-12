@@ -24,10 +24,17 @@ const App = () => {
 									<Footer />
 								</>
 							}>
-							<Route path='/' element={<Aerograph />} />
-							<Route path='/nasze-uslugi' element={<Offer />} />
-							<Route path='/galeria' element={<Gallery />} />
-							<Route path='/kontakt' element={<Contact />} />
+							<Route
+								path='/'
+								element={
+									<>
+										<Aerograph />
+										<Offer />
+										<Gallery />
+										<Contact />
+									</>
+								}
+							/>
 							<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
 							<Route path='/warunki-uzytkowania' element={<TermsOfUse />} />
 							<Route path='*' element={<PageNotFound />} />

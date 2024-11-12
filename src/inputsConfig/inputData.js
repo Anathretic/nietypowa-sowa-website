@@ -6,7 +6,7 @@ export const inputData = [
 		placeholder: 'Wprowadź swoje imię..',
 		label: 'Imię',
 		errorMessage: 'Wprowadź poprawnie imię!',
-		pattern: '^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]{3,16}$',
+		pattern: '^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ ]{3,32}$',
 		required: true,
 	},
 	{
@@ -16,16 +16,6 @@ export const inputData = [
 		placeholder: 'Wprowadź swój e-mail..',
 		label: 'E-mail',
 		errorMessage: 'Wprowadź poprawnie e-mail!',
-		required: true,
-	},
-	{
-		id: 'subject',
-		name: 'subject',
-		type: 'text',
-		placeholder: 'Wprowadź temat wiadomości..',
-		label: 'Temat',
-		errorMessage: 'Temat jest za krótki lub za długi!',
-		pattern: '^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ ]{6,35}$',
 		required: true,
 	},
 ];

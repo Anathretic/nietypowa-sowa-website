@@ -1,7 +1,7 @@
 const Gallery = () => {
 	return (
 		<div>
-			<p>Galeria!</p>
+			<h2 id="galeria">Galeria!</h2>
 		</div>
 	);
 };
