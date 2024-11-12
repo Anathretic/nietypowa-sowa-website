@@ -3,26 +3,8 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { NavbarItem } from './components/NavbarItem';
 import { InstagramAnchor } from './components/InstagramAnchor';
+import { navbarItems } from './components/navbarData/NavbarItems';
 import NavLogo from '/nietypowa-nav-logo.png';
-
-const navbarItems = [
-	{
-		title: 'aerograf',
-		section: '/#',
-	},
-	{
-		title: 'nasze usługi',
-		section: '/#nasze-uslugi',
-	},
-	{
-		title: 'galeria',
-		section: '/#galeria',
-	},
-	{
-		title: 'kontakt',
-		section: '/#kontakt',
-	},
-];
 
 export const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);

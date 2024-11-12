@@ -1,6 +1,6 @@
 const Aerograph = () => {
 	return (
-		<div className='flex w-full justify-center items-center pt-[80px]'>
+		<section className='flex w-full justify-center items-center pt-[80px]'>
 			<div className='flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4 min-h-screen'>
 				<>
 					<div className='flex flex-1 justify-center flex-col mf:mr-20'>
@@ -15,7 +15,7 @@ const Aerograph = () => {
 					<div className='flex flex-col flex-1 items-center justify-start w-full sm:w-96 mf:mt-0 mf:ml-18 lg:ml-20 mt-10'></div>
 				</>
 			</div>
-		</div>
+		</section>
 	);
 };
 

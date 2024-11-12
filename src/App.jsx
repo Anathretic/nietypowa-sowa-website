@@ -27,12 +27,12 @@ const App = () => {
 							<Route
 								path='/'
 								element={
-									<>
+									<main>
 										<Aerograph />
 										<Offer />
 										<Gallery />
 										<Contact />
-									</>
+									</main>
 								}
 							/>
 							<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />

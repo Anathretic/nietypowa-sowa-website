@@ -1,8 +1,10 @@
 const TermsOfUse = () => {
 	return (
-		<div>
-			<p>Warunki użytkowania!</p>
-		</div>
+		<main>
+			<section>
+				<p>Warunki użytkowania!</p>
+			</section>
+		</main>
 	);
 };
 

@@ -1,8 +1,8 @@
 const Offer = () => {
 	return (
-		<div>
-			<h2 id="nasze-uslugi">Oferta!</h2>
-		</div>
+		<section>
+			<h2 id='nasze-uslugi'>Oferta!</h2>
+		</section>
 	);
 };
 

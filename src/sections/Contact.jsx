@@ -67,10 +67,10 @@ const Contact = () => {
 	};
 
 	return (
-		<div className='flex w-full justify-center items-center pt-[80px]'>
+		<section id='kontakt' className='flex w-full justify-center items-center max-md:pt-[50px]'>
 			<div className='flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4'>
 				<div className='flex flex-1 justify-center items-center flex-col mf:ml-2'>
-					<h2 id='kontakt' className='text-4xl sm:text-5xl text-white text-gradient py-1 max-rsm:text-left text-center mf:text-left'>
+					<h2 className='text-4xl sm:text-5xl text-white text-gradient py-1 max-rsm:text-left text-center mf:text-left'>
 						Chciałbyś zamówić coś <br /> dla siebie? <br />
 						A może.. <br /> interesuje Cię to <br /> jak wykonuję swoją pracę?
 					</h2>
@@ -133,7 +133,7 @@ const Contact = () => {
 					</form>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
