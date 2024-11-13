@@ -67,24 +67,28 @@ const Contact = () => {
 	};
 
 	return (
-		<section id='kontakt' className='flex w-full justify-center items-center max-md:pt-[50px]'>
-			<div className='flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4'>
+		<section id='kontakt' className='flex w-full justify-center items-center max-md:pt-[50px] pt-[40px]'>
+			<div className='flex flex-col items-center md:p-20 py-12 px-4'>
 				<div className='flex flex-1 justify-center items-center flex-col mf:ml-2'>
-					<h2 className='text-4xl sm:text-5xl text-white text-gradient py-1 max-rsm:text-left text-center mf:text-left'>
-						Chciałbyś zamówić coś <br /> dla siebie? <br />
-						A może.. <br /> interesuje Cię to <br /> jak wykonuję swoją pracę?
-					</h2>
-					<div className='text-left mt-5 text-white font-light text-base max-[350px]:text-left text-center mf:text-left'>
+					<h2 className='text-4xl sm:text-5xl mf:text-6xl text-white py-1 max-rsm:text-left text-center mf:text-left'>Kontakt</h2>
+					<img src='' alt='' />
+					<div className='mf:text-lg text-center mt-5 text-white font-light text-base italic'>
 						<br />
 						<p className='mb-2'>Wypełnij formularz, a ja na pewno się odezwę i dogadamy wszystkie szczegóły!</p>
+						<br />
+						<p className='mb-2'>A jeśli chcesz skontaktować się w inny sposób skorzystaj z danych poniżej:</p>
+						<br />
+						<p className='mb-2'>
+							<span className='font-semibold not-italic'>E-mail:</span> xyz@gmail.com
+						</p>
+						<br />
+						<p className='mb-2'>
+							<span className='font-semibold not-italic'>Telefon:</span> 000-111-222
+						</p>
 					</div>
 				</div>
-				<div className='flex flex-col flex-1 items-center justify-start w-full sm:w-96 mf:mt-0 mf:ml-18 lg:ml-20 mt-10'>
-					<form
-						onSubmit={handleSubmit}
-						className='px-5 py-2 sm:w-96 w-full flex flex-col justify-start items-center blue-gradient mt-10'>
-						<h2 className='p-5 text-2xl text-white text-gradient text-center'>Napisz do mnie!</h2>
-						<div className='h-[1px] w-full bg-gray-400 my-1' />
+				<div className='flex flex-col flex-1 items-center justify-start w-full max-w-[1000px] mf:mt-4 mt-10'>
+					<form onSubmit={handleSubmit} className='px-5 py-2 w-full flex flex-col justify-start items-center mf:mt-10 mf:text-lg'>
 						{inputData.map(input => (
 							<FormInput
 								key={input.id}
@@ -115,17 +119,16 @@ const Contact = () => {
 								ref={refCaptcha}
 							/>
 							<div className={`${isMobile ? 'h-12' : 'h-10 mt-1'} flex items-center justify-center`}>
-								<p className='text-[#ff91d8] text-lg font-bold text-center'>{recaptchaErrorValue}</p>
+								<p className='text-[#23A1B4] text-lg font-bold text-center'>{recaptchaErrorValue}</p>
 							</div>
 						</div>
-						<div className='h-[1px] w-full bg-gray-400' />
 						<div className='flex justify-center items-center h-28 mt-2'>
 							{isLoading ? (
 								<FormLoader />
 							) : (
 								<button
 									type='submit'
-									className='flex justify-center bg-[#ff91d8] p-3 w-32 rounded-full cursor-pointer hover:bg-[#bf589a] transition duration-300 text-white'>
+									className='flex justify-center bg-[#23A1B4] p-3 w-32 mf:w-48 rounded-full cursor-pointer hover:bg-[#C80C59] transition duration-300 text-white'>
 									{buttonText}
 								</button>
 							)}

@@ -12,7 +12,7 @@ export const Footer = () => {
 
 	return (
 		<footer className='w-full flex md:justify-center justify-between items-center flex-col p-4 text-white'>
-			<div className='sm:w-[90%] w-full h-[1px] bg-[#C80C59] mt-20' />
+			<div className='sm:w-[90%] w-full h-[1px] bg-[#23A1B4] mt-20' />
 			<div className='sm:w-[90%] w-full flex justify-between items-center my-5'>
 				<div className='flex'>
 					<FaRegCopyright className='mx-1 h-auto' />
