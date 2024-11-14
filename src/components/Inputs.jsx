@@ -1,5 +1,4 @@
-const inputStyles =
-	'my-2 w-full rounded-sm outline-none bg-transparent text-white border-none text-sm input-gradient';
+const inputStyles = 'my-2 w-full rounded-sm outline-none bg-transparent text-white border-none text-sm input-gradient';
 
 export const FormInput = ({ label, htmlFor, onChange, errorMessage, ...inputProps }) => {
 	return (

@@ -10,6 +10,8 @@ import { BsCheck2All } from 'react-icons/bs';
 import { useContactFormButton } from '../hooks/useContactFormButton';
 import { useContactFormInputs } from '../hooks/useContactFormInputs';
 
+import ContactHeader from '../images/contact-header.png';
+
 const Contact = () => {
 	const [focused, setFocused] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
@@ -70,8 +72,9 @@ const Contact = () => {
 		<section id='kontakt' className='flex w-full justify-center items-center max-md:pt-[50px] pt-[40px]'>
 			<div className='flex flex-col items-center md:p-20 py-12 px-4'>
 				<div className='flex flex-1 justify-center items-center flex-col mf:ml-2'>
-					<h2 className='text-4xl sm:text-5xl mf:text-6xl text-white py-1 max-rsm:text-left text-center mf:text-left'>Kontakt</h2>
-					<img src='' alt='' />
+					<h2 className='w-full max-w-[800px] text-4xl sm:text-5xl mf:text-6xl text-white py-1 max-rsm:text-left text-center mf:text-left'>
+						<img src={ContactHeader} alt='Tytuł sekcji kontaktowej' />
+					</h2>
 					<div className='mf:text-lg text-center mt-5 text-white font-light text-base italic'>
 						<br />
 						<p className='mb-2'>Wypełnij formularz, a ja na pewno się odezwę i dogadamy wszystkie szczegóły!</p>
@@ -88,7 +91,9 @@ const Contact = () => {
 					</div>
 				</div>
 				<div className='flex flex-col flex-1 items-center justify-start w-full max-w-[1000px] mf:mt-4 mt-10'>
-					<form onSubmit={handleSubmit} className='px-5 py-2 w-full flex flex-col justify-start items-center mf:mt-10 mf:text-lg'>
+					<form
+						onSubmit={handleSubmit}
+						className='px-5 py-2 w-full flex flex-col justify-start items-center mf:mt-10 mf:text-lg'>
 						{inputData.map(input => (
 							<FormInput
 								key={input.id}
@@ -111,7 +116,7 @@ const Contact = () => {
 								focused={focused.toString()}
 							/>
 						))}
-						<div className={`${isMobile ? 'h-48' : 'h-32'} mt-7 md:ml-0.5 ml-1.5`}>
+						<div className={`${isMobile ? 'h-48' : 'h-32'} mt-7 md:ml-0.5 ml-1.5 z-10`}>
 							<ReCAPTCHA
 								key={isMobile ? 'compact-recaptcha' : 'normal-recaptcha'}
 								size={isMobile ? 'compact' : 'normal'}
@@ -122,7 +127,7 @@ const Contact = () => {
 								<p className='text-[#23A1B4] text-lg font-bold text-center'>{recaptchaErrorValue}</p>
 							</div>
 						</div>
-						<div className='flex justify-center items-center h-28 mt-2'>
+						<div className='flex justify-center items-center h-28 mt-2 z-10'>
 							{isLoading ? (
 								<FormLoader />
 							) : (
