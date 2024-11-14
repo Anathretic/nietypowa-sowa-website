@@ -45,6 +45,10 @@ form span {
 	visibility: hidden;
 }
 
+form input {
+	scroll-margin-top: 120px;
+}
+
 form input:invalid[focused='true'] ~ span,
 form textarea:invalid[focused='true'] ~ span {
 	visibility: visible;
@@ -53,4 +57,12 @@ form textarea:invalid[focused='true'] ~ span {
 form input:invalid[focused='true'],
 form textarea:invalid[focused='true'] {
 	border: 1px solid #072028;
+}
+
+.footer-icon-shadow {
+	filter: drop-shadow(3px 5px 3px #fff);
+}
+
+.footer-icon-shadow:hover {
+	filter: drop-shadow(3px 5px 3px #c80c59);
 }
