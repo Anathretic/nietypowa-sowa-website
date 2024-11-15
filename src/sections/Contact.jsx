@@ -72,7 +72,7 @@ const Contact = () => {
 		<section id='kontakt' className='flex w-full justify-center items-center max-md:pt-[50px] pt-[40px]'>
 			<div className='flex flex-col items-center md:p-20 py-12 px-4'>
 				<div className='flex flex-1 justify-center items-center flex-col mf:ml-2'>
-					<h2 className='w-full max-w-[800px] text-4xl sm:text-5xl mf:text-6xl text-white py-1 max-rsm:text-left text-center mf:text-left'>
+					<h2 className='w-full max-w-[800px] text-4xl sm:text-5xl mf:text-6xl text-white py-1 max-rsm:text-left text-center mf:text-left z-10'>
 						<img src={ContactHeader} alt='Tytuł sekcji kontaktowej' />
 					</h2>
 					<div className='mf:text-lg text-center mt-5 text-white font-light text-base italic'>

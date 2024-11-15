@@ -1,6 +1,15 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar/Navbar';
-import { Aerograph, Contact, Gallery, Offer, PageNotFound, PrivacyPolicy, TermsOfUse } from './sections';
+import {
+	Aerograph,
+	Contact,
+	Gallery,
+	GallerySubpage,
+	Offer,
+	PageNotFound,
+	PrivacyPolicy,
+	TermsOfUse,
+} from './sections';
 import { Footer } from './components/Footer/Footer';
 import { CookieBaner } from './components/CookieBaner';
 
@@ -35,6 +44,7 @@ const App = () => {
 									</main>
 								}
 							/>
+							<Route path='/galeria-prac' element={<GallerySubpage />} />
 							<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
 							<Route path='/warunki-uzytkowania' element={<TermsOfUse />} />
 							<Route path='*' element={<PageNotFound />} />
