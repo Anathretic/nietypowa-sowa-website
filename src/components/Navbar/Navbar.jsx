@@ -15,7 +15,7 @@ export const Navbar = () => {
 
 	return (
 		<header>
-			<div className='fixed top-0 w-full h-[80px] flex md:justify-center justify-between items-center py-4 mf:py-2 z-20 transition duration-300 mr-auto tracking-widest bg-[#C80C59]'>
+			<div className='fixed top-0 w-full h-[80px] flex md:justify-center justify-between items-center py-4 mf:py-2 z-50 transition duration-300 mr-auto tracking-widest bg-[#C80C59]'>
 				<div className='md:flex-[0.8] 2xl:flex-[0.5] flex-initial justify-center items-center'>
 					<div className='flex items-center mf:mx-2'>
 						<img
