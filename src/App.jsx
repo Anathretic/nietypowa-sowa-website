@@ -8,6 +8,7 @@ import {
 	Offer,
 	PageNotFound,
 	PrivacyPolicy,
+	Quote,
 	TermsOfUse,
 } from './sections';
 import { Footer } from './components/Footer/Footer';
@@ -39,6 +40,7 @@ const App = () => {
 									<main>
 										<Aerograph />
 										<Offer />
+										<Quote />
 										<Gallery />
 										<Contact />
 									</main>
