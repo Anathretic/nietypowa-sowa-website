@@ -8,7 +8,7 @@ const GallerySubpage = () => {
 			<div className='flex flex-col items-center md:p-20 py-12 px-4'>
 				<div className='flex flex-1 justify-center items-center flex-col mf:ml-2'>
 					<h2 className='w-full max-w-[800px] text-4xl sm:text-5xl mf:text-6xl text-white max-md:pt-4 pt-1 pb-12 max-rsm:text-left text-center mf:text-left z-10'>
-						<img src={GallerySubpageHeader} alt='Tytuł sekcji kontaktowej' />
+						<img src={GallerySubpageHeader} alt='Tytuł sekcji z galerią zdjęć' />
 					</h2>
 				</div>
 				<div id='galeria' className='scroll-mt-[120px] max-w-[1000px] w-full max-lg:w-11/12 z-10'>
