@@ -17,7 +17,7 @@ const Offer = () => {
 						<img className='w-full' src={OfferHeader} alt='Tytuł sekcji z usługami' />
 					</h2>
 				</div>
-				<div className='w-full max-w-[1400px] flex justify-center items-center flex-col xl:flex-row xl:justify-between xl:ml-6 pt-20 pb-32 xl:pb-48 text-base mf:text-lg'>
+				<div className='w-full max-w-[1400px] flex justify-center items-center flex-col xl:flex-row xl:justify-between xl:ml-12 pt-20 pb-32 xl:pb-48 text-base mf:text-lg'>
 					<p className='w-full max-w-[450px]'>
 						Morbi consectetur neque diam, sit amet ultrices elit imperdiet vitae. Mauris lacinia risus ex. Integer ante
 						libero, rutrum in finibus sed, cursus lobortis arcu. Suspendisse ac arcu vehicula, vestibulum purus non,
