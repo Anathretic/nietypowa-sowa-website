@@ -5,6 +5,7 @@ import {
 	Contact,
 	Gallery,
 	GallerySubpage,
+	HeroImage,
 	Offer,
 	PageNotFound,
 	PrivacyPolicy,
@@ -38,6 +39,7 @@ const App = () => {
 								path='/'
 								element={
 									<main>
+										<HeroImage />
 										<Aerograph />
 										<Offer />
 										<Quote />

@@ -1,7 +1,7 @@
 export const navbarItems = [
 	{
 		title: 'aerograf',
-		section: '/#',
+		section: '/#aerograf',
 	},
 	{
 		title: 'nasze usługi',
