@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { NavbarItem } from './components/NavbarItem';
@@ -9,6 +9,23 @@ import NavLogo from '/nietypowa-nav-logo.png';
 
 export const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	const handleScroll = () => {
+		if (window.scrollY > 80) {
+			setIsScrolled(true);
+		} else {
+			setIsScrolled(false);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
 
 	const handleLogo = () => {
 		window.location.href = '/';
@@ -16,7 +33,10 @@ export const Navbar = () => {
 
 	return (
 		<header>
-			<div className='fixed top-0 w-full h-[80px] flex md:justify-center justify-between items-center py-4 mf:py-2 z-50 transition duration-300 mr-auto tracking-widest bg-[#C80C59]'>
+			<div
+				className={`fixed top-0 w-full h-[80px] flex md:justify-center justify-between items-center py-4 mf:py-2 z-50 transition duration-300 mr-auto tracking-widest ${
+					isScrolled ? 'navbar-bg-scrolled' : 'navbar-bg'
+				}`}>
 				<div className='md:flex-[0.8] 2xl:flex-[0.5] flex-initial justify-center items-center'>
 					<div className='flex items-center mf:mx-2'>
 						<img
@@ -28,11 +48,11 @@ export const Navbar = () => {
 					</div>
 				</div>
 				<nav>
-					<ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
+					<ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial 2xl:text-lg'>
 						{navbarItems.map(({ title, section }) => (
-							<NavbarItem key={title} title={title} section={section} />
+							<NavbarItem key={title} title={title} section={section} isScrolled={isScrolled} />
 						))}
-						<InstagramAnchor liStyles='ml-5' />
+						<InstagramAnchor liStyles='ml-5' isScrolled={isScrolled}/>
 					</ul>
 				</nav>
 				<div className='flex relative'>
