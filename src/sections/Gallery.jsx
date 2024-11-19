@@ -1,9 +1,10 @@
-import GallerySplashImage from '../images/gallery-splash-image.png';
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '../utils/scrollToTopUtils';
+
+import GallerySplashImage from '../images/gallery-section/gallery-splash-image.png';
 import BlueTapeImage from '../images/blue-tape-image.png';
 import PinkTapeImage from '../images/pink-tape-image.png';
 import EmptyTapeImage from '../images/empty-tape-image.png';
-import { Link } from 'react-router-dom';
-import { scrollToTop } from '../utils/scrollToTopUtils';
 
 const Gallery = () => {
 	return (

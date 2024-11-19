@@ -1,12 +1,12 @@
-import QuoteTapeImage from '../images/quote-tape-image.png';
-import DecoratorImage from '../images/decorator-image.png';
+import QuoteTapeImage from '../images/quote-and-offer-tape-image.png';
+import PaintSplatterImage from '../images/paint-splatter-image.png';
 
 const Quote = () => {
 	return (
 		<section className='relative flex flex-col justify-center items-center w-full pb-6'>
 			<img
 				className='absolute right-0 2xl:right-16 z-10 max-rsm:top-[-160px] max-sm:top-[-200px] top-[-175px] max-md:top-[-230px]'
-				src={DecoratorImage}
+				src={PaintSplatterImage}
 				alt=''
 			/>
 			<img

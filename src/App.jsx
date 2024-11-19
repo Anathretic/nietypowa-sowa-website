@@ -1,5 +1,4 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
-import { Navbar } from './components/Navbar/Navbar';
 import {
 	Aerograph,
 	Contact,
@@ -12,6 +11,7 @@ import {
 	Quote,
 	TermsOfUse,
 } from './sections';
+import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 import { CookieBaner } from './components/CookieBaner';
 
