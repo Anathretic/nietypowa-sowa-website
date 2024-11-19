@@ -24,49 +24,6 @@ body {
 	background-color: #072028;
 }
 
-.input-gradient {
-	background: rgba(35, 161, 180, 0.8);
-	border-radius: 16px;
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border: 1px solid rgba(35, 161, 180, 0.2);
-}
-
-.blue-gradient {
-	background: rgba(51, 115, 198, 0.664);
-	border-radius: 16px;
-	box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-form span {
-	visibility: hidden;
-}
-
-form input {
-	scroll-margin-top: 120px;
-}
-
-form input:invalid[focused='true'] ~ span,
-form textarea:invalid[focused='true'] ~ span {
-	visibility: visible;
-}
-
-form input:invalid[focused='true'],
-form textarea:invalid[focused='true'] {
-	border: 1px solid #072028;
-}
-
-.footer-icon-shadow {
-	filter: drop-shadow(3px 5px 3px #fff);
-}
-
-.footer-icon-shadow:hover {
-	filter: drop-shadow(3px 5px 3px #c80c59);
-}
-
 /* Gallery mosaic */
 
 .image-mosaic {
@@ -99,6 +56,42 @@ form textarea:invalid[focused='true'] {
 
 .card-with-bg {
 	background-color: #353535;
+}
+
+/* ---------------------------------------- */
+
+.input-gradient {
+	background: rgba(35, 161, 180, 0.8);
+	border-radius: 16px;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(35, 161, 180, 0.2);
+}
+
+form span {
+	visibility: hidden;
+}
+
+form input {
+	scroll-margin-top: 120px;
+}
+
+form input:invalid[focused='true'] ~ span,
+form textarea:invalid[focused='true'] ~ span {
+	visibility: visible;
+}
+
+form input:invalid[focused='true'],
+form textarea:invalid[focused='true'] {
+	border: 1px solid #072028;
+}
+
+.footer-icon-shadow {
+	filter: drop-shadow(3px 5px 3px #fff);
+}
+
+.footer-icon-shadow:hover {
+	filter: drop-shadow(3px 5px 3px #c80c59);
 }
 
 @media screen and (min-width: 500px) {

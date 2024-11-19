@@ -4,6 +4,7 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import { NavbarItem } from './components/NavbarItem';
 import { InstagramAnchor } from './components/InstagramAnchor';
 import { navbarItems } from './components/navbarData/NavbarItems';
+
 import NavLogo from '/nietypowa-nav-logo.png';
 
 export const Navbar = () => {

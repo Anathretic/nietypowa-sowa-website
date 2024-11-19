@@ -1,11 +1,11 @@
+import { Link } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 import { FaRegCopyright } from 'react-icons/fa';
 import { IoDocumentOutline } from 'react-icons/io5';
 import { MdOutlinePrivacyTip } from 'react-icons/md';
-import { Link } from 'react-router-dom';
 import { scrollToTop } from '../../utils/scrollToTopUtils';
-import { useMediaQuery } from 'react-responsive';
 
-import FooterImage from '../../images/footer-image.png';
+import FooterPaintSplatterImage from '../../images/footer-section/footer-paint-splatter-image.png';
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -38,7 +38,7 @@ export const Footer = () => {
 					</Link>
 				</div>
 			</div>
-			<img className='absolute bottom-0 right-0 z-0' src={FooterImage} alt='' />
+			<img className='absolute bottom-0 right-0 z-0' src={FooterPaintSplatterImage} alt='' />
 		</footer>
 	);
 };
