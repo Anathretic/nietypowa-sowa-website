@@ -1,4 +1,3 @@
-import AerographTapeImage from '../images/aerograph-section/aerograph-tape-image.png';
 import AerographHeader from '../images/aerograph-section/aerograph-header.png';
 import AerographSectionImage from '../images/aerograph-section/aerograph-section-image.jpg';
 import PaintSplatterImage from '../images/paint-splatter-image.png';
@@ -8,11 +7,6 @@ const Aerograph = () => {
 		<section
 			id='aerograf'
 			className='relative flex w-full justify-center items-center max-md:pt-[50px] pt-[40px] text-white'>
-			<img
-				className='absolute max-rsm:top-[-10px] max-sm:top-[-30px] top-[-50px] lg:top-[-65px] w-full max-h-[90px] bg-repeat z-0'
-				src={AerographTapeImage}
-				alt=''
-			/>
 			<div className='w-full flex flex-col items-center md:p-20 py-12 px-4'>
 				<div className='w-full max-w-[1400px] flex flex-1 justify-center items-center xl:items-end flex-col mf:ml-2'>
 					<h2 className='w-full max-w-[800px] text-4xl sm:text-5xl mf:text-6xl text-white py-1 max-rsm:text-left text-center xl:text-left z-10'>
