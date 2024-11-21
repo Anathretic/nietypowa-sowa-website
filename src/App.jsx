@@ -18,7 +18,7 @@ import { CookieBaner } from './components/CookieBaner';
 const App = () => {
 	return (
 		<div className='min-h-screen'>
-			<div className='main-bg-color'>
+			<div className='bg-[#072028]'>
 				<Routes>
 					<Route
 						element={

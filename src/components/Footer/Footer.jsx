@@ -38,7 +38,11 @@ export const Footer = () => {
 					</Link>
 				</div>
 			</div>
-			<img className='absolute bottom-0 right-0 z-0' src={FooterPaintSplatterImage} alt='' />
+			<img
+				className='absolute bottom-0 right-0 z-0 2xl:max-w-[700px] max-sm:max-w-[300px] sm:max-w-[500px]'
+				src={FooterPaintSplatterImage}
+				alt=''
+			/>
 		</footer>
 	);
 };

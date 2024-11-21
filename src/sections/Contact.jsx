@@ -6,6 +6,7 @@ import { inputData } from '../inputsConfig/inputData';
 import { textareaData } from '../inputsConfig/textareaData';
 import { FormInput, FormTextarea } from '../components/Inputs';
 import { FormLoader } from '../components/FormLoader';
+import { MailToButton } from '../components/MailToButton';
 import { useContactFormButton } from '../hooks/useContactFormButton';
 import { useContactFormInputs } from '../hooks/useContactFormInputs';
 import { BsCheck2All } from 'react-icons/bs';
@@ -72,7 +73,7 @@ const Contact = () => {
 		<section id='kontakt' className='flex w-full justify-center items-center max-md:pt-[50px] pt-[40px]'>
 			<div className='flex flex-col items-center md:p-20 py-12 px-4'>
 				<div className='flex flex-1 justify-center items-center flex-col mf:ml-2'>
-					<h2 className='w-full max-w-[800px] text-4xl sm:text-5xl mf:text-6xl text-white py-1 max-rsm:text-left text-center mf:text-left z-10'>
+					<h2 className='w-full max-w-[500px] 2xl:max-w-[725px] text-4xl sm:text-5xl mf:text-6xl py-1 max-rsm:text-left text-center mf:text-left z-10'>
 						<img src={ContactHeader} alt='Tytuł sekcji z formularzem kontaktowym' />
 					</h2>
 					<div className='mf:text-lg text-center mt-5 text-white font-light text-base italic'>
@@ -81,12 +82,18 @@ const Contact = () => {
 						<br />
 						<p className='mb-2'>A jeśli chcesz skontaktować się w inny sposób skorzystaj z danych poniżej:</p>
 						<br />
-						<p className='mb-2'>
-							<span className='font-semibold not-italic'>E-mail:</span> xyz@gmail.com
+						<p className='mb-2 underline underline-offset-4'>
+							<span className='not-italic'>E-mail:</span>{' '}
+							<MailToButton label='nietypowasowa@gmail.com' mailto='mailto:nietypowasowa@gmail.com' />
+						</p>
+						<br />
+						<p className='mb-2 underline underline-offset-4'>
+							<span className='not-italic'>Telefon:</span> +48 577 738 995
 						</p>
 						<br />
 						<p className='mb-2'>
-							<span className='font-semibold not-italic'>Telefon:</span> 000-111-222
+							Pamiętaj, że moja pracownia znajduje się w okolicy{' '}
+							<span className='not-italic underline underline-offset-4'>Zamościa!</span>
 						</p>
 					</div>
 				</div>
