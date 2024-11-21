@@ -9,8 +9,7 @@ const TermsOfUse = () => {
 				<div className={termsBoxStyle}>
 					<p className='mb-3 font-bold'>1. Administrator danych</p>
 					<p className='font-light'>
-						Administratorem Państwa danych jest <span className='font-bold'>Magdalena Sowa</span>, właściciel strony
-						Nietypowa Sowa.
+						Administratorem Państwa danych jest Magdalena Sowa, właściciel strony Nietypowa Sowa.
 					</p>
 				</div>
 				<div className={termsBoxStyle}>
@@ -32,7 +31,11 @@ const TermsOfUse = () => {
 					<p className='mb-3 font-bold'>4. Pozostałe informacje</p>
 					<p className='font-light'>
 						W razie jakichkolwiek pytań proszę o kontakt na mój adres mailowy:{' '}
-						<MailToButton label='nietypowasowa@gmail.com' mailto='mailto:nietypowasowa@gmail.com' />
+						<MailToButton
+							className='transition duration-300 hover:text-[#c80c59]'
+							label='nietypowasowa@gmail.com'
+							mailto='mailto:nietypowasowa@gmail.com'
+						/>
 					</p>
 				</div>
 				<div className={termsBoxStyle}>
@@ -40,17 +43,17 @@ const TermsOfUse = () => {
 					<p className='font-light'>
 						Rozplanowanie i makieta:{' '}
 						<a
-							className='font-bold hover:text-[#ff91d8] transition duration-300'
-							href='https://www.linkedin.com/in/julia-hyz-098288274/'
+							className='hover:text-[#c80c59] transition duration-300'
+							href='https://github.com/KamiRaLsr'
 							target='_blank'
 							rel='noreferrer'>
-							Julia Hyz
+							Kamila Lipiec
 						</a>
 					</p>
 					<p className='font-light'>
 						Kod, tekst oraz małe poprawki graficzne:{' '}
 						<a
-							className='font-bold hover:text-[#ff91d8] transition duration-300'
+							className='hover:text-[#c80c59] transition duration-300'
 							href='https://konrad-wojtylo.com/'
 							target='_blank'
 							rel='noreferrer'>

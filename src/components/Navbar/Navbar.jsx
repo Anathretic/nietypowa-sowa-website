@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { NavbarItem } from './components/NavbarItem';
@@ -11,11 +11,25 @@ export const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
 
+	const divRef = useRef();
+
 	const handleScroll = () => {
 		if (window.scrollY > 80) {
 			setIsScrolled(true);
 		} else {
 			setIsScrolled(false);
+		}
+	};
+
+	const scrollToTop = () => {
+		const { current } = divRef;
+
+		if (current !== null) {
+			current.scrollIntoView({ behavior: 'smooth' });
+		}
+
+		if (window.location.hash) {
+			window.history.replaceState('', document.title, window.location.pathname);
 		}
 	};
 
@@ -27,23 +41,21 @@ export const Navbar = () => {
 		};
 	}, []);
 
-	const handleLogo = () => {
-		window.location.href = '/';
-	};
+	useEffect(() => scrollToTop, []);
 
 	return (
-		<header>
+		<header className='w-full flex justify-center' ref={divRef}>
 			<div
-				className={`fixed top-0 w-full h-[80px] flex md:justify-center justify-between items-center py-4 mf:py-2 z-50 transition duration-300 mr-auto tracking-widest ${
-					isScrolled ? 'navbar-bg-scrolled' : 'navbar-bg'
+				className={`fixed top-0 w-full 2xl:w-[95%] 2xl:rounded-b-full h-[80px] flex md:justify-center justify-between items-center py-4 mf:py-2 z-50 transition duration-300 mr-auto tracking-widest ${
+					isScrolled ? 'bg-[#c80c5afb]' : 'bg-transparent'
 				}`}>
 				<div className='md:flex-[0.8] 2xl:flex-[0.5] flex-initial justify-center items-center'>
 					<div className='flex items-center mf:mx-2'>
 						<img
 							src={NavLogo}
-							alt='Logo odświeżające stronę'
-							className='cursor-pointer p-2 mf:p-0'
-							onClick={handleLogo}
+							alt='Logo przenoszące na początek strony'
+							className='cursor-pointer p-2 mf:p-0 scroll-smooth'
+							onClick={scrollToTop}
 						/>
 					</div>
 				</div>
@@ -52,7 +64,7 @@ export const Navbar = () => {
 						{navbarItems.map(({ title, section }) => (
 							<NavbarItem key={title} title={title} section={section} isScrolled={isScrolled} />
 						))}
-						<InstagramAnchor liStyles='ml-5' isScrolled={isScrolled}/>
+						<InstagramAnchor liStyles='ml-5' isScrolled={isScrolled} />
 					</ul>
 				</nav>
 				<div className='flex relative'>

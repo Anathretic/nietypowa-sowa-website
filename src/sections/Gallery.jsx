@@ -2,19 +2,19 @@ import { Link } from 'react-router-dom';
 import { scrollToTop } from '../utils/scrollToTopUtils';
 
 import GallerySplashImage from '../images/gallery-section/gallery-splash-image.png';
+import GallerySplashTireImage from '../images/gallery-section/gallery-splash-tire-image.png';
 import BlueTapeImage from '../images/blue-tape-image.png';
 import PinkTapeImage from '../images/pink-tape-image.png';
-import EmptyTapeImage from '../images/empty-tape-image.png';
 
 const Gallery = () => {
 	return (
 		<section className='relative flex flex-col justify-center items-center w-full max-rsm:pb-[8rem] max-sm:pb-[10rem] lg:pb-[24rem] pb-[16rem]'>
 			<img
-				className='absolute max-rsm:top-[-60px] max-sm:top-[-85px] top-[-175px] w-full max-h-[500px] bg-repeat mb-24 z-0'
+				className='absolute max-rsm:top-[-60px] max-sm:top-[-45px] top-[-110px] w-full max-h-[300px] bg-repeat mb-24 z-10'
 				src={PinkTapeImage}
 				alt=''
 			/>
-			<img className='w-full max-h-[100px] bg-repeat mb-24 z-0' src={BlueTapeImage} alt='' />
+			<img className='w-full max-h-[85px] bg-repeat mb-24 z-0' src={BlueTapeImage} alt='' />
 			<div id='galeria' className='scroll-mt-[120px] max-w-[1000px] w-full max-lg:w-11/12 z-10'>
 				<div className='image-mosaic w-full'>
 					<div
@@ -46,11 +46,15 @@ const Gallery = () => {
 				</div>
 				<div className='relative w-full flex flex-col items-center'>
 					<img
-						className='absolute max-rsm:bottom-[-200px] max-sm:bottom-[-300px] bottom-[-500px] z-0'
+						className='absolute max-rsm:bottom-[-200px] max-sm:bottom-[-300px] max-md:bottom-[-400px] bottom-[-450px] 2xl:bottom-[-650px] z-0 2xl:max-w-[800px] max-sm:max-w-[300px] sm:max-w-[500px]'
 						src={GallerySplashImage}
 						alt=''
 					/>
-					<img className='absolute top-[-350px] z-0 hidden mf:block' src={EmptyTapeImage} alt='' />
+					<img
+						className='absolute max-w-[800px] top-[-20px] z-0 hidden mf:block'
+						src={GallerySplashTireImage}
+						alt=''
+					/>
 				</div>
 			</div>
 		</section>

@@ -20,27 +20,28 @@ body {
 	max-width: 1920px;
 }
 
-.main-bg-color {
-	background-color: #072028;
-}
-
-.navbar-bg {
-	background-color: transparent;
-	transition: background-color 0.3s ease;
-}
-
-.navbar-bg-scrolled {
-	background-color: #c80c59;
-}
-
 .hero-bg {
 	background-image: url('./images/hero-image-section/hero-bg.jpg');
-	background-size: cover;
-	background-position: center;
 }
 
 .hero-bg h1 {
 	font-family: 'Lavishly Yours', 'cursive';
+}
+
+.hero-bg-arrow {
+	position: absolute;
+	bottom: 2em;
+	left: 48.7%;
+	padding: 0.25em;
+	animation: bounce 2s infinite;
+}
+
+/* Bounce animations */
+
+@keyframes bounce {
+	50% {
+		transform: translateY(-25px);
+	}
 }
 
 /* Gallery mosaic */

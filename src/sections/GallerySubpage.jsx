@@ -8,7 +8,7 @@ const GallerySubpage = () => {
 		<section className='flex w-full justify-center items-center max-md:pt-[50px] pt-[40px]'>
 			<div className='flex flex-col items-center md:p-20 py-12 px-4'>
 				<div className='flex flex-1 justify-center items-center flex-col mf:ml-2'>
-					<h2 className='w-full max-w-[800px] text-4xl sm:text-5xl mf:text-6xl text-white max-md:pt-4 pt-1 pb-12 max-rsm:text-left text-center mf:text-left z-10'>
+					<h2 className='w-full max-w-[500px] 2xl:max-w-[700px] text-4xl sm:text-5xl mf:text-6xl max-md:pt-4 pt-1 pb-12 max-rsm:text-left text-center mf:text-left z-10'>
 						<img
 							src={GallerySubpageHeader}
 							alt='Tytuł sekcji przedstawijącej galerię zdjęć ilustrujące wykonane prace'
@@ -57,7 +57,7 @@ const GallerySubpage = () => {
 				</div>
 				<Link
 					to='/'
-					className='bg-[#23A1B4] mt-16 max-md:py-3 py-2 max-sm:px-12 px-20 text-lg rounded-full hover:bg-[#C80C59] transition duration-300 z-10'
+					className='bg-[#23A1B4] mt-16 max-md:py-3 py-2 max-sm:px-12 px-20 text-lg rounded-full hover:bg-[#C80C59] text-white transition duration-300 z-10'
 					onClick={scrollToTop}>
 					Powrót
 				</Link>

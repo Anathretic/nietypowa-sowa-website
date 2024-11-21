@@ -7,13 +7,13 @@ const Offer = () => {
 			id='nasze-uslugi'
 			className='relative flex w-full justify-center items-center max-md:pt-[50px] pt-[40px] text-white'>
 			<img
-				className='absolute max-rsm:top-[-60px] max-sm:top-[-85px] top-[-175px] w-full max-h-[400px] bg-repeat z-0'
+				className='absolute max-rsm:top-[-60px] max-sm:top-[-65px] top-[-175px] w-full max-h-[250px] z-0'
 				src={OfferTapeImage}
 				alt=''
 			/>
 			<div className='w-full flex flex-col items-center md:p-20 py-12 px-4'>
 				<div className='w-full max-w-[1400px] flex flex-1 justify-center items-center xl:items-start flex-col mf:ml-2'>
-					<h2 className='w-full max-w-[800px] text-4xl sm:text-5xl mf:text-6xl text-white py-1 max-rsm:text-left text-center xl:text-left z-10'>
+					<h2 className='w-full max-w-[500px] 2xl:max-w-[625px] text-4xl sm:text-5xl mf:text-6xl py-1 max-rsm:text-left text-center xl:text-left z-10'>
 						<img className='w-full' src={OfferHeader} alt='Tytuł sekcji z opisem wykonywanych usług' />
 					</h2>
 				</div>
