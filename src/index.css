@@ -8,6 +8,11 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+	-webkit-scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Sour Gummy', sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -85,7 +90,7 @@ body {
 	border-radius: 16px;
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
-	border: 1px solid rgba(35, 161, 180, 0.2);
+	border: 2px solid rgba(35, 161, 180, 0.2);
 }
 
 form span {
@@ -103,15 +108,7 @@ form textarea:invalid[focused='true'] ~ span {
 
 form input:invalid[focused='true'],
 form textarea:invalid[focused='true'] {
-	border: 1px solid #072028;
-}
-
-.footer-icon-shadow {
-	filter: drop-shadow(3px 5px 3px #fff);
-}
-
-.footer-icon-shadow:hover {
-	filter: drop-shadow(3px 5px 3px #c80c59);
+	border: 2px solid #c80c59;
 }
 
 @media screen and (min-width: 500px) {
