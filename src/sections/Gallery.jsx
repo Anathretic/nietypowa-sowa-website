@@ -3,8 +3,8 @@ import { scrollToTop } from '../utils/scrollToTopUtils';
 
 import GallerySplashImage from '../images/gallery-section/gallery-splash-image.png';
 import GallerySplashTireImage from '../images/gallery-section/gallery-splash-tire-image.png';
-import BlueTapeImage from '../images/blue-tape-image.png';
-import PinkTapeImage from '../images/pink-tape-image.png';
+import BlueTapeImage from '../images/gallery-section/gallery-blue-tape-image.svg';
+import PinkTapeImage from '../images/gallery-section/gallery-pink-tape-image.svg';
 
 const Gallery = () => {
 	return (
@@ -14,7 +14,7 @@ const Gallery = () => {
 				src={PinkTapeImage}
 				alt=''
 			/>
-			<img className='w-full max-h-[85px] bg-repeat mb-24 z-0' src={BlueTapeImage} alt='' />
+			<img className='w-full max-h-[60px] bg-repeat mb-24 z-0' src={BlueTapeImage} alt='' />
 			<div id='galeria' className='scroll-mt-[120px] max-w-[1000px] w-full max-lg:w-11/12 z-10'>
 				<div className='image-mosaic w-full'>
 					<div
@@ -50,11 +50,7 @@ const Gallery = () => {
 						src={GallerySplashImage}
 						alt=''
 					/>
-					<img
-						className='absolute max-w-[800px] top-[-20px] z-0 hidden mf:block'
-						src={GallerySplashTireImage}
-						alt=''
-					/>
+					<img className='absolute max-w-[800px] top-[-20px] z-0 hidden mf:block' src={GallerySplashTireImage} alt='' />
 				</div>
 			</div>
 		</section>

@@ -9,7 +9,6 @@ import {
 	PageNotFound,
 	PrivacyPolicy,
 	Quote,
-	TermsOfUse,
 } from './sections';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
@@ -50,7 +49,6 @@ const App = () => {
 							/>
 							<Route path='/galeria-prac' element={<GallerySubpage />} />
 							<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
-							<Route path='/warunki-uzytkowania' element={<TermsOfUse />} />
 							<Route path='*' element={<PageNotFound />} />
 						</Route>
 					</Route>

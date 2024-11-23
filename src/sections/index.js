@@ -7,4 +7,3 @@ export { default as GallerySubpage } from './GallerySubpage';
 export { default as Contact } from './Contact';
 export { default as PageNotFound } from './PageNotFound';
 export { default as PrivacyPolicy } from './PrivacyPolicy';
-export { default as TermsOfUse } from './TermsOfUse';
