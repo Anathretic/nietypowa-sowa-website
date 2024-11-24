@@ -1,15 +1,6 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
-import {
-	Aerograph,
-	Contact,
-	Gallery,
-	GallerySubpage,
-	HeroImage,
-	Offer,
-	PageNotFound,
-	PrivacyPolicy,
-	Quote,
-} from './sections';
+import { Aerograph, Contact, Gallery, HeroImage, Offer, Quote } from './sections';
+import { GallerySubpage, PrivacyPolicy, PageNotFound } from './subpages';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 import { CookieBaner } from './components/CookieBaner';

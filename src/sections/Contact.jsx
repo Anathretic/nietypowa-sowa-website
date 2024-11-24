@@ -48,7 +48,7 @@ const Contact = () => {
 				.then(
 					function () {
 						setValues({ username: '', email: '', message: '' });
-						setButtonText(<BsCheck2All color='#3373c6' fontSize={24} />);
+						setButtonText(<BsCheck2All color='#FFFFFF' fontSize={28} />);
 					},
 					function () {
 						setRecaptchaErrorValue('Coś poszło nie tak..');
@@ -140,7 +140,7 @@ const Contact = () => {
 							) : (
 								<button
 									type='submit'
-									className='flex justify-center bg-[#23A1B4] p-3 w-32 mf:w-48 rounded-full cursor-pointer hover:bg-[#C80C59] transition duration-300 text-white'>
+									className='flex justify-center bg-[#23A1B4] p-3 w-32 mf:w-48 rounded-full cursor-pointer hover:bg-[#C80C59] transition duration-300 text-white text-lg'>
 									{buttonText}
 								</button>
 							)}
