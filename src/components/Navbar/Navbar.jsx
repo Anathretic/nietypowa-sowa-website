@@ -64,7 +64,7 @@ export const Navbar = () => {
 						{navbarItems.map(({ title, section }) => (
 							<NavbarItem key={title} title={title} section={section} isScrolled={isScrolled} />
 						))}
-						<InstagramAnchor liStyles='ml-5' isScrolled={isScrolled} />
+						<InstagramAnchor liStyles='ml-3' isScrolled={isScrolled} />
 					</ul>
 				</nav>
 				<div className='flex relative'>
