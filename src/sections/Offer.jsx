@@ -26,7 +26,7 @@ const Offer = () => {
 						najwyższej jakości farbach i lakierach zapewni trwałość oraz odporność na warunki atmosferyczne i
 						uszkodzenia :)
 					</p>
-					<ul className='w-full h-full max-xl:mt-8 max-w-[400px] flex flex-col justify-between items-start list-disc leading-[50px] z-20 sm:pb-8'>
+					<ul className='w-full h-full max-xl:mt-8 max-w-[400px] flex flex-col justify-between items-start list-disc leading-[50px] z-20 sm:pb-8 2xl:pb-0'>
 						<li className='max-xl:ml-12'>Profesjonalizm</li>
 						<li className='max-xl:ml-12'>Kreatywność</li>
 						<li className='max-xl:ml-12'>Oryginalność</li>
