@@ -7,6 +7,7 @@ export default {
 				rrsm: '315px',
 				rsm: '350px',
 				mf: '990px',
+				ws: '2320px' 
 			},
 			keyframes: {
 				'slide-in': {

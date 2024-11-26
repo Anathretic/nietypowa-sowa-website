@@ -5,7 +5,7 @@ const Quote = () => {
 	return (
 		<section className='relative flex flex-col justify-center items-center w-full'>
 			<img
-				className='absolute right-0 2xl:right-16 z-10 max-rsm:top-[-160px] max-sm:top-[-200px] top-[-210px] max-md:top-[-230px] 2xl:max-w-[700px] max-rsm:max-w-[300px] max-sm:max-w-[400px] sm:max-w-[500px]'
+				className='absolute block ws:hidden right-0 2xl:right-16 z-10 max-rsm:top-[-160px] max-sm:top-[-200px] top-[-210px] max-md:top-[-230px] 2xl:max-w-[700px] max-rsm:max-w-[300px] max-sm:max-w-[400px] sm:max-w-[500px]'
 				src={PaintSplatterImage}
 				alt=''
 			/>
@@ -20,6 +20,11 @@ const Quote = () => {
 				</p>
 				<p className='my-6 text-white italic'>~ Rainbow Rowell</p>
 			</div>
+			<img
+				className='absolute hidden ws:block z-10 max-w-[700px] right-[-18rem] bottom-[-24rem]'
+				src={PaintSplatterImage}
+				alt=''
+			/>
 		</section>
 	);
 };
