@@ -1,5 +1,6 @@
 import OfferHeader from '../images/offer-section/offer-header.png';
 import OfferTapeImage from '../images/quote-and-offer-tape-image.svg';
+import PaintSplatterImage from '../images/paint-splatter-image.png';
 
 const Offer = () => {
 	return (
@@ -17,6 +18,11 @@ const Offer = () => {
 						<img className='w-full' src={OfferHeader} alt='Tytuł sekcji z opisem wykonywanych usług' />
 					</h2>
 				</div>
+				<img
+					className='absolute right-48 hidden 2xl:block z-10 top-0 max-w-[700px] rotate-[75deg]'
+					src={PaintSplatterImage}
+					alt=''
+				/>
 				<div className='w-full max-w-[1400px] flex justify-center items-center flex-col xl:flex-row xl:justify-between xl:ml-10 pt-20 pb-32 xl:pb-48 text-base mf:text-lg'>
 					<p className='w-full max-w-[450px] md:ml-5 2xl:ml-0'>
 						Oferujemy profesjonalne lakierowanie wszelakich kasków i motocykli przy użyciu techniki aerografu, która
