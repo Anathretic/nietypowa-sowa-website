@@ -17,40 +17,40 @@ const GallerySubpage = () => {
 				</div>
 				<div className='scroll-mt-[120px] max-w-[1000px] w-full max-lg:w-11/12 z-10'>
 					<div className='image-mosaic w-full'>
-						<div className='card card-tall card-wide card-with-bg'>
+						<div className='card card-tall card-wide card-with-bg animate-[loading_1s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-tall card-with-bg'>
+						<div className='card card-tall card-with-bg animate-[loading_1.25s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-with-bg'>
+						<div className='card card-with-bg animate-[loading_1.75s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-with-bg'>
+						<div className='card card-with-bg animate-[loading_1.5s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-with-bg'>
+						<div className='card card-with-bg animate-[loading_1.75s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-with-bg'>
+						<div className='card card-with-bg animate-[loading_1.25s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-tall card-wide card-with-bg'>
+						<div className='card card-tall card-wide card-with-bg animate-[loading_1.6s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-tall card-with-bg'>
+						<div className='card card-tall card-with-bg animate-[loading_1.8s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-with-bg'>
+						<div className='card card-with-bg animate-[loading_2s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-with-bg'>
+						<div className='card card-with-bg animate-[loading_1.3s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-with-bg'>
+						<div className='card card-with-bg animate-[loading_1.25s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
-						<div className='card card-with-bg'>
+						<div className='card card-with-bg animate-[loading_1s_alternate_infinite]'>
 							<span>Pracujemy nad tym.. :)</span>
 						</div>
 					</div>

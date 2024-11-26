@@ -81,7 +81,6 @@ body {
 
 .card-with-bg {
 	background-color: #353535;
-	animation: loading 1s infinite alternate;
 }
 
 @keyframes loading {
