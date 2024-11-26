@@ -9,7 +9,7 @@ const Aerograph = () => {
 			className='relative flex w-full justify-center items-center max-md:pt-[50px] pt-[40px] text-white'>
 			<div className='w-full flex flex-col items-center md:p-20 py-12 px-4'>
 				<div className='w-full max-w-[1400px] flex flex-1 justify-center items-center xl:items-end flex-col mf:ml-2'>
-					<h2 className='w-full max-w-[580px] 2xl:max-w-[750px] text-4xl sm:text-5xl mf:text-6xl py-1 max-rsm:text-left text-center xl:text-left z-10'>
+					<h2 className='w-full max-w-[530px] 2xl:max-w-[750px] text-4xl sm:text-5xl mf:text-6xl py-1 max-rsm:text-left text-center xl:text-left z-10'>
 						<img className='w-full' src={AerographHeader} alt='Tytuł sekcji z opisem czym jest aerograf' />
 					</h2>
 				</div>
@@ -23,7 +23,7 @@ const Aerograph = () => {
 						<img className='absolute right-[17rem] z-0 bottom-[-10rem]' src={PaintSplatterImage} alt='' />
 						<img className='absolute right-[42rem] z-20 bottom-[12rem]' src={PaintSplatterImage} alt='' />
 					</div>
-					<p className='w-full max-w-[500px]'>
+					<p className='w-full max-w-[500px] md:ml-5 lg:ml-8 2xl:ml-0'>
 						Aerograf to precyzyjne narzędzie pneumatyczne, używane do rozpylania farby, lakieru lub innych płynów.
 						Działa na zasadzie mieszania sprężonego powietrza z farbą, co pozwala na tworzenie równomiernych, cienkich
 						warstw barwnika na powierzchniach. Jest powszechnie stosowany w branży motoryzacyjnej, szczególnie przy

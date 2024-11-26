@@ -82,13 +82,16 @@ const Contact = () => {
 						<br />
 						<p className='mb-2'>A jeśli chcesz skontaktować się w inny sposób skorzystaj z danych poniżej:</p>
 						<br />
-						<p className='mb-2 underline underline-offset-4'>
-							<span className='not-italic'>E-mail:</span>{' '}
+						<p className='mb-2'>
+							<span className='pr-[10px]'>⚬</span>
 							<MailToButton label='nietypowasowa@gmail.com' mailto='mailto:nietypowasowa@gmail.com' />
+							<span className='pl-[10px]'>⚬</span>
 						</p>
 						<br />
-						<p className='mb-2 underline underline-offset-4'>
-							<span className='not-italic'>Telefon:</span> +48 577 738 995
+						<p className='mb-2'>
+							<span className='pr-[10px]'>⚬</span>
+							+48 577 738 995
+							<span className='pl-[10px]'>⚬</span>
 						</p>
 						<br />
 						<p className='mb-2'>

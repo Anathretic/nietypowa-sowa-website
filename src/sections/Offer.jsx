@@ -13,12 +13,12 @@ const Offer = () => {
 					alt=''
 				/>
 				<div className='w-full max-w-[1400px] flex flex-1 justify-center items-center xl:items-start flex-col mf:ml-2'>
-					<h2 className='w-full max-w-[500px] 2xl:max-w-[625px] text-4xl sm:text-5xl mf:text-6xl py-1 max-rsm:text-left text-center xl:text-left z-10'>
+					<h2 className='w-full max-w-[450px] 2xl:max-w-[625px] text-4xl sm:text-5xl mf:text-6xl py-1 max-rsm:text-left text-center xl:text-left z-10'>
 						<img className='w-full' src={OfferHeader} alt='Tytuł sekcji z opisem wykonywanych usług' />
 					</h2>
 				</div>
 				<div className='w-full max-w-[1400px] flex justify-center items-center flex-col xl:flex-row xl:justify-between xl:ml-10 pt-20 pb-32 xl:pb-48 text-base mf:text-lg'>
-					<p className='w-full max-w-[450px]'>
+					<p className='w-full max-w-[450px] md:ml-5 2xl:ml-0'>
 						Oferujemy profesjonalne lakierowanie wszelakich kasków i motocykli przy użyciu techniki aerografu, która
 						pozwala na tworzenie oryginalnych kompozycji. Nasze usługi obejmują odświeżenie wyglądu, jak i wykonanie
 						unikalnych grafik dopasowanych do Twojego stylu. Każde zamówienie jest realizowane indywidualnie, więc masz

@@ -8,31 +8,33 @@ import PinkTapeImage from '../images/gallery-section/gallery-pink-tape-image.svg
 
 const Gallery = () => {
 	return (
-		<section className='relative flex flex-col justify-center items-center w-full max-rsm:pb-[8rem] max-sm:pb-[10rem] lg:pb-[24rem] pb-[16rem]'>
+		<section
+			id='galeria'
+			className='relative flex flex-col justify-center items-center w-full max-rsm:pb-[8rem] max-sm:pb-[10rem] lg:pb-[24rem] pb-[16rem]'>
 			<img
 				className='absolute max-rsm:top-[-60px] max-sm:top-[-45px] top-[-110px] w-full max-h-[300px] bg-repeat mb-24 z-10'
 				src={PinkTapeImage}
 				alt=''
 			/>
 			<img className='w-full max-h-[60px] bg-repeat mb-24 z-0' src={BlueTapeImage} alt='' />
-			<div id='galeria' className='scroll-mt-[120px] max-w-[1000px] w-full max-lg:w-11/12 z-10'>
+			<div className='scroll-mt-[120px] max-w-[1000px] w-full max-lg:w-11/12 z-10'>
 				<div className='image-mosaic w-full'>
-					<div className='card card-tall card-wide card-with-bg max-[540px]:col-span-2'>
+					<div className='card card-tall card-wide card-with-bg max-[540px]:col-span-2 animate-[loading_1s_alternate_infinite]'>
 						<span>Pracujemy nad tym.. :)</span>
 					</div>
-					<div className='card card-tall card-with-bg max-[540px]:hidden'>
+					<div className='card card-tall card-with-bg max-[540px]:hidden animate-[loading_2s_alternate_infinite]'>
 						<span>Pracujemy nad tym.. :)</span>
 					</div>
-					<div className='card card-with-bg max-[540px]:col-span-2'>
+					<div className='card card-with-bg max-[540px]:col-span-2 animate-[loading_1.5s_alternate_infinite]'>
 						<span>Pracujemy nad tym.. :)</span>
 					</div>
-					<div className='card card-with-bg max-[540px]:hidden'>
+					<div className='card card-with-bg max-[540px]:hidden animate-[loading_1.75s_alternate_infinite]'>
 						<span>Pracujemy nad tym.. :)</span>
 					</div>
-					<div className='card card-with-bg max-[540px]:col-span-2'>
+					<div className='card card-with-bg max-[540px]:col-span-2 animate-[loading_1s_alternate_infinite]'>
 						<span>Pracujemy nad tym.. :)</span>
 					</div>
-					<div className='card card-with-bg max-[540px]:hidden'>
+					<div className='card card-with-bg max-[540px]:hidden animate-[loading_1.25s_alternate_infinite]'>
 						<span>Pracujemy nad tym.. :)</span>
 					</div>
 					<div className='card card-wide max-sm:col-span-2 max-[540px]:gap-x-0'>
