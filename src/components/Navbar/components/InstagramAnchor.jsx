@@ -8,7 +8,7 @@ export const InstagramAnchor = ({ liStyles, isScrolled }) => {
 		<li className={`${liStyles} flex items-center justify-center`}>
 			<a
 				className={`cursor-pointer p-2 ${
-					isScrolled ? 'hover:text-[#072028]' : 'hover:text-[#c80c59]'
+					isScrolled ? 'md:hover:text-[#072028]' : 'md:hover:text-[#c80c59]'
 				} transition duration-300`}
 				href='https://www.instagram.com/nietypowa_sowa/'
 				target='_blank'
