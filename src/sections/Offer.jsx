@@ -7,7 +7,7 @@ const Offer = () => {
 		<section
 			id='nasze-uslugi'
 			className='relative flex w-full justify-center items-center max-md:pt-[50px] pt-[40px] text-white'>
-			<div className='w-full flex flex-col items-center lg:p-20 pt-20 pb-12 px-4'>
+			<div className='w-full flex flex-col items-center lg:p-20 py-12 px-4'>
 				<img
 					className='absolute max-rsm:top-[-60px] max-sm:top-[-65px] max-lg:top-[-100px] max-2xl:top-[-130px] top-[-175px] w-full max-h-[250px] z-0'
 					src={OfferTapeImage}

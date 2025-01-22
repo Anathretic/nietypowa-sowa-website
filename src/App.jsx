@@ -8,43 +8,41 @@ import { CookieBaner } from './components/CookieBaner';
 const App = () => {
 	return (
 		<div className='min-h-screen'>
-			<div className='bg-[#072028]'>
-				<Routes>
+			<Routes>
+				<Route
+					element={
+						<>
+							<Outlet />
+							<CookieBaner />
+						</>
+					}>
 					<Route
 						element={
 							<>
+								<Navbar />
 								<Outlet />
-								<CookieBaner />
+								<Footer />
 							</>
 						}>
 						<Route
+							path='/'
 							element={
-								<>
-									<Navbar />
-									<Outlet />
-									<Footer />
-								</>
-							}>
-							<Route
-								path='/'
-								element={
-									<main>
-										<HeroImage />
-										<Aerograph />
-										<Offer />
-										<Quote />
-										<Gallery />
-										<Contact />
-									</main>
-								}
-							/>
-							<Route path='/galeria-prac' element={<GallerySubpage />} />
-							<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
-							<Route path='*' element={<PageNotFound />} />
-						</Route>
+								<main>
+									<HeroImage />
+									<Aerograph />
+									<Offer />
+									<Quote />
+									<Gallery />
+									<Contact />
+								</main>
+							}
+						/>
+						<Route path='/galeria-prac' element={<GallerySubpage />} />
+						<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
+						<Route path='*' element={<PageNotFound />} />
 					</Route>
-				</Routes>
-			</div>
+				</Route>
+			</Routes>
 		</div>
 	);
 };

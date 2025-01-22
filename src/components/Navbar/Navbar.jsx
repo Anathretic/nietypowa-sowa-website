@@ -63,7 +63,7 @@ export const Navbar = () => {
 	return (
 		<header className='w-full flex justify-center' ref={divRef}>
 			<div
-				className={`fixed top-0 w-full 2xl:w-[95%] 2xl:rounded-b-full h-[80px] flex md:justify-center justify-between items-center py-4 mf:py-2 z-50 transition duration-300 mr-auto tracking-widest ${
+				className={`fixed top-0 w-full 2xl:rounded-b-[32px] h-[80px] flex md:justify-center justify-between items-center py-4 mf:py-2 z-50 transition duration-300 mr-auto tracking-widest ${
 					isScrolled ? 'bg-[#c80c5afb]' : 'bg-transparent'
 				}`}>
 				<div className='md:flex-[0.8] 2xl:flex-[0.5] flex-initial justify-center items-center'>
