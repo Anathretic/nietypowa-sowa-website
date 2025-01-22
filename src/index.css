@@ -9,11 +9,14 @@
 }
 
 html {
+	scroll-padding-top: 30px;
 	scroll-behavior: smooth;
 	-webkit-scroll-behavior: smooth;
 }
 
 body {
+	background-color: #072028;
+	color: #e9e9e9;
 	font-family: 'Sour Gummy', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

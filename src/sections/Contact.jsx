@@ -78,7 +78,7 @@ const Contact = () => {
 					</h2>
 					<div className='mf:text-lg text-center mt-5 text-white font-light text-base italic'>
 						<br />
-						<p className='mb-2'>Wypełnij formularz, a ja na pewno się odezwę i dogadamy wszystkie szczegóły!</p>
+						<p className='mb-2'>Wypełnij poniższy formularz, a ja na pewno się odezwę i dogadamy wszystkie szczegóły!</p>
 						<br />
 						<p className='mb-2'>A jeśli chcesz skontaktować się w inny sposób skorzystaj z danych poniżej:</p>
 						<br />
