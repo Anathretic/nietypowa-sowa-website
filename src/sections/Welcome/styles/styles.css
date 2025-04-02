@@ -19,6 +19,7 @@
 
 .welcome-title {
 	font-size: 4.5rem;
+	font-weight: 300;
 	font-family: 'Lavishly Yours', 'cursive';
 	text-align: center;
 }
@@ -33,11 +34,12 @@
 	left: 50%;
 	transform: translate(-50%);
 	padding: 0.25em;
-	animation: bounce 2s infinite;
+	animation: bounce 1.5s infinite;
 }
 
 .welcome-arrow-icon {
 	font-size: 52px;
+	color: #e9e9e9;
 }
 
 @media screen and (min-width: 350px) {

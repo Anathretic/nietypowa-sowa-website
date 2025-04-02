@@ -17,35 +17,28 @@ const App = () => {
 					<Route
 						element={
 							<>
+								<Navbar />
 								<Outlet />
 								<Footer />
 							</>
 						}>
 						<Route
+							path='/'
 							element={
-								<>
-									<Navbar />
-									<Outlet />
-								</>
-							}>
-							<Route
-								path='/'
-								element={
-									<main>
-										<Welcome />
-										<Aerograph />
-										<Offer />
-										<Quote />
-										<Gallery />
-										<Contact />
-									</main>
-								}
-							/>
-							<Route path='/galeria-prac' element={<GallerySubpage />} />
-							<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
-						</Route>
-						<Route path='*' element={<PageNotFound />} />
+								<main>
+									<Welcome />
+									<Aerograph />
+									<Offer />
+									<Quote />
+									<Gallery />
+									<Contact />
+								</main>
+							}
+						/>
+						<Route path='/galeria-prac' element={<GallerySubpage />} />
 					</Route>
+					<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
+					<Route path='*' element={<PageNotFound />} />
 				</Route>
 			</Routes>
 		</div>
