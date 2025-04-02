@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import NavLogo from '/nietypowa-nav-logo.png';
+
+import NavLogo from '../../../images/logo-images/nietypowa-nav-logo.png';
 
 export const NavbarTitle = ({ divRef }) => {
 	const scrollToTop = () => {

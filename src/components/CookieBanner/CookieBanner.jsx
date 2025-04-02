@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import CookieConsent from 'react-cookie-consent';
-import { scrollToTop } from '../utils/scrollToTopUtils';
+import { scrollToTop } from '../../utils/scrollToTopUtils';
 
-const CookieBaner = ({ ...otherProps }) => {
+import './styles/styles.css';
+
+const CookieBanner = ({ ...otherProps }) => {
 	return (
 		<CookieConsent
 			location='bottom'
@@ -10,7 +12,6 @@ const CookieBaner = ({ ...otherProps }) => {
 			style={{
 				color: '#fff',
 				backgroundColor: '#C80C59',
-				fontSize: '12px',
 				padding: '10px',
 				textAlign: 'center',
 				display: 'flex',
@@ -19,16 +20,16 @@ const CookieBaner = ({ ...otherProps }) => {
 			}}
 			buttonStyle={{
 				backgroundColor: '#ffdf00',
-				fontSize: '14px',
+				fontSize: '16px',
 				padding: '10px',
 				width: '100px',
 				borderRadius: '8px',
 			}}
 			expires={1}
 			{...otherProps}>
-			<p className='max-[300px]:p-3 p-1'>
+			<p className='cookie-text'>
 				Ta strona używa plików cookie wyłącznie w celach technicznych (np. google reCaptcha). Dowiedz się więcej z{' '}
-				<Link to='/polityka-prywatnosci' onClick={scrollToTop} className='text-amber-300 underline'>
+				<Link to='/polityka-prywatnosci' onClick={scrollToTop} className='cookie-anchor'>
 					polityki prywatności
 				</Link>
 				.
@@ -37,4 +38,4 @@ const CookieBaner = ({ ...otherProps }) => {
 	);
 };
 
-export default CookieBaner;
+export default CookieBanner;
