@@ -5,7 +5,7 @@ import PaintSplatterImage from '../images/paint-splatter-image.png';
 const Offer = () => {
 	return (
 		<section
-			id='nasze-uslugi'
+			id='uslugi'
 			className='relative flex w-full justify-center items-center max-md:pt-[50px] pt-[40px] text-white'>
 			<div className='w-full flex flex-col items-center lg:p-20 py-12 px-4'>
 				<img

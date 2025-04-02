@@ -1,0 +1,107 @@
+.welcome {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width: 100%;
+	background-image: url('./../../../images/hero-image-section/hero-bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.welcome-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.welcome-title {
+	font-size: 4.5rem;
+	font-weight: 300;
+	font-family: 'Lavishly Yours', 'cursive';
+	text-align: center;
+}
+
+.welcome-button {
+	display: none;
+}
+
+.welcome-arrow {
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+	transform: translate(-50%);
+	padding: 0.25em;
+	animation: bounce 1.5s infinite;
+}
+
+.welcome-arrow-icon {
+	font-size: 52px;
+	color: #e9e9e9;
+}
+
+@media screen and (min-width: 350px) {
+	.welcome-title {
+		font-size: 5.5rem;
+	}
+}
+
+@media screen and (min-height: 500px) {
+	.welcome-button {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.welcome-title {
+		font-size: 7rem;
+	}
+}
+
+@media screen and (min-width: 768px) and (min-height: 640px) {
+	.welcome-title {
+		font-size: 7.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.welcome {
+		padding-top: 40px;
+		background-image: url('./../../../images/hero-image-section/hero-bg-xl.jpg');
+	}
+
+	.welcome-title {
+		padding-bottom: 4rem;
+		font-size: 10rem;
+	}
+
+	.welcome-arrow {
+		bottom: 2em;
+	}
+
+	.welcome-arrow-icon {
+		font-size: 60px;
+	}
+
+	@keyframes bounce {
+		50% {
+			bottom: 5em;
+		}
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	.welcome-title {
+		font-size: 11rem;
+	}
+}
+
+/* Bounce animations */
+
+@keyframes bounce {
+	50% {
+		bottom: 4em;
+	}
+}
