@@ -5,43 +5,41 @@ import { GallerySubpage, PrivacyPolicy, PageNotFound } from './subpages';
 
 const App = () => {
 	return (
-		<div className='min-h-screen'>
-			<Routes>
+		<Routes>
+			<Route
+				element={
+					<>
+						<Outlet />
+						<CookieBanner />
+					</>
+				}>
 				<Route
 					element={
 						<>
+							<Navbar />
 							<Outlet />
-							<CookieBanner />
+							<Footer />
 						</>
 					}>
 					<Route
+						path='/'
 						element={
-							<>
-								<Navbar />
-								<Outlet />
-								<Footer />
-							</>
-						}>
-						<Route
-							path='/'
-							element={
-								<main>
-									<Welcome />
-									<Aerograph />
-									<Offer />
-									<Quote />
-									<Gallery />
-									<Contact />
-								</main>
-							}
-						/>
-						<Route path='/galeria-prac' element={<GallerySubpage />} />
-					</Route>
-					<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
-					<Route path='*' element={<PageNotFound />} />
+							<main>
+								<Welcome />
+								<Aerograph />
+								<Offer />
+								<Quote />
+								<Gallery />
+								<Contact />
+							</main>
+						}
+					/>
 				</Route>
-			</Routes>
-		</div>
+				<Route path='/galeria-prac' element={<GallerySubpage />} />
+				<Route path='/polityka-prywatnosci' element={<PrivacyPolicy />} />
+				<Route path='*' element={<PageNotFound />} />
+			</Route>
+		</Routes>
 	);
 };
 

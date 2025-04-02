@@ -41,18 +41,19 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: #fff;
-	box-shadow: rgba(3, 8, 20, 0.1);
+	padding: 0;
+	margin: 0;
 	height: 100%;
 	width: 100%;
+	color: #fff;
+	box-shadow: rgba(3, 8, 20, 0.1);
 	border-radius: 4px;
-	transition: all 500ms;
-	overflow: hidden;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 0;
-	margin: 0;
+	transition: all 500ms;
+	animation: loading 2.5s alternate infinite;
+	overflow: hidden;
 	z-index: 10;
 }
 
