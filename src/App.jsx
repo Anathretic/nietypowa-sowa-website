@@ -1,5 +1,5 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
-import { Aerograph, Contact, Gallery, HeroImage, Offer, Quote } from './sections';
+import { Aerograph, Contact, Gallery, Welcome, Offer, Quote } from './sections';
 import { GallerySubpage, PrivacyPolicy, PageNotFound } from './subpages';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
@@ -28,7 +28,7 @@ const App = () => {
 							path='/'
 							element={
 								<main>
-									<HeroImage />
+									<Welcome />
 									<Aerograph />
 									<Offer />
 									<Quote />

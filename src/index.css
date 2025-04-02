@@ -28,30 +28,6 @@ body {
 	max-width: 1920px;
 }
 
-.hero-bg {
-	background-image: url('./images/hero-image-section/hero-bg.jpg');
-}
-
-.hero-bg h1 {
-	font-family: 'Lavishly Yours', 'cursive';
-}
-
-.hero-bg-arrow {
-	position: absolute;
-	bottom: 2em;
-	left: 48.7%;
-	padding: 0.25em;
-	animation: bounce 2s infinite;
-}
-
-/* Bounce animations */
-
-@keyframes bounce {
-	50% {
-		transform: translateY(-25px);
-	}
-}
-
 /* Gallery mosaic */
 
 .image-mosaic {
@@ -133,12 +109,6 @@ form textarea:invalid[focused='true'] {
 
 	.card-wide {
 		grid-column: span 2 / auto;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.hero-bg {
-		background-image: url('./images/hero-image-section/hero-bg-xl.jpg');
 	}
 }
 
