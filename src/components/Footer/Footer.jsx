@@ -7,7 +7,7 @@ import { scrollToTop } from '../../utils/scrollToTopUtils';
 
 import FooterPaintSplatterImage from '../../images/footer-section/footer-paint-splatter-image.png';
 
-export const Footer = () => {
+const Footer = () => {
 	const [onMouseEnterEffect, setOnMouseEnterEffect] = useState(false);
 	const currentYear = new Date().getFullYear();
 
@@ -49,3 +49,5 @@ export const Footer = () => {
 		</footer>
 	);
 };
+
+export default Footer;

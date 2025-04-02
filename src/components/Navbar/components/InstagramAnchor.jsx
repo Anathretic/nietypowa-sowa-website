@@ -1,15 +1,13 @@
 import { useMediaQuery } from 'react-responsive';
 import { BsInstagram } from 'react-icons/bs';
 
-export const InstagramAnchor = ({ liStyles, isScrolled }) => {
+export const InstagramAnchor = ({ isScrolled }) => {
 	const isDesktop = useMediaQuery({ query: '(min-width: 1536px)' });
 
 	return (
-		<li className={`${liStyles} flex items-center justify-center`}>
+		<li className='navbar-special-icon'>
 			<a
-				className={`cursor-pointer p-2 ${
-					isScrolled ? 'md:hover:text-[#072028]' : 'md:hover:text-[#c80c59]'
-				} transition duration-300`}
+				className={`navbar-special-anchor ${isScrolled ? 'dark-hover' : 'pink-hover'}`}
 				href='https://www.instagram.com/nietypowa_sowa/'
 				target='_blank'
 				rel='noreferrer'>

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import CookieConsent from 'react-cookie-consent';
 import { scrollToTop } from '../utils/scrollToTopUtils';
 
-export const CookieBaner = ({ ...otherProps }) => {
+const CookieBaner = ({ ...otherProps }) => {
 	return (
 		<CookieConsent
 			location='bottom'
@@ -36,3 +36,5 @@ export const CookieBaner = ({ ...otherProps }) => {
 		</CookieConsent>
 	);
 };
+
+export default CookieBaner;

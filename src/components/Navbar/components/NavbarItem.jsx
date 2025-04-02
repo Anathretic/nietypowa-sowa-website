@@ -1,12 +1,21 @@
+import { useCallback } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-export const NavbarItem = ({ title, section, classProps, isScrolled, onClick, ...linkProps }) => {
+export const NavbarItem = ({ title, section, classProps, onClick, isScrolled, ...linkProps }) => {
+	const handleClick = useCallback(() => {
+		if (onClick) {
+			onClick();
+		}
+	}, [onClick]);
+
 	return (
-		<li
-			className={`mx-2 mf:mx-4 cursor-pointer capitalize ${
-				isScrolled ? 'md:hover:text-[#072028]' : 'md:hover:text-[#c80c59]'
-			} transition duration-300 ${classProps} z-10`}>
-			<HashLink smooth to={section} className='p-2' onClick={onClick} {...linkProps}>
+		<li className={`navbar-item ${classProps}`}>
+			<HashLink
+				smooth
+				to={section}
+				className={`navbar-item-link ${isScrolled ? 'dark-hover' : 'pink-hover'}`}
+				onClick={handleClick}
+				{...linkProps}>
 				{title}
 			</HashLink>
 		</li>

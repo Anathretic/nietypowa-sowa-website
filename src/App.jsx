@@ -1,9 +1,7 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
+import { CookieBanner, Footer, Navbar } from './components';
 import { Aerograph, Contact, Gallery, Welcome, Offer, Quote } from './sections';
 import { GallerySubpage, PrivacyPolicy, PageNotFound } from './subpages';
-import { Navbar } from './components/Navbar/Navbar';
-import { Footer } from './components/Footer/Footer';
-import { CookieBaner } from './components/CookieBaner';
 
 const App = () => {
 	return (
@@ -13,7 +11,7 @@ const App = () => {
 					element={
 						<>
 							<Outlet />
-							<CookieBaner />
+							<CookieBanner />
 						</>
 					}>
 					<Route
