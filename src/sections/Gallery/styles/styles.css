@@ -1,0 +1,145 @@
+.gallery {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0 40px;
+	width: 100%;
+}
+
+.gallery-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 1.5em 1em 0;
+	width: 100%;
+}
+
+.gallery-title-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.gallery-title {
+	width: 100%;
+	max-width: 500px;
+	padding-bottom: 1.5rem;
+	font-family: 'Lavishly Yours', 'cursive';
+	font-size: 4.5rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+.gallery-mosaic-container {
+	width: 100%;
+	max-width: 1000px;
+}
+
+.gallery-btn {
+	display: block;
+	padding: 0.75em 3.5em;
+	margin: 3em 0;
+	color: #e9e9e9;
+	background-color: #c80c59;
+	border: none;
+	border-radius: 2em;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	cursor: pointer;
+	z-index: 10;
+}
+
+@media screen and (max-width: 320px) {
+	.gallery-container {
+		padding: 1.5em 0 0;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.gallery-btn {
+		padding: 1em 4em;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.gallery-image--first,
+	.gallery-image--third,
+	.gallery-image--fifth {
+		grid-column: 1/-1;
+	}
+
+	.gallery-image--second,
+	.gallery-image--fourth,
+	.gallery-image--sixth {
+		display: none !important;
+	}
+
+	.gallery-image--seventh {
+		column-gap: 0;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.gallery-title {
+		font-size: 5.5rem;
+	}
+
+	.gallery-image--seventh {
+		grid-column: 1/-1;
+	}
+}
+
+@media screen and (min-width: 768px) and (min-height: 500px) {
+	.gallery-btn {
+		padding: 0.8em 0;
+		max-width: 280px;
+		width: 280px;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.gallery-title {
+		font-size: 6.5rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.gallery-mosaic-container {
+		width: 90%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.gallery-btn {
+		margin: 4em 0;
+		font-size: 1.1em;
+	}
+
+	.gallery-btn:hover {
+		background-color: #23a1b4;
+	}
+}
+
+@media screen and (min-width: 1358px) {
+	.gallery {
+		padding-top: 70px;
+	}
+
+	.gallery-title {
+		padding: 0.5rem 0.85rem 0;
+	}
+
+	.gallery-mosaic-container {
+		padding: 4em 0;
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	.gallery-title {
+		max-width: 700px;
+	}
+}

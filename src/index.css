@@ -52,13 +52,13 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	transition: all 500ms;
-	animation: loading 2.5s alternate infinite;
 	overflow: hidden;
 	z-index: 10;
 }
 
 .card-with-bg {
 	background-color: #353535;
+	animation: loading 2.5s alternate infinite;
 }
 
 @keyframes loading {
