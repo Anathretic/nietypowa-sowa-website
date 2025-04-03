@@ -1,6 +1,6 @@
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useMediaQuery } from 'react-responsive';
-import { FormLoader } from '../../FormLoader';
+import { FormLoader } from '../../FormLoader/FormLoader';
 
 export const FormInput = ({ label, htmlFor, onChange, errorMessage, ...inputProps }) => {
 	return (
