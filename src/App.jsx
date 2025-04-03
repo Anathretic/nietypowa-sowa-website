@@ -1,6 +1,6 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
 import { CookieBanner, Footer, Navbar } from './components';
-import { Aerograph, Contact, Gallery, Welcome, Offer, Quote } from './sections';
+import { Aerograph, Contact, Gallery, Welcome, Offer, Motto } from './sections';
 import { GallerySubpage, PrivacyPolicy, PageNotFound } from './subpages';
 
 const App = () => {
@@ -28,7 +28,7 @@ const App = () => {
 								<Welcome />
 								<Aerograph />
 								<Offer />
-								<Quote />
+								<Motto />
 								<Gallery />
 								<Contact />
 							</main>
