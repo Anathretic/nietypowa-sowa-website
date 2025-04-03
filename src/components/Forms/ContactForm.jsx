@@ -7,6 +7,8 @@ import { FormInput, FormReCaptchaV2, FormSubmit, FormTextarea } from './componen
 import { textareaData } from '../../inputsConfig/textareaData';
 import { BsCheck2All } from 'react-icons/bs';
 
+import './styles/styles.css';
+
 export const ContactForm = () => {
 	const [focused, setFocused] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
@@ -63,9 +65,7 @@ export const ContactForm = () => {
 	};
 
 	return (
-		<form
-			onSubmit={handleSubmit}
-			className='px-5 py-2 w-full flex flex-col justify-start items-center mf:mt-10 mf:text-lg'>
+		<form onSubmit={handleSubmit} className='contact-form'>
 			{inputData.map(input => (
 				<FormInput
 					key={input.id}

@@ -8,7 +8,7 @@ const CookieBanner = ({ ...otherProps }) => {
 	return (
 		<CookieConsent
 			location='bottom'
-			buttonText='OK!'
+			buttonText='OK'
 			style={{
 				color: '#fff',
 				backgroundColor: '#C80C59',
@@ -20,7 +20,7 @@ const CookieBanner = ({ ...otherProps }) => {
 			}}
 			buttonStyle={{
 				backgroundColor: '#ffdf00',
-				fontSize: '16px',
+				fontSize: '15px',
 				padding: '10px',
 				width: '100px',
 				borderRadius: '8px',

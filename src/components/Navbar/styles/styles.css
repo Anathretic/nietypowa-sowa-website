@@ -29,8 +29,10 @@
 	margin-right: auto;
 	top: 0;
 	height: 80px;
-	letter-spacing: 0.1em;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	background-color: transparent;
+	letter-spacing: 0.1em;
 	transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out;
 	z-index: 50;
 }
@@ -43,6 +45,7 @@
 }
 
 .navbar-title {
+	padding-top: 0.25rem;
 	justify-content: center;
 }
 
@@ -63,8 +66,7 @@
 	color: #e9e9e9;
 }
 
-.navbar-mobile-list,
-.navbar-login-icon {
+.navbar-mobile-list {
 	display: flex;
 	align-items: center;
 }
@@ -154,13 +156,8 @@
 		margin: 0 1rem;
 	}
 
-	.navbar-login-icon {
-		margin-top: 5px;
-	}
-
 	.navbar-special-icon {
-		margin-left: 1.55rem;
-		margin-right: 1rem;
+		margin: 5px 1rem 0 1.55rem;
 	}
 }
 
@@ -231,10 +228,6 @@
 
 	.navbar-item {
 		margin: 0 2rem;
-	}
-
-	.navbar-login-icon {
-		margin: 5px 2rem 0;
 	}
 }
 
