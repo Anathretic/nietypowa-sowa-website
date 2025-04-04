@@ -42,7 +42,7 @@ export const ContactForm = () => {
 				)
 				.then(
 					function () {
-						setValues({ username: '', email: '', message: '' });
+						setValues({ username: '', email: '', phone: '', message: '' });
 						setButtonText(<BsCheck2All color='#FFFFFF' fontSize={28} />);
 					},
 					function () {

@@ -18,4 +18,14 @@ export const inputData = [
 		errorMessage: 'Wprowadź poprawnie e-mail!',
 		required: true,
 	},
+	{
+		id: 'phone',
+		name: 'phone',
+		type: 'text',
+		placeholder: 'Wprowadź numer telefonu..',
+		label: 'Nr telefonu',
+		errorMessage: 'Wprowadź poprawnie nr telefonu!',
+		pattern: '^[0123456789+]{9,12}$',
+		required: true,
+	},
 ];

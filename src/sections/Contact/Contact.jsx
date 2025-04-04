@@ -11,11 +11,11 @@ const Contact = () => {
 				<div className='contact-title-box'>
 					<h2 className='contact-title'>Kontakt</h2>
 					<p className='contact-title-subtext'>
-						Gotowy na spotkanie ze sztuką? Świetnie! Ale jeśli Twoją głowę męczy jakieś pytanie skorzystaj z formularza
-						kontaktowego lub zadzwoń na poniższy numer!
+						Gotowy na spotkanie ze sztuką? Świetnie! Uzupełnij formularz o swoje dane oraz przybliżoną wizję projektu i
+						zacznijmy współpracę!
 					</p>
 					<p className='contact-title-subtext'>
-						<span>Pamiętaj, że moja pracownia znajduje się w okolicy Zamościa!</span>
+						<span>Pamiętaj, że moja pracownia znajduje się w okolicy Zamościa w województwie lubelskim!</span>
 					</p>
 					<p className='contact-title-subtext'>
 						Wysyłając formularz wyrażasz zgodę na przetwarzanie Twoich danych zgodnie z obowiązującą{' '}
