@@ -2,9 +2,9 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useContactFormInputs } from '../../hooks/useContactFormInputs';
 import { useContactFormButton } from '../../hooks/useContactFormButton';
-import { inputData } from '../../inputsConfig/inputData';
 import { FormInput, FormReCaptchaV2, FormSubmit, FormTextarea } from './components/FormElements';
-import { textareaData } from '../../inputsConfig/textareaData';
+import { inputData } from '../../config/inputsConfig/inputData';
+import { textareaData } from '../../config/inputsConfig/textareaData';
 import { BsCheck2All } from 'react-icons/bs';
 
 import './styles/styles.css';
