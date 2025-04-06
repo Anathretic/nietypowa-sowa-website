@@ -1,7 +1,4 @@
-import { FaCalendarAlt } from 'react-icons/fa';
-import { GiCoinsPile } from 'react-icons/gi';
-import { HiMiniCurrencyDollar } from 'react-icons/hi2';
-import { TbPackages } from 'react-icons/tb';
+import { GiPencilBrush, GiBlackBook, GiLaptop, GiHealthNormal } from 'react-icons/gi';
 
 import './styles/styles.css';
 
@@ -11,35 +8,43 @@ const Aerograph = () => {
 			<h2 className='aerograph-title'>Aerograf</h2>
 			<div className='aerograph-text-content'>
 				<div className='aerograph-text-content-box'>
-					<HiMiniCurrencyDollar fontSize={56} color='c80c59' />
-					<h3>Efekt 3D</h3>
+					<GiPencilBrush fontSize={56} color='c80c59' />
+					<h3>Sztuka i precyzja</h3>
 					<p>
-						Zwykła powierzchnia ożywa, a kompozycje nabierają trójwymiarowego charakteru. Stworzone iluzje głębi
-						sprawiają, że wszystko wydaje się wystawać i pulsować życiem.
+						Choć aerograf kojarzy się głównie z malarstwem, to jest to również niezwykle precyzyjne narzędzie
+						wykorzystywane w modelarstwie, kosmetologii czy nawet w produkcji ozdób cukierniczych. Dzięki swojej
+						dokładności pozwala na tworzenie detali na poziomie mikroskalowym, który jest nieosiągalny dla tradycyjnych
+						pędzli.
 					</p>
 				</div>
 				<div className='aerograph-text-content-box'>
-					<FaCalendarAlt fontSize={56} color='c80c59' />
-					<h3>Wtapianie elementów</h3>
+					<GiBlackBook fontSize={56} color='c80c59' />
+					<h3>Historia od XIX wieku</h3>
 					<p>
-						Malarstwo, które subtelnie łączy się z tłem, tworząc wrażenie, że obraz jest częścią samego przedmiotu, a
-						granice między nimi znikają w niewidoczny sposób i cała praca stanowi jedność.
+						Pierwsze próby użycia aerografu miały miejsce już w 1876 roku, kiedy to wynaleziono urządzenie, które
+						pozwalało na precyzyjne nanoszenie farby w sposób podobny do dzisiejszych aerografów. To narzędzie było
+						pierwotnie wykorzystywane do malowania portretów, ale szybko znalazło swoje miejsce w innych dziedzinach, na
+						przykład reklamie.
 					</p>
 				</div>
 				<div className='aerograph-text-content-box'>
-					<GiCoinsPile fontSize={56} color='c80c59' />
-					<h3>Nietypowe powierzchnie</h3>
+					<GiLaptop fontSize={56} color='c80c59' />
+					<h3>Połączenie z cyfrową sztuką</h3>
 					<p>
-						Tworzenie unikalnych projektów na trudnych powierzchniach – od skóry po tworzywa sztuczne – które zyskują
-						charakter i głębię, niemożliwe do osiągnięcia przy tradycyjnych metodach.
+						Nowoczesne aerografy, dzięki precyzyjnej regulacji przepływu powietrza i farby, stały się jednym z
+						ulubionych narzędzi artystów cyfrowych, którzy tworzą cyfrowe obrazy przypominające tradycyjne malowanie
+						aerografem. Technika ta pozwala na uzyskanie efektów przejść tonalnych i detali, które są charakterystyczne
+						dla aerografii tradycyjnej.
 					</p>
 				</div>
 				<div className='aerograph-text-content-box'>
-					<TbPackages fontSize={56} color='c80c59' />
-					<h3>Sztuka żyjąca z ciałem</h3>
+					<GiHealthNormal fontSize={56} color='c80c59' />
+					<h3>Zastosowanie w medycynie</h3>
 					<p>
-						Projekty, które zyskują życie z każdym ruchem – odzież, akcesoria czy obuwie, które stają się integralną
-						częścią właściciela, oddychając jego stylem i osobowością.
+						Aerografy znalazły zastosowanie w medycynie, szczególnie w dermatologii i kosmetologii, gdzie są używane do
+						aplikacji leczenia skóry, a także w procesach takich jak mikropigmentacja brwi. Precyzyjne kontrolowanie
+						ilości pigmentu pozwala na osiąganie naturalnych efektów, takich jak subtelne poprawki na skórze bez ryzyka
+						nierówności.
 					</p>
 				</div>
 			</div>
