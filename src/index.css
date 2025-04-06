@@ -94,9 +94,3 @@ form textarea:invalid[focused='true'] {
 		grid-column: span 2 / auto;
 	}
 }
-
-@media screen and (min-width: 2320px) {
-	body {
-		overflow-x: hidden;
-	}
-}
