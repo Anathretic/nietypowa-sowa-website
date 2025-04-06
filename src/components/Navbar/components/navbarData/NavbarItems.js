@@ -4,8 +4,8 @@ export const navbarItems = [
 		section: '/#aerograf',
 	},
 	{
-		title: 'usługi',
-		section: '/#uslugi',
+		title: 'oferta',
+		section: '/#oferta',
 	},
 	{
 		title: 'galeria',

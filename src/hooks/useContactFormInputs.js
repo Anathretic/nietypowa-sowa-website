@@ -4,6 +4,7 @@ export const useContactFormInputs = () => {
 	const [values, setValues] = useState({
 		username: '',
 		email: '',
+		phone: '',
 		message: '',
 	});
 

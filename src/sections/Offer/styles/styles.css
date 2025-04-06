@@ -1,0 +1,68 @@
+.offer,
+.offer-wrapper,
+.offer-carousel-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.offer,
+.offer-wrapper {
+	flex-direction: column;
+}
+
+.offer-container,
+.offer-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.offer {
+	padding: 30px 0 90px;
+	background-color: #c4c4c4;
+	color: #072028;
+	overflow-x: hidden;
+}
+
+.offer-wrapper {
+	margin: 0 auto;
+	max-width: 2160px;
+}
+
+.offer-title {
+	padding-bottom: 2.5rem;
+	color: #072028;
+	font-family: 'Lavishly Yours', 'cursive';
+	font-size: 4.5rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+	.offer-title {
+		font-size: 5.5rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.offer {
+		padding: 30px 0 100px;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.offer-title {
+		font-size: 6.5rem;
+	}
+}
+
+@media screen and (min-width: 1358px) {
+	.offer {
+		padding-top: 50px;
+	}
+
+	.offer-title {
+		padding: 0.5rem 0.85rem 2rem;
+		width: 100%;
+	}
+}
