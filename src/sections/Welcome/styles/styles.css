@@ -1,19 +1,20 @@
-.welcome {
-	position: relative;
+.welcome,
+.welcome-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.welcome {
+	position: relative;
 	min-height: 100vh;
 	width: 100%;
-	background-image: url('./../../../images/hero-image-section/hero-bg.jpg');
+	background-image: url('./../../../images/welcome-section/hero-bg.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 .welcome-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 }
 
@@ -69,7 +70,7 @@
 @media screen and (min-width: 1024px) {
 	.welcome {
 		padding-top: 40px;
-		background-image: url('./../../../images/hero-image-section/hero-bg-xl.jpg');
+		background-image: url('./../../../images/welcome-section/hero-bg-xl.jpg');
 	}
 
 	.welcome-title {

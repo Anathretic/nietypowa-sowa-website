@@ -11,9 +11,14 @@
 	flex-direction: column;
 }
 
+.offer,
 .offer-container,
 .offer-wrapper {
 	position: relative;
+}
+
+.offer-container,
+.offer-wrapper {
 	width: 100%;
 }
 
@@ -38,6 +43,24 @@
 	text-align: center;
 }
 
+.offer-special-block {
+	position: absolute;
+	bottom: 0;
+	width: 40%;
+	height: 40px;
+	background-color: #0f4353;
+}
+
+.offer-special-block--left {
+	left: -50px;
+	transform: skew(45deg);
+}
+
+.offer-special-block--right {
+	right: -50px;
+	transform: skew(-45deg);
+}
+
 @media screen and (min-width: 640px) {
 	.offer-title {
 		font-size: 5.5rem;
@@ -47,6 +70,11 @@
 @media screen and (min-width: 768px) {
 	.offer {
 		padding: 30px 0 100px;
+	}
+
+	.offer-special-block {
+		width: 35%;
+		height: 50px;
 	}
 }
 
@@ -64,5 +92,10 @@
 	.offer-title {
 		padding: 0.5rem 0.85rem 2rem;
 		width: 100%;
+	}
+
+	.offer-special-block {
+		width: 42%;
+		height: 45px;
 	}
 }

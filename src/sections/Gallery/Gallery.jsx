@@ -38,6 +38,8 @@ const Gallery = () => {
 					</div>
 				</div>
 			</div>
+			<div className='gallery-special-block gallery-special-block--left' />
+			<div className='gallery-special-block gallery-special-block--right' />
 		</section>
 	);
 };

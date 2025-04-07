@@ -76,6 +76,10 @@
 	font-weight: 600;
 }
 
+.contact-title-icon {
+	display: none;
+}
+
 @media screen and (max-width: 300px) {
 	.contact-title-info-box li {
 		padding: 0.5em 0;
@@ -146,6 +150,27 @@
 	.contact-form {
 		padding-top: 2rem;
 		margin-right: 2.5rem;
+	}
+
+	.contact-title-icon {
+		position: absolute;
+		display: block;
+		color: rgba(255, 255, 255, 0.15);
+	}
+
+	.contact-title-icon--first {
+		bottom: 1.25em;
+		left: 5.6em;
+	}
+
+	.contact-title-icon--second {
+		bottom: 0.35em;
+		left: 7.1em;
+	}
+
+	.contact-title-icon--third {
+		bottom: 2.35em;
+		left: 9.2em;
 	}
 }
 

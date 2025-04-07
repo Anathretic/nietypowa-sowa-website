@@ -1,11 +1,13 @@
-.motto {
-	width: 100%;
-	overflow: hidden;
-}
-
+.motto,
 .motto-container,
 .motto-maintext {
 	position: relative;
+}
+
+.motto {
+	width: 100%;
+	background-color: #0f4353;
+	overflow: hidden;
 }
 
 .motto-container {
@@ -38,6 +40,24 @@
 	display: none;
 }
 
+.motto-special-block {
+	position: absolute;
+	bottom: 0;
+	width: 40%;
+	height: 40px;
+	background-color: #0b313e;
+}
+
+.motto-special-block--left {
+	left: -50px;
+	transform: skew(45deg);
+}
+
+.motto-special-block--right {
+	right: -50px;
+	transform: skew(-45deg);
+}
+
 @media screen and (min-width: 640px) {
 	.motto-container {
 		padding: 3rem 0;
@@ -47,6 +67,11 @@
 @media screen and (min-width: 768px) {
 	.motto-maintext {
 		font-size: 2.5rem;
+	}
+
+	.motto-special-block {
+		width: 35%;
+		height: 50px;
 	}
 }
 
@@ -93,8 +118,13 @@
 	}
 
 	.motto-icon--fourth {
-		bottom: 0.5em;
+		bottom: 1em;
 		right: 0.5em;
+	}
+
+	.motto-special-block {
+		width: 42%;
+		height: 45px;
 	}
 }
 
@@ -121,7 +151,7 @@
 	}
 
 	.motto-icon--fourth {
-		bottom: 0.25em;
+		bottom: 0.75em;
 		right: 0.75em;
 	}
 }

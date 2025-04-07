@@ -56,6 +56,24 @@
 	font-weight: 700;
 }
 
+.aerograph-special-block {
+	position: absolute;
+	bottom: 0;
+	width: 40%;
+	height: 40px;
+	background-color: #c4c4c4;
+}
+
+.aerograph-special-block--left {
+	left: -50px;
+	transform: skew(45deg);
+}
+
+.aerograph-special-block--right {
+	right: -50px;
+	transform: skew(-45deg);
+}
+
 @media screen and (min-width: 640px) {
 	.aerograph-title {
 		font-size: 5.5rem;
@@ -65,6 +83,11 @@
 @media screen and (min-width: 768px) {
 	.aerograph-text-content-box {
 		max-width: 325px;
+	}
+
+	.aerograph-special-block {
+		width: 35%;
+		height: 50px;
 	}
 }
 
@@ -102,5 +125,10 @@
 	.aerograph-title {
 		padding: 0.5rem 0.85rem 2rem;
 		width: 100%;
+	}
+
+	.aerograph-special-block {
+		width: 42%;
+		height: 45px;
 	}
 }

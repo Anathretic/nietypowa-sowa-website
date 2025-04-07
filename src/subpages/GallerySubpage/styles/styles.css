@@ -1,23 +1,24 @@
-.gallery-subpage {
+.gallery-subpage,
+.gallery-subpage-title-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.gallery-subpage {
 	width: 100%;
+}
+
+.gallery-subpage-container,
+.gallery-subpage-title-container {
+	flex-direction: column;
 }
 
 .gallery-subpage-container {
 	display: flex;
 	align-items: center;
-	flex-direction: column;
 	padding: 1.5em 1em 0;
 	width: 100%;
-}
-
-.gallery-subpage-title-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 }
 
 .gallery-subpage-title {
