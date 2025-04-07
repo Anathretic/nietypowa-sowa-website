@@ -1,19 +1,19 @@
-.notfound {
-	position: relative;
+.notfound,
+.notfound-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.notfound {
+	position: relative;
 	width: 100%;
 	min-height: 100vh;
 	overflow: hidden;
 }
 
 .notfound-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	padding: 1em 0 2em;
 	width: 100%;
 }

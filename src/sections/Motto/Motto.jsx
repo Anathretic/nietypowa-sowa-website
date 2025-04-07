@@ -14,6 +14,8 @@ const Motto = () => {
 				<GiPaintBrush className='motto-icon motto-icon--third' fontSize={68} />
 				<GiEasel className='motto-icon motto-icon--fourth' fontSize={120} />
 			</div>
+			<div className='motto-special-block motto-special-block--left' />
+			<div className='motto-special-block motto-special-block--right' />
 		</section>
 	);
 };

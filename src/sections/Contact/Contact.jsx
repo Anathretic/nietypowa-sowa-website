@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ContactForm } from '../../components/Forms/ContactForm';
 import { scrollToTop } from '../../utils/scrollToTopUtils';
+import { GiOwl } from 'react-icons/gi';
 
 import './styles/styles.css';
 
@@ -33,6 +34,9 @@ const Contact = () => {
 							<p>+48 577 738 995</p>
 						</li>
 					</ul>
+					<GiOwl className='contact-title-icon contact-title-icon--first' fontSize={70} />
+					<GiOwl className='contact-title-icon contact-title-icon--second' fontSize={66} />
+					<GiOwl className='contact-title-icon contact-title-icon--third' fontSize={54} />
 				</div>
 				<ContactForm />
 			</div>

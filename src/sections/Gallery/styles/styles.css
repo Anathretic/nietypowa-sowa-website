@@ -1,10 +1,16 @@
-.gallery {
-	position: relative;
+.gallery,
+.gallery-title-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.gallery {
+	position: relative;
 	padding: 30px 0 40px;
 	width: 100%;
+	background-color: #0b313e;
+	overflow-x: hidden;
 }
 
 .gallery-container {
@@ -16,9 +22,6 @@
 }
 
 .gallery-title-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 }
 
@@ -53,6 +56,24 @@
 	z-index: 10;
 }
 
+.gallery-special-block {
+	position: absolute;
+	bottom: 0;
+	width: 40%;
+	height: 40px;
+	background-color: #072028;
+}
+
+.gallery-special-block--left {
+	left: -50px;
+	transform: skew(45deg);
+}
+
+.gallery-special-block--right {
+	right: -50px;
+	transform: skew(-45deg);
+}
+
 @media screen and (max-width: 320px) {
 	.gallery-container {
 		padding: 1.5em 0 0;
@@ -83,6 +104,12 @@
 	}
 }
 
+@media screen and (min-width: 868px) and (max-width: 1358px) {
+	.gallery-container {
+		padding: 1.5em 1em 5em;
+	}
+}
+
 @media screen and (min-width: 640px) {
 	.gallery-title {
 		font-size: 5.5rem;
@@ -90,6 +117,13 @@
 
 	.gallery-image--seventh {
 		grid-column: 1/-1;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.gallery-special-block {
+		width: 35%;
+		height: 50px;
 	}
 }
 
@@ -129,12 +163,21 @@
 		padding-top: 34px;
 	}
 
+	.gallery-container {
+		padding: 1.5em 1em 0.5em;
+	}
+
 	.gallery-title {
 		padding: 0.5rem 0.85rem 0;
 	}
 
 	.gallery-mosaic-container {
 		padding: 4em 0;
+	}
+
+	.gallery-special-block {
+		width: 42%;
+		height: 45px;
 	}
 }
 

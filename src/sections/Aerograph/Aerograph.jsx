@@ -48,6 +48,8 @@ const Aerograph = () => {
 					</p>
 				</div>
 			</div>
+			<div className='aerograph-special-block aerograph-special-block--left' />
+			<div className='aerograph-special-block aerograph-special-block--right' />
 		</section>
 	);
 };

@@ -8,11 +8,11 @@ This is a site dedicated to an artist who airbrush paints professionally, creati
 
 ## Coding & Problems
 
-I did not encounter any major problems when writing the code due to the use of components from the previous version and the [Tailwind CSS](https://tailwindcss.com/) library.
+I did not encounter any major problems when writing the code due to the use of reusable components from the another projects.
 
 ## Links, Tools & Tech-stack
 
-**Used:** HTML, CSS, JavaScript, React, Node + Express, Tailwind, Vite
+**Used:** HTML, CSS, JavaScript, React, Vite
 
 **Tools:** [EmailJS](https://www.emailjs.com/), [Google reCaptcha](https://www.google.com/recaptcha/about/)
 

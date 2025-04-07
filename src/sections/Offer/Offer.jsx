@@ -15,6 +15,8 @@ const Offer = () => {
 					<OfferCarouselMemoized slides={offerCarouselConfig} />
 				</div>
 			</div>
+			<div className='offer-special-block offer-special-block--left' />
+			<div className='offer-special-block offer-special-block--right' />
 		</section>
 	);
 };
