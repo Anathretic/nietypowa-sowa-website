@@ -1,14 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { AiOutlineClose } from 'react-icons/ai';
-import { HiMenuAlt4 } from 'react-icons/hi';
+import throttle from 'lodash/throttle';
 import { NavbarTitle } from './components/NavbarTitle';
 import { NavbarItem } from './components/NavbarItem';
 import { InstagramAnchor } from './components/InstagramAnchor';
 import { navbarItems } from './components/navbarData/NavbarItems';
+import { AiOutlineClose } from 'react-icons/ai';
+import { HiMenuAlt4 } from 'react-icons/hi';
 
-import throttle from 'lodash/throttle';
 import './styles/styles.css';
+import './styles/animations.css';
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);

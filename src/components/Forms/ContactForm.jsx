@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import emailjs from '@emailjs/browser';
 import { useContactFormInputs } from '../../hooks/useContactFormInputs';
 import { useContactFormButton } from '../../hooks/useContactFormButton';
@@ -16,6 +17,8 @@ export const ContactForm = () => {
 
 	const [values, setValues, handleInputValue] = useContactFormInputs();
 	const [buttonText, setButtonText] = useContactFormButton();
+
+	const isMobile = useMediaQuery({ query: '(max-width: 1023px)' });
 
 	const refCaptcha = useRef(null);
 
@@ -43,7 +46,7 @@ export const ContactForm = () => {
 				.then(
 					function () {
 						setValues({ username: '', email: '', phone: '', message: '' });
-						setButtonText(<BsCheck2All color='#FFFFFF' fontSize={28} />);
+						setButtonText(<BsCheck2All color='#FFFFFF' fontSize={isMobile ? 21 : 23} />);
 					},
 					function () {
 						setReCaptchaErrorValue('Coś poszło nie tak..');

@@ -1,4 +1,5 @@
 import './styles/styles.css';
+import './styles/animations.css';
 
 export const FormLoader = () => {
 	return (

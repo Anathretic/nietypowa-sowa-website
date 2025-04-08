@@ -2,6 +2,7 @@ import { HashLink } from 'react-router-hash-link';
 import { SlArrowDown } from 'react-icons/sl';
 
 import './styles/styles.css';
+import './styles/animations.css';
 
 const Welcome = () => {
 	return (

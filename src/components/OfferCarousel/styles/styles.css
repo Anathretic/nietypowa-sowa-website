@@ -21,12 +21,6 @@
 	transform: translateY(1px);
 }
 
-@media screen and (min-width: 1024px) {
-	.btn:hover {
-		background-color: #23a1b4;
-	}
-}
-
 .slider {
 	position: relative;
 	margin: 0 auto;
@@ -36,16 +30,18 @@
 	max-height: 750px;
 }
 
-.slider-wrapper {
+.slider-wrapper,
+.slider-controls {
 	position: absolute;
 	display: flex;
+}
+
+.slider-wrapper {
 	margin: 0 calc(4vmin * -1);
 	transition: transform 0.6s cubic-bezier(0.25, 1, 0.35, 1);
 }
 
 .slider-controls {
-	position: absolute;
-	display: flex;
 	justify-content: center;
 	top: calc(100% + 1rem);
 	width: 100%;
@@ -66,12 +62,16 @@
 	transform: rotate(180deg);
 }
 
-.slide {
+.slide,
+.slide-content {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.slide {
 	flex: 1;
 	height: 70vmin;
 	width: 70vmin;
@@ -117,14 +117,12 @@
 	user-select: auto;
 }
 
-@media (hover: hover) {
-	.slide--current:hover .slide-image-wrapper {
-		transform: translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
-	}
+.slide-image-wrapper,
+.slide-image {
+	position: absolute;
 }
 
 .slide-image-wrapper {
-	position: absolute;
 	top: 0%;
 	left: 0%;
 	height: 100%;
@@ -140,7 +138,6 @@
 .slide-image {
 	--d: 20;
 
-	position: absolute;
 	height: 110%;
 	width: 110%;
 	top: -5%;
@@ -160,15 +157,15 @@
 }
 
 .slide-image--0 {
-	background-image: url('../../../images/offer-section/offer-first-image.jpg');
+	background-image: url('../../../images/offer-section/small-images/offer-first-image.jpg');
 }
 
 .slide-image--1 {
-	background-image: url('../../../images/offer-section/offer-second-image.jpg');
+	background-image: url('../../../images/offer-section/small-images/offer-second-image.jpg');
 }
 
 .slide-image--2 {
-	background-image: url('../../../images/offer-section/offer-third-image.jpg');
+	background-image: url('../../../images/offer-section/small-images/offer-third-image.jpg');
 }
 
 .slide-headline {
@@ -183,11 +180,6 @@
 .slide-content {
 	--d: 60;
 
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	width: 100%;
 	max-width: 645px;
 	max-height: 750px;
@@ -208,5 +200,31 @@
 		> * + * {
 			margin-top: 2rem;
 		}
+	}
+}
+
+@media (hover: hover) {
+	.slide--current:hover .slide-image-wrapper {
+		transform: translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.slide-image--0 {
+		background-image: url('../../../images/offer-section/xl-images/offer-first-image.jpg');
+	}
+
+	.slide-image--1 {
+		background-image: url('../../../images/offer-section/xl-images/offer-second-image.jpg');
+	}
+
+	.slide-image--2 {
+		background-image: url('../../../images/offer-section/xl-images/offer-third-image.jpg');
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.link-btn:hover {
+		background-color: #23a1b4;
 	}
 }
