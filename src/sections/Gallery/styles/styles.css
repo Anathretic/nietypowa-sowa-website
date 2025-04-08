@@ -13,16 +13,16 @@
 	overflow-x: hidden;
 }
 
+.gallery-container,
+.gallery-title-container {
+	flex-direction: column;
+}
+
 .gallery-container {
 	display: flex;
 	align-items: center;
-	flex-direction: column;
 	padding: 1.5em 1em 0;
 	width: 100%;
-}
-
-.gallery-title-container {
-	flex-direction: column;
 }
 
 .gallery-title {

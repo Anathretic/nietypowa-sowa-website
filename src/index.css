@@ -20,12 +20,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
-}
-
 /* Gallery mosaic */
 
 .image-mosaic {
@@ -61,24 +55,6 @@ body {
 	animation: loading 2.5s alternate infinite;
 }
 
-@keyframes loading {
-	to {
-		background-color: #6d6d6d;
-	}
-}
-
-/* ---------------------------------------- */
-
-form input:invalid[focused='true'] ~ span,
-form textarea:invalid[focused='true'] ~ span {
-	visibility: visible;
-}
-
-form input:invalid[focused='true'],
-form textarea:invalid[focused='true'] {
-	border: 1px solid #c80c59;
-}
-
 @media screen and (min-width: 500px) {
 	.image-mosaic {
 		gap: 1rem;
@@ -92,5 +68,11 @@ form textarea:invalid[focused='true'] {
 
 	.card-wide {
 		grid-column: span 2 / auto;
+	}
+}
+
+@keyframes loading {
+	to {
+		background-color: #6d6d6d;
 	}
 }

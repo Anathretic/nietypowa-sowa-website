@@ -28,13 +28,13 @@
 .aerograph-text-content-box {
 	margin: 2em;
 	padding: 2em 0.5em 0;
-	max-width: 300px;
+	max-width: 400px;
 	border: none;
 	border-radius: 1.5em;
 
-	-webkit-box-shadow: 0px 0px 10px 2px rgba(25, 50, 63, 0.25);
-	-moz-box-shadow: 0px 0px 10px 2px rgba(25, 50, 63, 0.25);
-	box-shadow: 0px 0px 10px 2px rgba(25, 50, 63, 0.25);
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(25, 50, 63, 0.45);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(25, 50, 63, 0.45);
+	box-shadow: 0px 0px 10px 2px rgba(25, 50, 63, 0.45);
 }
 
 .aerograph-text-content-box h3 {
@@ -82,7 +82,7 @@
 
 @media screen and (min-width: 768px) {
 	.aerograph-text-content-box {
-		max-width: 325px;
+		max-width: 425px;
 	}
 
 	.aerograph-special-block {
@@ -98,6 +98,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+	.aerograph {
+		padding-bottom: 3rem;
+	}
+
 	.aerograph-text-content {
 		display: flex;
 		justify-content: center;
@@ -106,14 +110,6 @@
 		width: 100%;
 		padding-bottom: 3em;
 		max-width: 1000px;
-	}
-
-	.aerograph-text-content-box {
-		max-width: 425px;
-	}
-
-	.aerograph {
-		padding-bottom: 3rem;
 	}
 }
 
