@@ -1,4 +1,7 @@
 export const scrollToTop = () => {
 	const body = document.querySelector('#root');
-	body.scrollIntoView();
+
+	setTimeout(() => {
+		body.scrollIntoView();
+	}, 50);
 };

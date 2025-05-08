@@ -39,7 +39,7 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 			</div>
 			<article className='slide-content'>
 				<h3 className='slide-headline'>{main_title}</h3>
-				<HashLink to='/#kontakt' className='slide-action btn link-btn'>
+				<HashLink smooth to='/#kontakt' className='slide-action btn link-btn'>
 					Zamawiam
 				</HashLink>
 			</article>
