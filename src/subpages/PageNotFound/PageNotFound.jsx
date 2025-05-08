@@ -1,26 +1,43 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { scrollToTop } from '../../utils/scrollToTopUtils';
 import './styles/styles.css';
 
 import NotFoundImg from '../../images/notfound-subpage/notfound-img.svg';
 
 const PageNotFound = () => {
+	const currentUrl = window.location.href;
+
 	return (
-		<main>
-			<section className='notfound'>
-				<div className='notfound-container'>
-					<img
-						src={NotFoundImg}
-						alt='Error-404 image by Storyset - https://storyset.com/web'
-						className='notfound-img'
-					/>
-					<h1 className='notfound-credits'>Ups! Strony nie znaleziono..</h1>
-					<Link to='/' className='notfound-btn' onClick={scrollToTop} aria-label='Powrót na stronę główną'>
-						Powrót
-					</Link>
-				</div>
-			</section>
-		</main>
+		<>
+			<Helmet htmlAttributes={{ lang: 'pl' }}>
+				<title>Strona nie znaleziona | Nietypowa Sowa</title>
+				<meta
+					name='description'
+					content='Ups! Wygląda na to, że ta strona nie istnieje. Sprawdź adres lub wróć na stronę główną.'
+				/>
+				<meta property='og:title' content='Strona nie znaleziona | Nietypowa Sowa' />
+				<meta property='og:description' content='Nie znaleziono strony. Przekieruj się do naszej oferty.' />
+				<meta property='og:type' content='website' />
+				<meta property='og:url' content={currentUrl} />
+				<meta name='robots' content='noindex, nofollow' />
+			</Helmet>
+			<main>
+				<section className='notfound'>
+					<div className='notfound-container'>
+						<img
+							src={NotFoundImg}
+							alt='Error-404 image by Storyset - https://storyset.com/web'
+							className='notfound-img'
+						/>
+						<h1 className='notfound-credits'>Ups! Strony nie znaleziono..</h1>
+						<Link to='/' className='notfound-btn' onClick={scrollToTop} aria-label='Powrót na stronę główną'>
+							Powrót
+						</Link>
+					</div>
+				</section>
+			</main>
+		</>
 	);
 };
 

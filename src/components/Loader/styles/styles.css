@@ -1,0 +1,16 @@
+.subpage-loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.subpage-loader-spinner {
+	position: relative;
+	width: 1em;
+	height: 1em;
+	color: #fff;
+	font-size: 90px;
+	border-radius: 50%;
+	overflow: hidden;
+}
