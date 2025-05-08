@@ -7,7 +7,7 @@ import './styles/styles.css';
 const GallerySubpage = () => {
 	return (
 		<>
-			<Helmet>
+			<Helmet htmlAttributes={{ lang: 'pl' }}>
 				<title>Galeria Prac | Nietypowa Sowa</title>
 				<meta
 					name='description'

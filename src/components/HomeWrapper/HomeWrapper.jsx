@@ -12,7 +12,7 @@ const HomeWrapper = ({ children }) => {
 
 	return (
 		<>
-			<Helmet>
+			<Helmet htmlAttributes={{ lang: 'pl' }}>
 				<title>Aerograf - Lakiernictwo - Sztuka | Nietypowa Sowa</title>
 				<meta
 					name='description'
