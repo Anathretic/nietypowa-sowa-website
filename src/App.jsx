@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { Outlet, Route, Routes, useLocation,  } from 'react-router-dom';
+import { Outlet, Route, Routes, useLocation } from 'react-router-dom';
 import { CookieBanner, Footer, HomeWrapper, Navbar } from './components';
 import { SubpageLoader } from './components/Loader/Loader';
 import { Aerograph, Contact, Gallery, Welcome, Offer, Motto } from './sections';
