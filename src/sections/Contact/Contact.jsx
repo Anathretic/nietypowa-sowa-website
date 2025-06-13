@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ContactForm } from '../../components/Forms/ContactForm';
 import { scrollToTop } from '../../utils/scrollToTopUtils';
+import { FiMail, FiPhone } from 'react-icons/fi';
 import { GiOwl } from 'react-icons/gi';
 
 import './styles/styles.css';
@@ -26,12 +27,22 @@ const Contact = () => {
 					</p>
 					<ul className='contact-title-info-box'>
 						<li>
-							<p>E-mail:</p>
-							<p>nietypowasowa@gmail.com</p>
+							<div>
+								<FiMail />
+							</div>
+							<div>
+								<p>E-mail:</p>
+								<p>nietypowasowa@gmail.com</p>
+							</div>
 						</li>
 						<li>
-							<p>Telefon:</p>
-							<p>+48 577 738 995</p>
+							<div>
+								<FiPhone />
+							</div>
+							<div>
+								<p>Telefon:</p>
+								<p>+48 577 738 995</p>
+							</div>
 						</li>
 					</ul>
 					<GiOwl className='contact-title-icon contact-title-icon--first' fontSize={70} />

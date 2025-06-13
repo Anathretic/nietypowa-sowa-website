@@ -13,22 +13,22 @@ const Gallery = () => {
 				<div className='gallery-mosaic-container'>
 					<div className='image-mosaic w-full'>
 						<div className='card card-tall card-wide card-with-bg gallery-image--first'>
-							<span>Pracujemy nad tym.. :)</span>
+							<span>Pracuję nad tym.. :)</span>
 						</div>
 						<div className='card card-tall card-with-bg gallery-image--second'>
-							<span>Pracujemy nad tym.. :)</span>
+							<span>Pracuję nad tym.. :)</span>
 						</div>
 						<div className='card card-with-bg gallery-image--third'>
-							<span>Pracujemy nad tym.. :)</span>
+							<span>Pracuję nad tym.. :)</span>
 						</div>
 						<div className='card card-with-bg gallery-image--fourth'>
-							<span>Pracujemy nad tym.. :)</span>
+							<span>Pracuję nad tym.. :)</span>
 						</div>
 						<div className='card card-with-bg gallery-image--fifth'>
-							<span>Pracujemy nad tym.. :)</span>
+							<span>Pracuję nad tym.. :)</span>
 						</div>
 						<div className='card card-with-bg gallery-image--sixth'>
-							<span>Pracujemy nad tym.. :)</span>
+							<span>Pracuję nad tym.. :)</span>
 						</div>
 						<div className='card card-wide gallery-image--seventh'>
 							<Link to='/galeria-prac' className='gallery-btn' onClick={scrollToTop}>

@@ -15,8 +15,15 @@
 	padding: 1em 0 1em 4px;
 }
 
+.form-recaptcha-box div div div div iframe {
+	border: 1px solid transparent;
+	border-radius: 0.35em;
+}
+
 .form-label {
 	padding-bottom: 0.25em;
+	width: 100%;
+	text-align: start;
 }
 
 .form-input,
@@ -63,8 +70,12 @@
 	padding-top: 0.25em;
 	height: 1em;
 	width: 100%;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	visibility: hidden;
+}
+
+.form-textarea-error {
+	font-size: 0.95em;
 }
 
 .form-recaptcha-error {
@@ -72,6 +83,10 @@
 	height: 2px;
 	width: 90%;
 	font-size: 0.95em;
+}
+
+.form-recaptcha-box-error div div div div iframe {
+	border: 3px solid #c80c59;
 }
 
 form input:invalid[focused='true'] ~ span,
@@ -105,7 +120,8 @@ form textarea:invalid[focused='true'] {
 
 @media screen and (min-width: 400px) {
 	.form-input,
-	.form-textarea {
+	.form-textarea,
+	.form-label {
 		width: 90%;
 	}
 }
@@ -135,7 +151,7 @@ form textarea:invalid[focused='true'] {
 	}
 
 	.form-input-error {
-		font-size: 0.9rem;
+		font-size: 0.95em;
 	}
 
 	.form-textarea-error,

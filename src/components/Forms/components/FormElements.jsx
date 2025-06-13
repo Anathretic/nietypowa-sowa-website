@@ -37,7 +37,7 @@ export const FormReCaptchaV2 = ({ refCaptcha, reCaptchaErrorValue }) => {
 	const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
 
 	return (
-		<div className='form-recaptcha-box'>
+		<div className={`form-recaptcha-box ${reCaptchaErrorValue && 'form-recaptcha-box-error'}`}>
 			<ReCAPTCHA
 				key={isMobile ? 'compact-recaptcha' : 'normal-recaptcha'}
 				size={isMobile ? 'compact' : 'normal'}
