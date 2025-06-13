@@ -1,4 +1,6 @@
-export const scrollToTop = () => {
+export const scrollToTop = e => {
+	if (e.ctrlKey) return;
+
 	const body = document.querySelector('#root');
 
 	setTimeout(() => {

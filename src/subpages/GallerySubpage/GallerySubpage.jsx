@@ -31,40 +31,40 @@ const GallerySubpage = () => {
 						<div className='gallery-subpage-mosaic-container'>
 							<div className='image-mosaic w-full'>
 								<div className='card card-tall card-wide card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-tall card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-tall card-wide card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-tall card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 								<div className='card card-with-bg'>
-									<span>Pracujemy nad tym.. :)</span>
+									<span>Pracuję nad tym.. :)</span>
 								</div>
 							</div>
 						</div>
