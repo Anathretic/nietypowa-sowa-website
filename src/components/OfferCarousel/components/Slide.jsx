@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import { HashLink } from 'react-router-hash-link';
 
 export const Slide = ({ slide, current, handleSlideClick }) => {
 	const { id, main_title } = slide;
@@ -21,6 +20,10 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 		}
 	};
 
+	const handleSlideBtn = () => {
+		document.querySelector('#kontakt')?.scrollIntoView({ behavior: 'smooth' });
+	};
+
 	let classNames = 'slide';
 
 	if (current === id) classNames += ' slide--current';
@@ -39,9 +42,9 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 			</div>
 			<article className='slide-content'>
 				<h3 className='slide-headline'>{main_title}</h3>
-				<HashLink smooth to='/#kontakt' className='slide-action btn link-btn'>
+				<button type='button' className='slide-action btn link-btn' onClick={handleSlideBtn}>
 					Zamawiam
-				</HashLink>
+				</button>
 			</article>
 		</li>
 	);
