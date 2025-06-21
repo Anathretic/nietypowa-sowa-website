@@ -7,6 +7,7 @@ import './styles/styles.css';
 const CookieBanner = ({ ...otherProps }) => {
 	return (
 		<CookieConsent
+			buttonId='cookie-btn'
 			location='bottom'
 			buttonText='OK'
 			style={{

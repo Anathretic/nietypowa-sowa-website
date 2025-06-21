@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MailToButton } from '../../components/MailToButton';
 import { scrollToTop } from '../../utils/scrollToTopUtils';
 
 import './styles/styles.css';
@@ -37,8 +36,7 @@ const PrivacyPolicy = () => {
 							<h2>2. Administrator Danych Osobowych</h2>
 							<p>
 								Administratorem danych osobowych jest Magdalena Sowa - właściciel marki Nietypowa Sowa. Możliwy kontakt
-								pod adresem e-mail:{' '}
-								<MailToButton label='nietypowasowa@gmail.com' mailto='mailto:nietypowasowa@gmail.com' />
+								pod adresem e-mail: <a href='mailto:nietypowasowa@gmail.com'>nietypowasowa@gmail.com</a>
 							</p>
 						</div>
 						<div className='privacy-policy-box'>
@@ -104,7 +102,7 @@ const PrivacyPolicy = () => {
 							</ul>
 							<p style={{ paddingTop: '0.75em' }}>
 								Aby skorzystać z tych praw, proszę o kontakt pod adresem:{' '}
-								<MailToButton label='nietypowasowa@gmail.com' mailto='mailto:nietypowasowa@gmail.com' />.
+								<a href='mailto:nietypowasowa@gmail.com'>nietypowasowa@gmail.com</a>
 							</p>
 						</div>
 						<div className='privacy-policy-box'>
@@ -138,8 +136,14 @@ const PrivacyPolicy = () => {
 							</p>
 							<p style={{ paddingTop: '1em' }}>
 								Dalsze informacje na temat przetwarzania danych przez Google reCAPTCHA można znaleźć w Polityce
-								Prywatności Google: https://policies.google.com/privacy oraz w Warunkach Usługi reCAPTCHA:
-								https://www.google.com/recaptcha/
+								Prywatności Google:{' '}
+								<a href='https://policies.google.com/privacy' target='_blank' rel='noreferrer'>
+									https://policies.google.com/privacy
+								</a>{' '}
+								oraz w Warunkach Usługi reCAPTCHA:{' '}
+								<a href='https://www.google.com/recaptcha/' target='_blank' rel='noreferrer'>
+									https://www.google.com/recaptcha/
+								</a>
 							</p>
 							<p style={{ paddingTop: '1em' }}>
 								Korzystając z formularza kontaktowego, użytkownik wyraża zgodę na przetwarzanie danych przez Google w

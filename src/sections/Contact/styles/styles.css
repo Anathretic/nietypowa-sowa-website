@@ -89,6 +89,12 @@
 	font-weight: 600;
 }
 
+.contact-title-info-box a {
+	color: #e9e9e9;
+	text-underline-offset: 2px;
+	transition: color 0.3s;
+}
+
 .contact-title-icon {
 	display: none;
 }
@@ -121,7 +127,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-	.contact-title-subtext a:hover {
+	.contact-title-subtext a:hover,
+	.contact-title-info-box a:hover {
 		color: #c80c59;
 	}
 }
