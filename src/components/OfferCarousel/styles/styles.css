@@ -1,6 +1,7 @@
 .icon {
 	fill: #0f4353;
 	width: 100%;
+	transition: fill 0.3s;
 }
 
 .btn {
@@ -92,7 +93,7 @@
 }
 
 .slide--previous {
-	cursor: w-resize;
+	cursor: pointer;
 }
 
 .slide--previous:hover {
@@ -100,7 +101,7 @@
 }
 
 .slide--next {
-	cursor: e-resize;
+	cursor: pointer;
 }
 
 .slide--next:hover {
@@ -148,12 +149,6 @@
 	transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.84), transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.84);
 	pointer-events: none;
 	user-select: none;
-
-	@media (hover: hover) {
-		.slide--current & {
-			transform: translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
-		}
-	}
 }
 
 .slide-image--0 {
@@ -193,10 +188,6 @@
 		animation: fade-in calc(600ms / 2) cubic-bezier(0.25, 0.46, 0.45, 0.84) forwards;
 		visibility: visible;
 
-		@media (hover: hover) {
-			transform: translate(calc(var(--x) / var(--d) * -1px), calc(var(--y) / var(--d) * -1px));
-		}
-
 		> * + * {
 			margin-top: 2rem;
 		}
@@ -226,5 +217,15 @@
 @media screen and (min-width: 1024px) {
 	.link-btn:hover {
 		background-color: #23a1b4;
+	}
+
+	.icon:hover {
+		fill: #23a1b4;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.slide-headline {
+		font-size: 50px;
 	}
 }

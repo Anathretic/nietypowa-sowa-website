@@ -32,7 +32,7 @@ const Contact = () => {
 							</div>
 							<div>
 								<p>E-mail:</p>
-								<p>nietypowasowa@gmail.com</p>
+								<a href='mailto:nietypowasowa@gmail.com'>nietypowasowa@gmail.com</a>
 							</div>
 						</li>
 						<li>
@@ -41,7 +41,7 @@ const Contact = () => {
 							</div>
 							<div>
 								<p>Telefon:</p>
-								<p>+48 577 738 995</p>
+								<a href='tel:+48577738995'>+48 577 738 995</a>
 							</div>
 						</li>
 					</ul>
