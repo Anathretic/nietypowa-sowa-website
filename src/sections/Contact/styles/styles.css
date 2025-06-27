@@ -43,10 +43,11 @@
 
 .contact-title-subtext {
 	line-height: 1.8em;
+	font-weight: 300;
 }
 
 .contact-title-subtext span {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .contact-title-subtext a {
