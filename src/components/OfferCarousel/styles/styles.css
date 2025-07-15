@@ -6,7 +6,7 @@
 
 .btn {
 	padding: 1rem 2.5rem 1.125rem;
-	color: #e9e9e9;
+	color: #fbfbfb;
 	background-color: #c80c59;
 	border: none;
 	border-radius: 0.125rem;
@@ -99,7 +99,7 @@
 	max-height: 750px;
 	margin: 0 4vmin;
 	opacity: 0.25;
-	color: #e9e9e9;
+	color: #fbfbfb;
 	transition: opacity calc(600ms / 2) cubic-bezier(0.25, 0.46, 0.45, 0.84),
 		transform calc(600ms / 2) cubic-bezier(0.25, 0.46, 0.45, 0.84);
 	text-align: center;
@@ -149,7 +149,7 @@
 	width: 100%;
 	max-width: 645px;
 	max-height: 750px;
-	background-color: #e9e9e9;
+	background-color: #fbfbfb;
 	border-radius: 1%;
 	transition: transform calc(600ms / 4) cubic-bezier(0.25, 0.46, 0.45, 0.84);
 	overflow: hidden;
@@ -184,7 +184,7 @@
 
 .slide-headline {
 	position: relative;
-	color: #e9e9e9;
+	color: #fbfbfb;
 	padding-bottom: 5vmin;
 	font-size: 5vmin;
 	font-weight: 500;
@@ -247,7 +247,7 @@
 	}
 
 	.icon:hover {
-		fill: #e9e9e9;
+		fill: #fbfbfb;
 	}
 }
 
