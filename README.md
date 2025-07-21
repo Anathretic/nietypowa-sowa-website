@@ -17,3 +17,5 @@ I did not encounter any major problems when writing the code due to the use of r
 **Tools:** [EmailJS](https://www.emailjs.com/), [Google reCaptcha](https://www.google.com/recaptcha/about/)
 
 **URL:** [Nietypowa Sowa](https://nietypowa-sowa.pl/)
+
+_This project is closed-source and proprietary. See the LICENSE file for details._
