@@ -1,5 +1,6 @@
 {
 	"name": "Nietypowa Sowa - Aerograf",
+	"short_name": "Nietypowa Sowa",
 	"description": "Twój kask jest po prostu zwyczajny? Bak motocykla prosi się o dodatkowe kolory? Napisz, a coś na to poradzimy!",
 	"start_url": "./",
 	"scope": "/",
@@ -20,6 +21,11 @@
 		{
 			"src": "manifest-icons/icon-144.png",
 			"sizes": "144x144",
+			"type": "image/png"
+		},
+		{
+			"src": "manifest-icons/icon-512.png",
+			"sizes": "512x512",
 			"type": "image/png"
 		}
 	]

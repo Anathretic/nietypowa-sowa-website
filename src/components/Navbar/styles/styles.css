@@ -53,6 +53,10 @@
 .navbar-title-text {
 	padding: 0.5rem 0.25rem;
 	cursor: pointer;
+
+	img {
+		width: 65px;
+	}
 }
 
 .navbar-desktop {
