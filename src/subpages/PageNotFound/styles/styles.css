@@ -25,7 +25,7 @@
 .notfound-credits {
 	padding: 0.5em;
 	margin: 0.5em;
-	color: #fbfbfb;
+	color: var(--white-color);
 	font-size: 1.8em;
 	font-weight: 500;
 	text-align: center;
@@ -34,8 +34,8 @@
 .notfound-btn {
 	display: block;
 	padding: 0.75em 3.5em;
-	color: #fbfbfb;
-	background-color: #c80c59;
+	color: var(--white-color);
+	background-color: var(--pink-color);
 	border: none;
 	border-radius: 2em;
 	font-size: 1em;
@@ -83,7 +83,7 @@
 	}
 
 	.notfound-btn:hover {
-		background-color: #23a1b4;
+		background-color: var(--blue-color);
 	}
 
 	.notfound-img {

@@ -25,7 +25,7 @@
 	width: 100%;
 	max-width: 500px;
 	padding-bottom: 1.5rem;
-	font-family: 'Lavishly Yours', 'cursive';
+	font-family: var(--special-font);
 	font-size: 4.5rem;
 	font-weight: 300;
 	text-align: center;
@@ -40,8 +40,8 @@
 	display: block;
 	padding: 0.75em 3.5em;
 	margin: 3em 0;
-	color: #fbfbfb;
-	background-color: #c80c59;
+	color: var(--white-color);
+	background-color: var(--pink-color);
 	border: none;
 	border-radius: 2em;
 	font-size: 1em;
@@ -91,7 +91,7 @@
 	}
 
 	.gallery-subpage-btn:hover {
-		background-color: #23a1b4;
+		background-color: var(--blue-color);
 	}
 }
 

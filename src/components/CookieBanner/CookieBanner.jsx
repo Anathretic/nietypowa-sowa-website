@@ -12,7 +12,7 @@ const CookieBanner = ({ ...otherProps }) => {
 			buttonText='OK'
 			style={{
 				color: '#fff',
-				backgroundColor: '#C80C59',
+				backgroundColor: '#c80c59',
 				padding: '10px',
 				textAlign: 'center',
 				display: 'flex',

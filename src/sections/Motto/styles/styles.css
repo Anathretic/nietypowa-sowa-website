@@ -6,7 +6,7 @@
 
 .motto {
 	width: 100%;
-	background-color: #0f4353;
+	background-color: var(--sea-blue-color);
 	overflow: hidden;
 }
 
@@ -45,7 +45,7 @@
 	bottom: 0;
 	width: 40%;
 	height: 40px;
-	background-color: #0b313e;
+	background-color: var(--dark-sea-blue-color);
 }
 
 .motto-special-block--left {

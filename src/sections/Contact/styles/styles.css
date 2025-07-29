@@ -14,7 +14,7 @@
 
 .contact-title {
 	padding-bottom: 2.5rem;
-	font-family: 'Lavishly Yours', 'cursive';
+	font-family: var(--special-font);
 	font-size: 4.5rem;
 	font-weight: 300;
 	text-align: center;
@@ -51,7 +51,7 @@
 }
 
 .contact-title-subtext a {
-	color: #fbfbfb;
+	color: var(--white-color);
 	text-underline-offset: 2px;
 	transition: color 0.3s;
 }
@@ -91,7 +91,7 @@
 }
 
 .contact-title-info-box a {
-	color: #fbfbfb;
+	color: var(--white-color);
 	text-underline-offset: 2px;
 	transition: color 0.3s;
 }
@@ -130,7 +130,7 @@
 @media screen and (min-width: 1024px) {
 	.contact-title-subtext a:hover,
 	.contact-title-info-box a:hover {
-		color: #c80c59;
+		color: var(--pink-color);
 	}
 }
 

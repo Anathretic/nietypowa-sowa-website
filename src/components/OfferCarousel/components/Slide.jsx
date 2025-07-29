@@ -1,11 +1,12 @@
 import { useRef } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import { useSlideOptions } from '../../../hooks/useSlideOptions';
 
 export const Slide = ({ slide, current, handleSlideClick }) => {
 	const { id, main_title } = slide;
 	const slideRef = useRef(null);
 
-	const { handleMouseMove, handleMouseLeave, handleSlideBtn } = useSlideOptions({ slideRef });
+	const { handleMouseMove, handleMouseLeave } = useSlideOptions({ slideRef });
 
 	let classNames = 'slide';
 
@@ -25,9 +26,9 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 			</div>
 			<article className='slide-content'>
 				<h3 className='slide-headline'>{main_title}</h3>
-				<button type='button' className='slide-action btn link-btn' onClick={handleSlideBtn}>
+				<HashLink smooth to='/#kontakt' className='slide-action btn link-btn'>
 					Zamawiam
-				</button>
+				</HashLink>
 			</article>
 		</li>
 	);

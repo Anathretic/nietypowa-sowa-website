@@ -1,6 +1,6 @@
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useMediaQuery } from 'react-responsive';
-import { FormLoader } from '../../FormLoader/FormLoader';
+import { FormLoader } from './FormLoader';
 
 export const FormInput = ({ label, htmlFor, onChange, errorMessage, ...inputProps }) => {
 	return (
@@ -54,13 +54,9 @@ export const FormReCaptchaV2 = ({ refCaptcha, reCaptchaErrorValue }) => {
 export const FormSubmit = ({ isLoading, buttonText }) => {
 	return (
 		<div className='form-box'>
-			{isLoading ? (
-				<FormLoader />
-			) : (
-				<button type='submit' className='form-submit'>
-					{buttonText}
-				</button>
-			)}
+			<button type='submit' className={`form-submit ${isLoading && 'form-submit--is-loading'}`}>
+				{isLoading ? <FormLoader /> : buttonText}
+			</button>
 		</div>
 	);
 };

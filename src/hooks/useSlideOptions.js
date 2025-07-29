@@ -15,9 +15,5 @@ export const useSlideOptions = ({ slideRef }) => {
 		}
 	};
 
-	const handleSlideBtn = () => {
-		document.querySelector('#kontakt')?.scrollIntoView({ behavior: 'smooth' });
-	};
-
-	return { handleMouseMove, handleMouseLeave, handleSlideBtn };
+	return { handleMouseMove, handleMouseLeave };
 };

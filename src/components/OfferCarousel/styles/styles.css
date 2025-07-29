@@ -1,16 +1,16 @@
 .icon {
-	fill: #072028;
+	fill: var(--darker-sea-blue-color);
 	width: 100%;
 	transition: fill 0.3s;
 }
 
 .btn {
 	padding: 1rem 2.5rem 1.125rem;
-	color: #fbfbfb;
-	background-color: #c80c59;
+	color: var(--white-color);
+	background-color: var(--pink-color);
 	border: none;
 	border-radius: 0.125rem;
-	font-family: 'Sour Gummy', sans-serif;
+	font-family: var(--default-font);
 	font-size: inherit;
 	text-decoration: none;
 	letter-spacing: 1px;
@@ -99,7 +99,7 @@
 	max-height: 750px;
 	margin: 0 4vmin;
 	opacity: 0.25;
-	color: #fbfbfb;
+	color: var(--white-color);
 	transition: opacity calc(600ms / 2) cubic-bezier(0.25, 0.46, 0.45, 0.84),
 		transform calc(600ms / 2) cubic-bezier(0.25, 0.46, 0.45, 0.84);
 	text-align: center;
@@ -149,7 +149,7 @@
 	width: 100%;
 	max-width: 645px;
 	max-height: 750px;
-	background-color: #fbfbfb;
+	background-color: var(--white-color);
 	border-radius: 1%;
 	transition: transform calc(600ms / 4) cubic-bezier(0.25, 0.46, 0.45, 0.84);
 	overflow: hidden;
@@ -184,7 +184,7 @@
 
 .slide-headline {
 	position: relative;
-	color: #fbfbfb;
+	color: var(--white-color);
 	padding-bottom: 5vmin;
 	font-size: clamp(24px, 5vmin, 50px);
 	font-weight: 500;
@@ -243,11 +243,11 @@
 
 @media screen and (min-width: 1024px) {
 	.link-btn:hover {
-		background-color: #23a1b4;
+		background-color: var(--blue-color);
 	}
 
 	.icon:hover {
-		fill: #fbfbfb;
+		fill: var(--white-color);
 	}
 }
 

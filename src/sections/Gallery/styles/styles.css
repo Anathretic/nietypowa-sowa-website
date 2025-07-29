@@ -9,7 +9,7 @@
 	position: relative;
 	padding: 30px 0 40px;
 	width: 100%;
-	background-color: #0b313e;
+	background-color: var(--dark-sea-blue-color);
 	overflow-x: hidden;
 }
 
@@ -29,7 +29,7 @@
 	width: 100%;
 	max-width: 500px;
 	padding-bottom: 1.5rem;
-	font-family: 'Lavishly Yours', 'cursive';
+	font-family: var(--special-font);
 	font-size: 4.5rem;
 	font-weight: 300;
 	text-align: center;
@@ -44,8 +44,8 @@
 	display: block;
 	padding: 0.75em 3.5em;
 	margin: 3em 0;
-	color: #fbfbfb;
-	background-color: #c80c59;
+	color: var(--white-color);
+	background-color: var(--pink-color);
 	border: none;
 	border-radius: 2em;
 	font-size: 1em;
@@ -61,7 +61,7 @@
 	bottom: 0;
 	width: 40%;
 	height: 40px;
-	background-color: #072028;
+	background-color: var(--darker-sea-blue-color);
 }
 
 .gallery-special-block--left {
@@ -154,7 +154,7 @@
 	}
 
 	.gallery-btn:hover {
-		background-color: #23a1b4;
+		background-color: var(--blue-color);
 	}
 }
 
