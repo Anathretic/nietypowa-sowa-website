@@ -30,10 +30,10 @@
 .form-textarea {
 	padding: 0.95em 3.25em 0.95em 0.75em;
 	width: 100%;
-	color: #fbfbfb;
+	color: var(--white-color);
 	background-color: transparent;
-	border: 1px solid #fbfbfb;
-	font-family: 'Sour Gummy', sans-serif;
+	border: 1px solid var(--white-color);
+	font-family: var(--default-font);
 	font-size: 0.9em;
 	letter-spacing: 1px;
 	transition: border 0.3s;
@@ -48,8 +48,8 @@
 
 .form-input:focus,
 .form-textarea:focus {
-	border-color: #23a1b4;
-	outline: #23a1b4;
+	border-color: var(--blue-color);
+	outline: var(--blue-color);
 }
 
 .form-input::placeholder,
@@ -61,7 +61,7 @@
 .form-input-error,
 .form-textarea-error,
 .form-recaptcha-error {
-	color: #c80c59;
+	color: var(--pink-color);
 	text-align: center;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .form-recaptcha-box-error div div div div iframe {
-	border: 3px solid #c80c59;
+	border: 3px solid var(--pink-color);
 }
 
 form input:invalid[focused='true'] ~ span,
@@ -96,7 +96,7 @@ form textarea:invalid[focused='true'] ~ span {
 
 form input:invalid[focused='true'],
 form textarea:invalid[focused='true'] {
-	border: 1px solid #c80c59;
+	border: 1px solid var(--pink-color);
 }
 
 .form-submit {
@@ -105,17 +105,31 @@ form textarea:invalid[focused='true'] {
 	align-items: center;
 	padding: 0.75em 3.5em;
 	margin: 1em 1em 1.25em;
-	color: #fbfbfb;
-	background-color: #c80c59;
+	width: 215px;
+	color: var(--white-color);
+	background-color: var(--pink-color);
 	border: none;
 	border-radius: 2em;
 	font-size: 1em;
-	font-family: 'Sour Gummy', sans-serif;
+	font-family: var(--default-font);
 	text-align: center;
 	text-decoration: none;
 	transition: background-color 0.3s;
 	cursor: pointer;
 	z-index: 10;
+}
+
+.form-submit--is-loading {
+	pointer-events: none;
+}
+
+.form-loader {
+	height: 20.5px;
+	aspect-ratio: 2.5;
+	--_g: no-repeat radial-gradient(farthest-side, var(--white-color) 90%, #0000);
+	background: var(--_g), var(--_g), var(--_g), var(--_g);
+	background-size: 20% 50%;
+	animation: loader-animation 1.5s infinite linear;
 }
 
 @media screen and (min-width: 400px) {
@@ -160,6 +174,10 @@ form textarea:invalid[focused='true'] {
 	}
 
 	.form-submit:hover {
-		background-color: #23a1b4;
+		background-color: var(--blue-color);
+	}
+
+	.form-loader {
+		height: 22.5px;
 	}
 }

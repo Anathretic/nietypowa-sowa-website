@@ -9,7 +9,7 @@
 	position: relative;
 	width: 1em;
 	height: 1em;
-	color: #fbfbfb;
+	color: var(--white-color);
 	font-size: 90px;
 	border-radius: 50%;
 	overflow: hidden;

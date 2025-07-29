@@ -27,7 +27,7 @@ const PageNotFound = () => {
 					<div className='notfound-container'>
 						<img
 							src={NotFoundImg}
-							alt='Error-404 image by Storyset - https://storyset.com/web'
+							alt='Obrazek przedstawiający błąd 404 dostarczony przez - https://storyset.com/web'
 							className='notfound-img'
 						/>
 						<h1 className='notfound-credits'>Ups! Strony nie znaleziono..</h1>

@@ -21,7 +21,7 @@
 .welcome-title {
 	font-size: 4.5rem;
 	font-weight: 300;
-	font-family: 'Lavishly Yours', 'cursive';
+	font-family: var(--special-font);
 	text-align: center;
 }
 
@@ -40,7 +40,7 @@
 
 .welcome-arrow-icon {
 	font-size: 52px;
-	color: #fbfbfb;
+	color: var(--white-color);
 }
 
 @media screen and (min-width: 350px) {

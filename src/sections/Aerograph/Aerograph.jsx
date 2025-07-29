@@ -16,8 +16,8 @@ const Aerograph = () => {
 						dokładności pozwala na tworzenie detali na poziomie mikroskalowym, który jest nieosiągalny dla tradycyjnych
 						pędzli.
 					</p>
-					<div className='aerograph-special-decoration' />
 				</div>
+				<div className='aerograph-special-decoration' />
 				<div className='aerograph-text-content-box'>
 					<GiBlackBook fontSize={56} color='c80c59' />
 					<h3>Historia od XIX wieku</h3>
@@ -27,8 +27,8 @@ const Aerograph = () => {
 						pierwotnie wykorzystywane do malowania portretów, ale szybko znalazło swoje miejsce w innych dziedzinach, na
 						przykład reklamie.
 					</p>
-					<div className='aerograph-special-decoration' />
 				</div>
+				<div className='aerograph-special-decoration' />
 				<div className='aerograph-text-content-box'>
 					<GiLaptop fontSize={56} color='c80c59' />
 					<h3>Połączenie z cyfrową sztuką</h3>

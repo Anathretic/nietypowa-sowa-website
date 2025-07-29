@@ -24,8 +24,8 @@
 
 .offer {
 	padding: 30px 0 90px;
-	background-color: #c4c4c4;
-	color: #072028;
+	background-color: var(--gray-color);
+	color: var(--darker-sea-blue-color);
 	overflow-x: hidden;
 }
 
@@ -36,8 +36,8 @@
 
 .offer-title {
 	padding-bottom: 2.5rem;
-	color: #072028;
-	font-family: 'Lavishly Yours', 'cursive';
+	color: var(--darker-sea-blue-color);
+	font-family: var(--special-font);
 	font-size: 4.5rem;
 	font-weight: 300;
 	text-align: center;
@@ -48,7 +48,7 @@
 	bottom: 0;
 	width: 40%;
 	height: 40px;
-	background-color: #0f4353;
+	background-color: var(--sea-blue-color);
 }
 
 .offer-special-block--left {
