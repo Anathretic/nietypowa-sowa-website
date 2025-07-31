@@ -7,30 +7,16 @@ import './styles/styles.css';
 const CookieBanner = ({ ...otherProps }) => {
 	return (
 		<CookieConsent
-			buttonId='cookie-btn'
+			disableStyles={true}
+			containerClasses='cookie-banner-container'
+			buttonClasses='cookie-banner-button'
 			location='bottom'
-			buttonText='OK'
-			style={{
-				color: '#fff',
-				backgroundColor: '#c80c59',
-				padding: '10px',
-				textAlign: 'center',
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-			}}
-			buttonStyle={{
-				backgroundColor: '#ffdf00',
-				fontSize: '15px',
-				padding: '10px',
-				width: '100px',
-				borderRadius: '8px',
-			}}
+			buttonText='Zamknij'
 			expires={1}
 			{...otherProps}>
-			<p className='cookie-text'>
+			<p className='cookie-banner-text'>
 				Ta strona używa plików cookie wyłącznie w celach technicznych (np. google reCaptcha). Dowiedz się więcej z{' '}
-				<Link to='/polityka-prywatnosci' onClick={scrollToTop} className='cookie-anchor'>
+				<Link to='/polityka-prywatnosci' onClick={scrollToTop} className='cookie-banner-anchor'>
 					polityki prywatności
 				</Link>
 				.
