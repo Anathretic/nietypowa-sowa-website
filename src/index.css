@@ -6,6 +6,8 @@
 	--sea-blue-color: #0f4353;
 	--dark-sea-blue-color: #0b313e;
 	--darker-sea-blue-color: #072028;
+	--yellow-color: #ffdf00;
+	--darker-yellow-color: #ebcb00;
 	--default-font: 'Sour Gummy', sans-serif;
 	--special-font: 'Lavishly Yours', 'cursive';
 }
@@ -30,24 +32,6 @@ body {
 	font-family: var(--default-font);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-@media screen and (min-width: 1358px) {
-	#cookie-btn {
-		margin-right: 7rem !important;
-	}
-}
-
-@media screen and (min-width: 1536px) {
-	#cookie-btn {
-		margin-right: 9rem !important;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	#cookie-btn {
-		margin-right: 12.5rem !important;
-	}
 }
 
 /* Gallery mosaic */
