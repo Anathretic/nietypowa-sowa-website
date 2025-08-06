@@ -5,7 +5,6 @@ import { SubpageLoader } from './components/Loader/Loader';
 import { Aerograph, Contact, Gallery, Welcome, Offer, Motto } from './sections';
 import { delaySubpageImport } from './helpers/delaySubpageImport';
 
-const GallerySubpage = lazy(() => delaySubpageImport(() => import('./subpages/GallerySubpage/GallerySubpage'), 1000));
 const PrivacyPolicy = lazy(() => delaySubpageImport(() => import('./subpages/PrivacyPolicy/PrivacyPolicy'), 1000));
 const PageNotFound = lazy(() => delaySubpageImport(() => import('./subpages/PageNotFound/PageNotFound'), 1000));
 
@@ -43,14 +42,6 @@ const App = () => {
 						}
 					/>
 				</Route>
-				<Route
-					path='/galeria-prac'
-					element={
-						<Suspense key={location.pathname} fallback={<SubpageLoader />}>
-							<GallerySubpage />
-						</Suspense>
-					}
-				/>
 				<Route
 					path='/polityka-prywatnosci'
 					element={
