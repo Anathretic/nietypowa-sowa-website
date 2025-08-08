@@ -12,7 +12,7 @@ import { BsCheck2All } from 'react-icons/bs';
 
 import './styles/styles.css';
 
-export const ContactForm = ({ formRef }) => {
+export const ContactForm = () => {
 	const [focused, setFocused] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 	const [reCaptchaErrorValue, setReCaptchaErrorValue] = useState('');
@@ -50,7 +50,7 @@ export const ContactForm = ({ formRef }) => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className='contact-form' ref={formRef}>
+		<form onSubmit={handleSubmit} className='contact-form' id='formularz'>
 			{inputData.map(input => (
 				<FormInput
 					key={input.id}

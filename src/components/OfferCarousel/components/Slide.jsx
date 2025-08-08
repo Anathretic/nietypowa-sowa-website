@@ -1,12 +1,11 @@
 import { useContext, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useSlideOptions } from '../../../hooks/useSlideOptions';
 import { TopicSelectContext } from '../../../context/TopicSelectContext';
+import { HashLink } from 'react-router-hash-link';
 
-export const Slide = ({ slide, current, handleSlideClick, formRef }) => {
+export const Slide = ({ slide, current, handleSlideClick }) => {
 	const { id, main_title } = slide;
 	const slideRef = useRef(null);
-	const navigate = useNavigate();
 
 	const { handleMouseMove, handleMouseLeave } = useSlideOptions({ slideRef });
 	const { setSelectedTopic } = useContext(TopicSelectContext);
@@ -19,8 +18,6 @@ export const Slide = ({ slide, current, handleSlideClick, formRef }) => {
 
 	const handleSlideBtn = () => {
 		setSelectedTopic(main_title);
-		if (formRef) formRef.current?.scrollIntoView({ behavior: 'smooth' });
-		navigate('#formularz', { replace: true });
 	};
 
 	return (
@@ -35,9 +32,9 @@ export const Slide = ({ slide, current, handleSlideClick, formRef }) => {
 			</div>
 			<article className='slide-content'>
 				<h3 className='slide-headline'>{main_title}</h3>
-				<button type='button' className='slide-action btn link-btn' onClick={handleSlideBtn}>
+				<HashLink smooth to='/#formularz' className='slide-action btn link-btn' onClick={handleSlideBtn}>
 					Zamawiam
-				</button>
+				</HashLink>
 			</article>
 		</li>
 	);

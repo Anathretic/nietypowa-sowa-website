@@ -6,7 +6,7 @@ import { Slide } from './components/Slide';
 
 import './styles/styles.css';
 
-export const OfferCarousel = ({ slides, formRef }) => {
+export const OfferCarousel = ({ slides }) => {
 	const [current, setCurrent] = useState(1);
 
 	const { handleNextClick, handlePreviousClick, handleSlideClick, wrapperTransform } = useCarouselOptions({
@@ -24,7 +24,7 @@ export const OfferCarousel = ({ slides, formRef }) => {
 		<div className='slider' ref={sliderRef}>
 			<ul className='slider-wrapper' style={wrapperTransform}>
 				{slides.map(slide => (
-					<Slide key={slide.id} slide={slide} current={current} handleSlideClick={handleSlideClick} formRef={formRef} />
+					<Slide key={slide.id} slide={slide} current={current} handleSlideClick={handleSlideClick} />
 				))}
 			</ul>
 			<div className='slider-controls-wrapper'>

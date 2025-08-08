@@ -6,7 +6,7 @@ import { GiOwl } from 'react-icons/gi';
 
 import './styles/styles.css';
 
-const Contact = ({ formRef }) => {
+const Contact = () => {
 	return (
 		<section className='contact' id='kontakt'>
 			<div className='contact-container'>
@@ -49,7 +49,7 @@ const Contact = ({ formRef }) => {
 					<GiOwl className='contact-title-icon contact-title-icon--second' fontSize={66} />
 					<GiOwl className='contact-title-icon contact-title-icon--third' fontSize={54} />
 				</div>
-				<ContactForm formRef={formRef} />
+				<ContactForm />
 			</div>
 		</section>
 	);
