@@ -5,6 +5,7 @@ export const useContactFormInputs = () => {
 		username: '',
 		email: '',
 		phone: '',
+		topic: '',
 		message: '',
 	});
 

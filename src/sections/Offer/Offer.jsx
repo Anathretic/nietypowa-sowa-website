@@ -4,7 +4,7 @@ import { offerCarouselConfig } from '../../config/offerCarouselConfig/offerCarou
 
 import './styles/styles.css';
 
-const Offer = () => {
+const Offer = ({ formRef }) => {
 	const OfferCarouselMemoized = memo(OfferCarousel);
 
 	return (
@@ -12,7 +12,7 @@ const Offer = () => {
 			<div className='offer-container'>
 				<div className='offer-wrapper'>
 					<h2 className='offer-title'>Oferta</h2>
-					<OfferCarouselMemoized slides={offerCarouselConfig} />
+					<OfferCarouselMemoized slides={offerCarouselConfig} formRef={formRef} />
 				</div>
 			</div>
 			<div className='offer-special-block offer-special-block--left' />

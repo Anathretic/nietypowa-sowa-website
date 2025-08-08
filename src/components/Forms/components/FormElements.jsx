@@ -33,6 +33,24 @@ export const FormTextarea = ({ label, htmlFor, onChange, errorMessage, ...textar
 	);
 };
 
+export const FormSelect = ({ label, htmlFor, onChange, errorMessage, labelValueArr, ...selectProps }) => {
+	return (
+		<div className='form-box'>
+			<label htmlFor={htmlFor} className='form-label'>
+				{label}:
+			</label>
+			<select className='form-select' onChange={onChange} {...selectProps}>
+				{labelValueArr.map(({ value, label, disabled }) => (
+					<option key={value} value={value} disabled={disabled}>
+						{label}
+					</option>
+				))}
+			</select>
+			<span className='form-select-error'>{errorMessage}</span>
+		</div>
+	);
+};
+
 export const FormReCaptchaV2 = ({ refCaptcha, reCaptchaErrorValue }) => {
 	const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
 

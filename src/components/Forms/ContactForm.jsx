@@ -1,16 +1,18 @@
-import { useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import emailjs from '@emailjs/browser';
-import { useContactFormInputs } from '../../hooks/useContactFormInputs';
-import { useContactFormButton } from '../../hooks/useContactFormButton';
-import { FormInput, FormReCaptchaV2, FormSubmit, FormTextarea } from './components/FormElements';
+import { useContactFormInputs } from '../../hooks/useContact/useContactFormInputs';
+import { useContactFormButton } from '../../hooks/useContact/useContactFormButton';
+import { useFormSubmit } from '../../hooks/useForm/useFormSubmit';
+import { TopicSelectContext } from '../../context/TopicSelectContext';
+import { FormInput, FormReCaptchaV2, FormSelect, FormSubmit, FormTextarea } from './components/FormElements';
 import { inputData } from '../../config/inputsConfig/inputData';
+import { selectData } from '../../config/inputsConfig/selectData';
 import { textareaData } from '../../config/inputsConfig/textareaData';
 import { BsCheck2All } from 'react-icons/bs';
 
 import './styles/styles.css';
 
-export const ContactForm = () => {
+export const ContactForm = ({ formRef }) => {
 	const [focused, setFocused] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 	const [reCaptchaErrorValue, setReCaptchaErrorValue] = useState('');
@@ -20,61 +22,52 @@ export const ContactForm = () => {
 
 	const isMobile = useMediaQuery({ query: '(max-width: 1023px)' });
 
+	const { selectedTopic } = useContext(TopicSelectContext);
+
 	const refCaptcha = useRef(null);
 
-	const handleSubmit = async e => {
-		e.preventDefault();
+	const { handleSubmit } = useFormSubmit({
+		setIsLoading,
+		setReCaptchaErrorValue,
+		refCaptcha,
+		values,
+		setValues,
+		setButtonText,
+		setFocused,
+		specialIcon: <BsCheck2All color='#FFFFFF' fontSize={isMobile ? 21 : 23} />,
+	});
 
-		setIsLoading(true);
-		setReCaptchaErrorValue('');
-		const token = await refCaptcha.current.getValue();
-		refCaptcha.current.reset();
-
-		const params = {
-			...values,
-			'g-recaptcha-response': token,
-		};
-
-		if (token) {
-			const sendMsg = emailjs
-				.send(
-					`${import.meta.env.VITE_SERVICE_ID}`,
-					`${import.meta.env.VITE_TEMPLATE_ID}`,
-					params,
-					`${import.meta.env.VITE_PUBLIC_KEY}`
-				)
-				.then(
-					function () {
-						setValues({ username: '', email: '', phone: '', message: '' });
-						setButtonText(<BsCheck2All color='#FFFFFF' fontSize={isMobile ? 21 : 23} />);
-					},
-					function () {
-						setReCaptchaErrorValue('Coś poszło nie tak..');
-					}
-				)
-				.finally(() => {
-					setFocused(false);
-					setIsLoading(false);
-				});
-			return sendMsg;
-		} else {
-			setIsLoading(false);
-			setReCaptchaErrorValue('Nie bądź 🤖!');
-		}
-	};
+	useEffect(() => {
+		if (selectedTopic)
+			setValues(prev => ({
+				...prev,
+				topic: selectedTopic || '',
+			}));
+	}, [selectedTopic]);
 
 	const handleFocus = () => {
 		setFocused(true);
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className='contact-form'>
+		<form onSubmit={handleSubmit} className='contact-form' ref={formRef}>
 			{inputData.map(input => (
 				<FormInput
 					key={input.id}
 					htmlFor={input.name}
 					{...input}
 					value={values[input.name]}
+					onChange={handleInputValue}
+					onInvalid={handleFocus}
+					focused={focused.toString()}
+				/>
+			))}
+			{selectData.map(select => (
+				<FormSelect
+					key={select.id}
+					htmlFor={select.name}
+					{...select}
+					value={values[select.name]}
 					onChange={handleInputValue}
 					onInvalid={handleFocus}
 					focused={focused.toString()}
