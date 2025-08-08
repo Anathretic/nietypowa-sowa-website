@@ -197,18 +197,18 @@
 	}
 
 	.contact-title-icon--first {
-		bottom: 0.5em;
-		left: 5.6em;
+		bottom: -0.9em;
+		left: 5.4em;
 	}
 
 	.contact-title-icon--second {
-		bottom: -0.4em;
-		left: 7.1em;
+		bottom: -1.8em;
+		left: 6.9em;
 	}
 
 	.contact-title-icon--third {
-		bottom: 1.6em;
-		left: 9.2em;
+		bottom: -0.2em;
+		left: 9em;
 	}
 }
 
