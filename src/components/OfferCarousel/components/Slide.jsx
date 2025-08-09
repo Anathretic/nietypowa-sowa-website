@@ -1,7 +1,8 @@
 import { useContext, useRef } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import { HashLink } from 'react-router-hash-link';
 import { useSlideOptions } from '../../../hooks/useSlideOptions';
 import { TopicSelectContext } from '../../../context/TopicSelectContext';
-import { HashLink } from 'react-router-hash-link';
 
 export const Slide = ({ slide, current, handleSlideClick }) => {
 	const { id, main_title } = slide;
@@ -10,15 +11,13 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 	const { handleMouseMove, handleMouseLeave } = useSlideOptions({ slideRef });
 	const { setSelectedTopic } = useContext(TopicSelectContext);
 
+	const isScreenLarge = useMediaQuery({ query: '(min-width: 1358px)' });
+
 	let classNames = 'slide';
 
 	if (current === id) classNames += ' slide--current';
 	else if (current - 1 === id) classNames += ' slide--previous';
 	else if (current + 1 === id) classNames += ' slide--next';
-
-	const handleSlideBtn = () => {
-		setSelectedTopic(main_title);
-	};
 
 	return (
 		<li
@@ -32,7 +31,11 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 			</div>
 			<article className='slide-content'>
 				<h3 className='slide-headline'>{main_title}</h3>
-				<HashLink smooth to='/#formularz' className='slide-action btn link-btn' onClick={handleSlideBtn}>
+				<HashLink
+					smooth
+					to={`/?topic=${encodeURIComponent(main_title)}${isScreenLarge ? '#kontakt' : '#formularz'}`}
+					className='slide-action btn link-btn'
+					onClick={() => setSelectedTopic(main_title)}>
 					Zamawiam
 				</HashLink>
 			</article>
