@@ -10,7 +10,14 @@ export const useContactFormInputs = () => {
 	});
 
 	const handleInputValue = e => {
-		setValues({ ...values, [e.target.name]: e.target.value });
+		const { name, value } = e.target;
+		setValues(prev => ({ ...prev, [name]: value }));
+
+		if (name === 'topic') {
+			const url = new URL(window.location);
+			url.searchParams.set('topic', value);
+			window.history.replaceState(null, '', url);
+		}
 	};
 
 	return { values, setValues, handleInputValue };

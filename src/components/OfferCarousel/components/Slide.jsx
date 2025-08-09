@@ -33,7 +33,7 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 				<h3 className='slide-headline'>{main_title}</h3>
 				<HashLink
 					smooth
-					to={`/?topic=${encodeURIComponent(main_title)}${isScreenLarge ? '#kontakt' : '#formularz'}`}
+					to={`/?${new URLSearchParams({ topic: main_title }).toString()}${isScreenLarge ? '#kontakt' : '#formularz'}`}
 					className='slide-action btn link-btn'
 					onClick={() => setSelectedTopic(main_title)}>
 					Zamawiam

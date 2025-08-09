@@ -12,10 +12,11 @@ export const useUrlWithTopic = () => {
 
 				if (el) {
 					el.scrollIntoView({ behavior: 'smooth' });
+					const params = new URLSearchParams();
+					params.set('topic', topic);
 
-					const fullUrl = `${location.pathname}?topic=${encodeURIComponent(topic)}${
-						isScreenLarge ? '#kontakt' : '#formularz'
-					}`;
+					const fullUrl = `${location.pathname}?${params.toString()}${isScreenLarge ? '#kontakt' : '#formularz'}`;
+
 					window.history.replaceState(null, '', fullUrl);
 				}
 			});
