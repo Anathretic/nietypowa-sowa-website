@@ -3,6 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useContactFormInputs } from '../../hooks/useContact/useContactFormInputs';
 import { useContactFormButton } from '../../hooks/useContact/useContactFormButton';
 import { useFormSubmit } from '../../hooks/useForm/useFormSubmit';
+import { useUrlWithTopic } from '../../hooks/useUrlWithTopic';
 import { TopicSelectContext } from '../../context/TopicSelectContext';
 import { FormInput, FormReCaptchaV2, FormSelect, FormSubmit, FormTextarea } from './components/FormElements';
 import { inputData } from '../../config/inputsConfig/inputData';
@@ -17,10 +18,12 @@ export const ContactForm = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [reCaptchaErrorValue, setReCaptchaErrorValue] = useState('');
 
-	const [values, setValues, handleInputValue] = useContactFormInputs();
-	const [buttonText, setButtonText] = useContactFormButton();
+	const { values, setValues, handleInputValue } = useContactFormInputs();
+	const { buttonText, setButtonText } = useContactFormButton();
+	const { goToValidHashWithTopic } = useUrlWithTopic();
 
 	const isMobile = useMediaQuery({ query: '(max-width: 1023px)' });
+	const isScreenLarge = useMediaQuery({ query: '(min-width: 1358px)' });
 
 	const { selectedTopic } = useContext(TopicSelectContext);
 
@@ -37,6 +40,12 @@ export const ContactForm = () => {
 		specialIcon: <BsCheck2All color='#FFFFFF' fontSize={isMobile ? 21 : 23} />,
 	});
 
+	const handleFocus = () => {
+		setFocused(true);
+	};
+
+	useEffect(() => goToValidHashWithTopic({ isScreenLarge }), []);
+
 	useEffect(() => {
 		if (selectedTopic)
 			setValues(prev => ({
@@ -44,10 +53,6 @@ export const ContactForm = () => {
 				topic: selectedTopic || '',
 			}));
 	}, [selectedTopic]);
-
-	const handleFocus = () => {
-		setFocused(true);
-	};
 
 	return (
 		<form onSubmit={handleSubmit} className='contact-form' id='formularz'>

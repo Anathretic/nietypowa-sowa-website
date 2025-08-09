@@ -13,5 +13,5 @@ export const useContactFormInputs = () => {
 		setValues({ ...values, [e.target.name]: e.target.value });
 	};
 
-	return [values, setValues, handleInputValue];
+	return { values, setValues, handleInputValue };
 };

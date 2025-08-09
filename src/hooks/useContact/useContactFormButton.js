@@ -13,5 +13,5 @@ export const useContactFormButton = () => {
 		return () => clearTimeout(buttonTimeout);
 	}, [buttonText]);
 
-	return [buttonText, setButtonText];
+	return { buttonText, setButtonText };
 };
