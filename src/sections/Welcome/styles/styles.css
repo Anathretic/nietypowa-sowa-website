@@ -23,6 +23,8 @@
 	font-weight: 300;
 	font-family: var(--special-font);
 	text-align: center;
+	transform: translateX(-400%);
+	animation: title-slide 1.5s forwards;
 }
 
 .welcome-button {

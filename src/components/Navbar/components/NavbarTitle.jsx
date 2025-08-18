@@ -20,9 +20,9 @@ export const NavbarTitle = ({ divRef }) => {
 	return (
 		<div className='navbar-title' onClick={scrollToTop}>
 			<div className='navbar-title-box'>
-				<h2 className='navbar-title-text'>
+				<div className='navbar-title-text'>
 					<img src={NavLogo} alt='Logo przenoszące na początek strony' />
-				</h2>
+				</div>
 			</div>
 		</div>
 	);
