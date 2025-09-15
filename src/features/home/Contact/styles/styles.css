@@ -135,7 +135,7 @@
 
 	.contact-title-subtext a:active,
 	.contact-title-info-box a:active {
-		opacity: 0;
+		opacity: 0.55;
 	}
 }
 
