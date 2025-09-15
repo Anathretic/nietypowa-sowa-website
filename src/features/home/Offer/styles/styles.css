@@ -24,6 +24,7 @@
 
 .offer {
 	padding: 30px 0 90px;
+	width: 100%;
 	background-color: var(--gray-color);
 	color: var(--darker-sea-blue-color);
 	overflow-x: hidden;

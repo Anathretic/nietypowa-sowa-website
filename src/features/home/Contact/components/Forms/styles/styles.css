@@ -144,6 +144,10 @@ form textarea:invalid[focused='true'] {
 	z-index: 10;
 }
 
+.form-submit:active {
+	transform: translateY(1px);
+}
+
 .form-submit--is-loading {
 	pointer-events: none;
 }

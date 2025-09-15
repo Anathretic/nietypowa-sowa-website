@@ -132,6 +132,11 @@
 	.contact-title-info-box a:hover {
 		color: var(--pink-color);
 	}
+
+	.contact-title-subtext a:active,
+	.contact-title-info-box a:active {
+		opacity: 0;
+	}
 }
 
 @media screen and (min-width: 1358px) {

@@ -31,6 +31,10 @@
 	cursor: pointer;
 }
 
+.cookie-banner-button:active {
+	transform: translateY(1px);
+}
+
 .cookie-banner-text {
 	padding: 0.25em;
 	max-width: 380px;
