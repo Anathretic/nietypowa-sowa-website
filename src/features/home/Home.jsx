@@ -37,7 +37,7 @@ export const Home = () => {
 				<meta property='og:url' content='https://nietypowa-sowa.pl' />
 				<link rel='canonical' href='https://nietypowa-sowa.pl' />
 			</Helmet>
-			<main>
+			<main className='special-main'>
 				<Welcome />
 				<Aerograph />
 				<Offer />
