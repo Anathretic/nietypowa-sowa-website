@@ -68,6 +68,10 @@
 		color: var(--darker-yellow-color);
 	}
 
+	.cookie-banner-anchor:active {
+		opacity: 0.55;
+	}
+
 	.cookie-banner-button:hover {
 		background-color: var(--darker-yellow-color);
 	}
