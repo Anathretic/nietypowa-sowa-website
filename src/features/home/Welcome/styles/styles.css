@@ -9,7 +9,6 @@
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	max-width: 2720px;
 	max-height: 1820px;
 	background-image: url('../../../../images/welcome-section/hero-bg.jpg');
 	background-size: cover;
