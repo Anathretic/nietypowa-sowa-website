@@ -5,6 +5,8 @@ export const TopicSelectContext = createContext(null);
 
 const TopicSelectProvider = ({ children }) => {
 	const [selectedTopic, setSelectedTopic] = useState('');
+	const [fromSelect, setFromSelect] = useState(false);
+
 	const location = useLocation();
 
 	useEffect(() => {
@@ -12,11 +14,14 @@ const TopicSelectProvider = ({ children }) => {
 
 		if (topicFromURL) {
 			setSelectedTopic(topicFromURL);
+			setFromSelect(false);
 		}
 	}, [location.search]);
 
 	return (
-		<TopicSelectContext.Provider value={{ selectedTopic, setSelectedTopic }}>{children}</TopicSelectContext.Provider>
+		<TopicSelectContext.Provider value={{ selectedTopic, setSelectedTopic, fromSelect, setFromSelect }}>
+			{children}
+		</TopicSelectContext.Provider>
 	);
 };
 

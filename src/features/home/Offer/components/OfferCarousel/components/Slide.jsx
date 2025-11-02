@@ -35,7 +35,7 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 					smooth
 					to={`/?${new URLSearchParams({ topic: main_title }).toString()}${isScreenLarge ? '#kontakt' : '#formularz'}`}
 					className='slide-action btn link-btn'
-					onClick={() => setSelectedTopic(main_title)}>
+					onClick={() => requestAnimationFrame(() => setSelectedTopic(main_title))}>
 					Zamawiam
 				</HashLink>
 			</article>

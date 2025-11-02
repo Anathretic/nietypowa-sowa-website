@@ -19,16 +19,13 @@ export const ContactForm = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [reCaptchaErrorValue, setReCaptchaErrorValue] = useState('');
 
+	const refCaptcha = useRef(null);
+	const { selectedTopic, fromSelect, setFromSelect } = useContext(TopicSelectContext);
 	const { values, setValues, handleInputValue } = useContactFormInputs();
 	const { buttonText, setButtonText } = useContactFormButton();
 	const { goToValidHashWithTopic } = useUrlWithTopic();
-
 	const isMobile = useMediaQuery({ query: '(max-width: 1023px)' });
 	const isScreenLarge = useMediaQuery({ query: '(min-width: 1358px)' });
-
-	const { selectedTopic } = useContext(TopicSelectContext);
-
-	const refCaptcha = useRef(null);
 
 	const { handleSubmit } = useFormSubmit({
 		setIsLoading,
@@ -45,14 +42,17 @@ export const ContactForm = () => {
 		setFocused(true);
 	};
 
-	useEffect(() => goToValidHashWithTopic({ isScreenLarge }), []);
-
 	useEffect(() => {
-		if (selectedTopic)
-			setValues(prev => ({
-				...prev,
-				topic: selectedTopic || '',
-			}));
+		if (!selectedTopic) return;
+		setValues(prev => ({
+			...prev,
+			topic: selectedTopic,
+		}));
+
+		if (!fromSelect) {
+			goToValidHashWithTopic({ isScreenLarge });
+		}
+		setFromSelect(false);
 	}, [selectedTopic]);
 
 	return (
@@ -71,7 +71,7 @@ export const ContactForm = () => {
 			{selectData.map(select => (
 				<FormSelect
 					key={select.id}
-					htmlFor={select.name}
+					htmlFor={`${select.name}`}
 					{...select}
 					value={values[select.name]}
 					onChange={handleInputValue}

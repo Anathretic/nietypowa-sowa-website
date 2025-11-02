@@ -171,15 +171,15 @@
 }
 
 .slide-image--0 {
-	background-image: url('../../../../../../images/offer-section/small-images/offer-first-image.jpg');
+	background-image: url('../../../../../../images/home/offer/small-images/offer-first-image.jpg');
 }
 
 .slide-image--1 {
-	background-image: url('../../../../../../images/offer-section/small-images/offer-second-image.jpg');
+	background-image: url('../../../../../../images/home/offer/small-images/offer-second-image.jpg');
 }
 
 .slide-image--2 {
-	background-image: url('../../../../../../images/offer-section/small-images/offer-third-image.jpg');
+	background-image: url('../../../../../../images/home/offer/small-images/offer-third-image.jpg');
 }
 
 .slide-headline {
@@ -221,15 +221,15 @@
 
 @media screen and (min-width: 768px) {
 	.slide-image--0 {
-		background-image: url('../../../../../../images/offer-section/xl-images/offer-first-image.jpg');
+		background-image: url('../../../../../../images/home/offer/xl-images/offer-first-image.jpg');
 	}
 
 	.slide-image--1 {
-		background-image: url('../../../../../../images/offer-section/xl-images/offer-second-image.jpg');
+		background-image: url('../../../../../../images/home/offer/xl-images/offer-second-image.jpg');
 	}
 
 	.slide-image--2 {
-		background-image: url('../../../../../../images/offer-section/xl-images/offer-third-image.jpg');
+		background-image: url('../../../../../../images/home/offer/xl-images/offer-third-image.jpg');
 	}
 }
 

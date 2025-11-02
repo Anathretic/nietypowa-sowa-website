@@ -4,7 +4,7 @@ import { scrollToTop } from '../../shared/utils/scrollToTopUtils';
 
 import './styles/styles.css';
 
-import NotFoundImg from '../../images/notfound-subpage/notfound-img.svg';
+import NotFoundImg from '../../images/page-not-found/page-not-found-img.svg';
 
 const PageNotFound = () => {
 	const currentUrl = window.location.href;
@@ -12,13 +12,13 @@ const PageNotFound = () => {
 	return (
 		<>
 			<Helmet htmlAttributes={{ lang: 'pl' }}>
-				<title>Strona nie znaleziona | Nietypowa Sowa</title>
+				<title>Strona nie istnieje | Nietypowa Sowa</title>
 				<meta
 					name='description'
 					content='Ups! Wygląda na to, że ta strona nie istnieje. Sprawdź adres lub wróć na stronę główną.'
 				/>
-				<meta property='og:title' content='Strona nie znaleziona | Nietypowa Sowa' />
-				<meta property='og:description' content='Nie znaleziono strony. Przekieruj się do naszej oferty.' />
+				<meta property='og:title' content='Strona nie istnieje | Nietypowa Sowa' />
+				<meta property='og:description' content='Nie znaleziono strony. Przekieruj się do mojej oferty.' />
 				<meta property='og:type' content='website' />
 				<meta property='og:url' content={currentUrl} />
 				<meta name='robots' content='noindex, nofollow' />
