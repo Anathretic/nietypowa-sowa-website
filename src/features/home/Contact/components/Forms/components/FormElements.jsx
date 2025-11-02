@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useMediaQuery } from 'react-responsive';
+import { TopicSelectContext } from '../../../../../../shared/context/TopicSelectContext';
 import { FormLoader } from './FormLoader';
 
 export const FormInput = ({ label, htmlFor, onChange, errorMessage, ...inputProps }) => {
@@ -34,12 +36,19 @@ export const FormTextarea = ({ label, htmlFor, onChange, errorMessage, ...textar
 };
 
 export const FormSelect = ({ label, htmlFor, onChange, errorMessage, labelValueArr, ...selectProps }) => {
+	const { setFromSelect } = useContext(TopicSelectContext);
+
+	const handleChange = e => {
+		setFromSelect(true);
+		onChange(e);
+	};
+
 	return (
 		<div className='form-box'>
 			<label htmlFor={htmlFor} className='form-label'>
 				{label}:
 			</label>
-			<select className='form-select' onChange={onChange} {...selectProps}>
+			<select className='form-select' onChange={handleChange} {...selectProps}>
 				{labelValueArr.map(({ value, label, disabled }) => (
 					<option key={value} value={value} disabled={disabled}>
 						{label}
