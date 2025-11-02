@@ -42,10 +42,11 @@
 
 .motto-special-block {
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	width: 40%;
 	height: 40px;
 	background-color: var(--dark-sea-blue-color);
+	z-index: 80;
 }
 
 .motto-special-block--left {

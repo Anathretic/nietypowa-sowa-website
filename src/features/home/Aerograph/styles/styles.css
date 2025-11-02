@@ -6,7 +6,7 @@
 	flex-direction: column;
 	padding: 30px 0 40px;
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .aerograph-title {
@@ -58,10 +58,11 @@
 
 .aerograph-special-block {
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	width: 40%;
 	height: 40px;
 	background-color: var(--gray-color);
+	z-index: 80;
 }
 
 .aerograph-special-block--left {

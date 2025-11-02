@@ -13,6 +13,7 @@
 	background-image: url('../../../../images/home/welcome/hero-bg.jpg');
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
 }
 
 .welcome-container {
@@ -64,7 +65,7 @@
 	}
 }
 
-@media screen and (min-width: 990px) and (min-height: 500px) {
+@media screen and (min-width: 990px) and (min-height: 990px) {
 	.welcome-button {
 		display: block;
 	}

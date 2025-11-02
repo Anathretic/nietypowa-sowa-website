@@ -27,7 +27,7 @@
 	width: 100%;
 	background-color: var(--gray-color);
 	color: var(--darker-sea-blue-color);
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .offer-wrapper {
@@ -46,10 +46,11 @@
 
 .offer-special-block {
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	width: 40%;
 	height: 40px;
 	background-color: var(--sea-blue-color);
+	z-index: 80;
 }
 
 .offer-special-block--left {

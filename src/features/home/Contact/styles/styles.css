@@ -2,6 +2,7 @@
 	padding-top: 30px;
 	margin-bottom: 3rem;
 	width: 100%;
+	overflow: hidden;
 }
 
 .contact-container,
