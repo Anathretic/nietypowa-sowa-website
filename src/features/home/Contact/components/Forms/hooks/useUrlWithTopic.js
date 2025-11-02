@@ -1,23 +1,20 @@
 export const useUrlWithTopic = () => {
-	const goToValidHashWithTopic = ({ isScreenLarge }) => {
-		const topic = new URLSearchParams(window.location.search).get('topic');
-		const pathname = window.location.pathname;
+	const goToValidHashWithTopic = ({ selectedTopic, isScreenLarge }) => {
+		if (!selectedTopic) return;
 
-		if (topic) {
-			requestAnimationFrame(() => {
-				const el = document.querySelector('#formularz');
+		requestAnimationFrame(() => {
+			const el = document.querySelector('#formularz');
 
-				if (el) {
-					el.scrollIntoView({ behavior: 'smooth' });
-					const params = new URLSearchParams();
-					params.set('topic', topic);
+			if (el) {
+				el.scrollIntoView({ behavior: 'smooth' });
 
-					const fullUrl = `${pathname}?${params.toString()}${isScreenLarge ? '#kontakt' : '#formularz'}`;
+				const params = new URLSearchParams();
+				params.set('topic', selectedTopic);
 
-					window.history.replaceState(null, '', fullUrl);
-				}
-			});
-		}
+				const fullUrl = `${window.location.pathname}?${params.toString()}${isScreenLarge ? '#kontakt' : '#formularz'}`;
+				window.history.replaceState(null, '', fullUrl);
+			}
+		});
 	};
 
 	return { goToValidHashWithTopic };

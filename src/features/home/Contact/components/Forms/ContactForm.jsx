@@ -50,7 +50,7 @@ export const ContactForm = () => {
 		}));
 
 		if (!fromSelect) {
-			goToValidHashWithTopic({ isScreenLarge });
+			goToValidHashWithTopic({ selectedTopic, isScreenLarge });
 		}
 		setFromSelect(false);
 	}, [selectedTopic]);

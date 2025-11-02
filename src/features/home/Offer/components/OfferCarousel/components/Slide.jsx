@@ -9,7 +9,7 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 	const slideRef = useRef(null);
 
 	const { handleMouseMove, handleMouseLeave } = useSlideOptions({ slideRef });
-	const { setSelectedTopic } = useContext(TopicSelectContext);
+	const { setSelectedTopic, setFromSelect } = useContext(TopicSelectContext);
 
 	const isScreenLarge = useMediaQuery({ query: '(min-width: 1358px)' });
 
@@ -35,7 +35,10 @@ export const Slide = ({ slide, current, handleSlideClick }) => {
 					smooth
 					to={`/?${new URLSearchParams({ topic: main_title }).toString()}${isScreenLarge ? '#kontakt' : '#formularz'}`}
 					className='slide-action btn link-btn'
-					onClick={() => requestAnimationFrame(() => setSelectedTopic(main_title))}>
+					onClick={() => {
+						setFromSelect(true);
+						setSelectedTopic(main_title);
+					}}>
 					Zamawiam
 				</HashLink>
 			</article>

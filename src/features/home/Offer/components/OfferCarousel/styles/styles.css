@@ -219,6 +219,12 @@
 	}
 }
 
+@media screen and (min-width: 500px) {
+	.slider-controls {
+		width: 35%;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.slide-image--0 {
 		background-image: url('../../../../../../images/home/offer/xl-images/offer-first-image.jpg');
