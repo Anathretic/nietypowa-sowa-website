@@ -16,7 +16,7 @@ const Navbar = () => {
 	const [isAnimating, setIsAnimating] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
 
-	const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+	const isLarge = useMediaQuery({ query: '(min-width: 768px) and (min-height: 620px)' });
 
 	const divRef = useRef();
 
@@ -25,10 +25,6 @@ const Navbar = () => {
 	const handleMenuClose = () => {
 		setIsAnimating(true);
 		setToggleMenu(false);
-
-		setTimeout(() => {
-			setIsAnimating(false);
-		}, 480);
 	};
 
 	const handleAnimationEnd = () => {
@@ -47,35 +43,45 @@ const Navbar = () => {
 		};
 	}, []);
 
+	useEffect(() => {
+		if (toggleMenu || isAnimating) {
+			document.body.classList.add('scroll-block');
+		} else {
+			document.body.classList.remove('scroll-block');
+		}
+	}, [toggleMenu, isAnimating]);
+
 	return (
 		<header ref={divRef}>
 			<div className='navbar'>
 				<div className={`navbar-container ${isScrolled && 'navbar-container--is-scrolled'}`}>
 					<div className='navbar-wrapper'>
 						<NavbarTitle divRef={divRef} isScrolled={isScrolled} />
-						{isMobile ? (
+						{!isLarge ? (
 							<>
 								<HiMenuAlt4 className='navbar-mobile-burger-btn' fontSize={32} onClick={() => setToggleMenu(true)} />
 								{(toggleMenu || isAnimating) && (
-									<nav className='navbar-mobile'>
-										<ul
-											onAnimationEnd={handleAnimationEnd}
-											className={`navbar-mobile-list ${toggleMenu ? 'animate-slide-in' : 'animate-slide-out'}`}>
-											<li className='navbar-mobile-exit-icon'>
-												<AiOutlineClose fontSize={28} onClick={handleMenuClose} />
-											</li>
-											{memoizedNavbarItems.map(({ title, section }) => (
-												<NavbarItem
-													key={title}
-													title={title}
-													section={section}
-													classProps={'navbar-item-margin'}
-													onClick={handleMenuClose}
-												/>
-											))}
-											<InstagramAnchor />
-										</ul>
-									</nav>
+									<div className={`navbar-mobile-wrapper ${toggleMenu ? 'animate-fade-in' : 'animate-fade-out'}`}>
+										<nav className='navbar-mobile'>
+											<ul
+												onAnimationEnd={handleAnimationEnd}
+												className={`navbar-mobile-list ${toggleMenu ? 'animate-slide-in' : 'animate-slide-out'}`}>
+												<li className='navbar-mobile-exit-icon'>
+													<AiOutlineClose fontSize={28} onClick={handleMenuClose} />
+												</li>
+												{memoizedNavbarItems.map(({ title, section }) => (
+													<NavbarItem
+														key={title}
+														title={title}
+														section={section}
+														classProps={'navbar-item-margin'}
+														onClick={handleMenuClose}
+													/>
+												))}
+												<InstagramAnchor />
+											</ul>
+										</nav>
+									</div>
 								)}
 							</>
 						) : (

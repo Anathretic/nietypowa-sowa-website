@@ -1,3 +1,7 @@
+.scroll-block {
+	overflow: hidden;
+}
+
 .navbar {
 	display: flex;
 	justify-content: center;
@@ -75,6 +79,16 @@
 	color: var(--white-color);
 }
 
+.navbar-mobile-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: rgba(0, 0, 0, 0.75);
+	opacity: 0;
+}
+
 .navbar-mobile-list {
 	position: fixed;
 	justify-content: flex-start;
@@ -139,7 +153,7 @@
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 620px) {
 	.navbar-container {
 		padding: 0 2.5rem;
 		justify-content: space-between;
