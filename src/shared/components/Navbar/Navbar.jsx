@@ -61,8 +61,10 @@ const Navbar = () => {
 							<>
 								<HiMenuAlt4 className='navbar-mobile-burger-btn' fontSize={32} onClick={() => setToggleMenu(true)} />
 								{(toggleMenu || isAnimating) && (
-									<div className={`navbar-mobile-wrapper ${toggleMenu ? 'animate-fade-in' : 'animate-fade-out'}`}>
-										<nav className='navbar-mobile'>
+									<div
+										className={`navbar-mobile-wrapper ${toggleMenu ? 'animate-fade-in' : 'animate-fade-out'}`}
+										onClick={handleMenuClose}>
+										<nav className='navbar-mobile' onClick={e => e.stopPropagation()}>
 											<ul
 												onAnimationEnd={handleAnimationEnd}
 												className={`navbar-mobile-list ${toggleMenu ? 'animate-slide-in' : 'animate-slide-out'}`}>
