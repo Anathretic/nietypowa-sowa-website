@@ -1,4 +1,5 @@
-import { useContext } from 'react';
+import { forwardRef, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useMediaQuery } from 'react-responsive';
 import { TopicSelectContext } from '../../../../../../shared/context/TopicSelectContext';
@@ -60,6 +61,29 @@ export const FormSelect = ({ label, htmlFor, onChange, errorMessage, labelValueA
 	);
 };
 
+export const CheckboxElement = forwardRef(({ label, htmlFor, onChange, checked, errorMessage, ...props }, ref) => {
+	return (
+		<div className='form-box form-box-checkbox'>
+			<div>
+				<label htmlFor={htmlFor} className={`form-label ${errorMessage && 'form-box-checkbox-error'}`}>
+					{label} <Link to='/polityka-prywatnosci'>polityką prywatności.</Link>
+				</label>
+				<input
+					type='checkbox'
+					id={htmlFor}
+					ref={ref}
+					className='form-input'
+					onChange={onChange}
+					checked={checked ?? false}
+					{...props}
+				/>
+			</div>
+		</div>
+	);
+});
+
+CheckboxElement.displayName = 'CheckboxElement';
+
 export const FormReCaptchaV2 = ({ refCaptcha, reCaptchaErrorValue }) => {
 	const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
 
@@ -71,9 +95,6 @@ export const FormReCaptchaV2 = ({ refCaptcha, reCaptchaErrorValue }) => {
 				sitekey={import.meta.env.VITE_SITE_KEY}
 				ref={refCaptcha}
 			/>
-			<div className='form-recaptcha-error'>
-				<p>{reCaptchaErrorValue}</p>
-			</div>
 		</div>
 	);
 };

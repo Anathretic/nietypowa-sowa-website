@@ -7,8 +7,16 @@ import { useUrlWithTopic } from './hooks/useUrlWithTopic';
 import { inputData } from '../../config/inputData';
 import { selectData } from '../../config/selectData';
 import { textareaData } from '../../config/textareaData';
+import { checkboxData } from '../../config/checkboxData';
 import { TopicSelectContext } from '../../../../../shared/context/TopicSelectContext';
-import { FormInput, FormReCaptchaV2, FormSelect, FormSubmit, FormTextarea } from './components/FormElements';
+import {
+	CheckboxElement,
+	FormInput,
+	FormReCaptchaV2,
+	FormSelect,
+	FormSubmit,
+	FormTextarea,
+} from './components/FormElements';
 
 import { BsCheck2All } from 'react-icons/bs';
 
@@ -91,6 +99,18 @@ export const ContactForm = () => {
 				/>
 			))}
 			<FormReCaptchaV2 refCaptcha={refCaptcha} reCaptchaErrorValue={reCaptchaErrorValue} />
+			{checkboxData.map(checkbox => (
+				<CheckboxElement
+					key={checkbox.id}
+					htmlFor={checkbox.name}
+					{...checkbox}
+					checked={values[checkbox.name]}
+					onChange={handleInputValue}
+					onInvalid={handleFocus}
+					focused={focused.toString()}
+					errorMessage={focused && !values[checkbox.name] ? checkbox.errorMessage : ''}
+				/>
+			))}
 			<FormSubmit isLoading={isLoading} buttonText={buttonText} />
 		</form>
 	);

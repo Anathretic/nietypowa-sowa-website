@@ -7,11 +7,16 @@ export const useContactFormInputs = () => {
 		phone: '',
 		topic: '',
 		message: '',
+		privacy: false,
 	});
 
 	const handleInputValue = e => {
-		const { name, value } = e.target;
-		setValues(prev => ({ ...prev, [name]: value }));
+		const { name, type, value, checked } = e.target;
+
+		setValues(prev => ({
+			...prev,
+			[name]: type === 'checkbox' ? checked : value,
+		}));
 
 		if (name === 'topic') {
 			const url = new URL(window.location);
