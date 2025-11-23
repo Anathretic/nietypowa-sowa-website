@@ -6,7 +6,8 @@
 }
 
 .contact-container,
-.contact-title-box {
+.contact-title-box,
+.contact-form {
 	display: flex;
 	justify-content: center;
 	align-items: center;

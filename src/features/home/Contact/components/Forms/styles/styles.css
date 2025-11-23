@@ -124,6 +124,39 @@ form textarea:invalid[focused='true'] {
 	border: 1px solid var(--pink-color);
 }
 
+.form-box-checkbox {
+	width: 100%;
+}
+
+.form-box-checkbox div {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-direction: row;
+	width: 100%;
+}
+
+.form-box-checkbox input[type='checkbox'] {
+	width: 18px;
+	height: 18px;
+}
+
+.form-box-checkbox label {
+	padding: 0 0.75em 0 0;
+	font-size: 0.75em;
+	line-height: 1.6em;
+}
+
+.form-box-checkbox label a {
+	color: inherit;
+	text-underline-offset: 2px;
+	transition: color 0.3s;
+}
+
+.form-box-checkbox-error {
+	color: var(--pink-color);
+}
+
 .form-submit {
 	display: flex;
 	justify-content: center;
@@ -165,7 +198,8 @@ form textarea:invalid[focused='true'] {
 	.form-input,
 	.form-select,
 	.form-textarea,
-	.form-label {
+	.form-label,
+	.form-box-checkbox {
 		width: 90%;
 	}
 }
@@ -202,6 +236,14 @@ form textarea:invalid[focused='true'] {
 	.form-textarea-error,
 	.form-recaptcha-error {
 		font-size: 1em;
+	}
+
+	.form-box-checkbox label a:hover {
+		color: var(--pink-color);
+	}
+
+	.form-box-checkbox label a:active {
+		opacity: 0.55;
 	}
 
 	.form-submit:hover {
