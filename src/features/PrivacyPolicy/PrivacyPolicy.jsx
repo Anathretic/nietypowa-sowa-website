@@ -48,6 +48,10 @@ const PrivacyPolicy = () => {
 								<li>Numer telefonu</li>
 								<li>Treść zapytania lub wiadomości wysłanej za pośrednictwem formularza kontaktowego</li>
 							</ul>
+							<p style={{ paddingTop: '0.75em' }}>
+								Podanie danych osobowych jest dobrowolne, jednak niezbędne do nawiązania kontaktu i udzielenia
+								odpowiedzi na Twoje zapytanie.
+							</p>
 						</div>
 						<div className='privacy-policy-box'>
 							<h2>4. Cel przetwarzania danych</h2>
@@ -101,6 +105,10 @@ const PrivacyPolicy = () => {
 								</li>
 							</ul>
 							<p style={{ paddingTop: '0.75em' }}>
+								Masz również prawo wniesienia skargi do organu nadzorczego – Prezesa Urzędu Ochrony Danych Osobowych –
+								jeśli uznasz, że przetwarzanie Twoich danych narusza przepisy RODO.
+							</p>
+							<p style={{ paddingTop: '0.75em' }}>
 								Aby skorzystać z tych praw, proszę o kontakt pod adresem:{' '}
 								<a href='mailto:nietypowasowa@gmail.com'>nietypowasowa@gmail.com</a>
 							</p>
@@ -149,9 +157,20 @@ const PrivacyPolicy = () => {
 								Korzystając z formularza kontaktowego, użytkownik wyraża zgodę na przetwarzanie danych przez Google w
 								celu weryfikacji użytkownika za pomocą reCAPTCHA.
 							</p>
+							<p style={{ paddingTop: '1em' }}>
+								W związku z korzystaniem z usługi Google reCAPTCHA dane mogą być przekazywane do państw spoza
+								Europejskiego Obszaru Gospodarczego (EOG), w szczególności do Stanów Zjednoczonych. Google stosuje
+								odpowiednie środki ochrony danych zgodnie z wymogami RODO.
+							</p>
 						</div>
 						<div className='privacy-policy-box'>
-							<h2>12. Zmiany w polityce prywatności</h2>
+							<h2>12. Zautomatyzowane podejmowanie decyzji</h2>{' '}
+							<p>
+								Twoje dane osobowe nie są wykorzystywane do zautomatyzowanego podejmowania decyzji ani profilowania.
+							</p>
+						</div>
+						<div className='privacy-policy-box'>
+							<h2>13. Zmiany w polityce prywatności</h2>
 							<p>
 								Zastrzegam sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. O wszelkich zmianach
 								będę informować na stronie internetowej.
