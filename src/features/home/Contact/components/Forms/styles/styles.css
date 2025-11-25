@@ -143,17 +143,23 @@ form textarea:invalid[focused='true'] {
 
 .form-box-checkbox label {
 	padding: 0 0.75em 0 0;
+	color: var(--white-color);
 	font-size: 0.75em;
 	line-height: 1.6em;
+	transition: color 0.3s;
 }
 
 .form-box-checkbox label a {
-	color: inherit;
+	color: var(--white-color);
 	text-underline-offset: 2px;
 	transition: color 0.3s;
 }
 
-.form-box-checkbox-error {
+.form-box-checkbox-error label {
+	color: var(--pink-color);
+}
+
+.form-box-checkbox-error label a {
 	color: var(--pink-color);
 }
 

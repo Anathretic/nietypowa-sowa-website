@@ -63,9 +63,9 @@ export const FormSelect = ({ label, htmlFor, onChange, errorMessage, labelValueA
 
 export const CheckboxElement = forwardRef(({ label, htmlFor, onChange, checked, errorMessage, ...props }, ref) => {
 	return (
-		<div className='form-box form-box-checkbox'>
+		<div className={`form-box form-box-checkbox ${errorMessage && 'form-box-checkbox-error'}`}>
 			<div>
-				<label htmlFor={htmlFor} className={`form-label ${errorMessage && 'form-box-checkbox-error'}`}>
+				<label htmlFor={htmlFor} className='form-label'>
 					{label} <Link to='/polityka-prywatnosci'>polityką prywatności.</Link>
 				</label>
 				<input
