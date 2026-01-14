@@ -86,7 +86,7 @@
 .form-select-error,
 .form-textarea-error,
 .form-recaptcha-error {
-	color: var(--pink-color);
+	color: var(--light-pink-color);
 	text-align: center;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .form-recaptcha-box-error div div div div iframe {
-	border: 3px solid var(--pink-color);
+	border: 3px solid var(--light-pink-color);
 }
 
 form input:invalid[focused='true'] ~ span,
@@ -124,7 +124,7 @@ form textarea:invalid[focused='true'] ~ span {
 form input:invalid[focused='true'],
 form select:invalid[focused='true'],
 form textarea:invalid[focused='true'] {
-	border: 1px solid var(--pink-color);
+	border: 1px solid var(--light-pink-color);
 }
 
 .form-box-checkbox {
@@ -147,7 +147,7 @@ form textarea:invalid[focused='true'] {
 .form-box-checkbox label {
 	padding: 0 0.75em 0 0;
 	color: var(--white-color);
-	font-size: 0.75em;
+	font-size: 0.9em;
 	line-height: 1.6em;
 	transition: color 0.3s;
 }
@@ -159,11 +159,11 @@ form textarea:invalid[focused='true'] {
 }
 
 .form-box-checkbox-error label {
-	color: var(--pink-color);
+	color: var(--light-pink-color);
 }
 
 .form-box-checkbox-error label a {
-	color: var(--pink-color);
+	color: var(--light-pink-color);
 }
 
 .form-submit {
@@ -248,7 +248,7 @@ form textarea:invalid[focused='true'] {
 	}
 
 	.form-box-checkbox label a:hover {
-		color: var(--pink-color);
+		color: var(--light-pink-color);
 	}
 
 	.form-box-checkbox label a:active {

@@ -132,7 +132,7 @@
 @media screen and (min-width: 1024px) {
 	.contact-title-subtext a:hover,
 	.contact-title-info-box a:hover {
-		color: var(--pink-color);
+		color: var(--light-pink-color);
 	}
 
 	.contact-title-subtext a:active,

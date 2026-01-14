@@ -219,7 +219,7 @@
 	}
 
 	.pink-hover:hover {
-		color: var(--pink-color);
+		color: var(--light-pink-color);
 	}
 
 	.dark-hover:hover {

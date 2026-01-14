@@ -5,7 +5,7 @@ export const inputData = [
 		type: 'text',
 		placeholder: 'Wprowadź swoje imię i nazwisko',
 		label: 'Imię i nazwisko',
-		errorMessage: 'Wprowadź poprawnie dane!',
+		errorMessage: 'Wprowadź poprawnie imię i nazwisko!',
 		pattern: '^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ ]{3,32}$',
 		required: true,
 	},
