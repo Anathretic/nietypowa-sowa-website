@@ -21,7 +21,7 @@ const PageNotFound = () => {
 				<meta property='og:description' content='Nie znaleziono strony. Przekieruj się do mojej oferty.' />
 				<meta property='og:type' content='website' />
 				<meta property='og:url' content={currentUrl} />
-				<meta name='robots' content='noindex, nofollow' />
+				<meta name='robots' content='noindex, follow' />
 			</Helmet>
 			<main>
 				<section className='notfound'>
